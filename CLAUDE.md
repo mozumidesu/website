@@ -14,15 +14,22 @@ online again within a minute or two.
 
 It is the four files in `src/css/` joined in the order of their names:
 `10-base.css` + `20-home.css` + `30-translate.css` + `40-extra.css`, byte for
-byte, with nothing added. There is currently no script that does the joining,
-so it has to be rebuilt by hand after every change to a source file, and
-nothing warns when that is forgotten. Edit a source file without rebuilding and
-the site keeps showing the old styling; edit `site.css` directly and the
-sources silently fall behind.
+byte, with nothing added. Edit a source file without rebuilding and the site
+keeps showing the old styling; edit `site.css` directly and the sources
+silently fall behind.
 
-A `tools css` subcommand that builds it, and a `--check` mode that fails when
-the built file disagrees with its sources, is the first thing planned for the
-Rust tooling in the plugin repository.
+`tools css` in the plugin repository does the joining, and `--check` says when
+it has been forgotten:
+
+```
+tools css --root /path/to/website            # write site.css
+tools css --root /path/to/website --check    # fails if it is out of date
+```
+
+`--check` names the source file, line and column where the built file and its
+sources part, so it says which of the two happened. Run it after every change
+to a source file. The joining itself is still the only thing that makes
+`site.css`, so it is never edited by hand.
 
 `public/assets/css/fonts.css` and everything in `public/assets/fonts/` are
 generated too, by `src/fonts.py`, which also subsets the Japanese fonts down to
@@ -72,6 +79,11 @@ language is `<b>` rather than a link, and the paths differ by depth — from
 sixteen and keeping their structure identical.
 
 ## Hosting
+
+`tools preview --root .` serves `public/` on `localhost:8787` for a look at a
+change before it goes up. It is not the Worker: the redirects below and the
+rules in `public/_headers` are not reproduced, and nothing is cached. The
+personal page is at `/` and the plugin's page at `/translate/`.
 
 Cloudflare Workers, built from this repository on every push. `wrangler.jsonc`
 lists the routes; DNS records and certificates are created by Cloudflare itself
