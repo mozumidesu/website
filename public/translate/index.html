@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Translate for Discord</title>
+<meta name="description" content="A plugin for Discord that translates your messages with the AI model of your choice and keeps the way you write. One command installs it on Windows, macOS and Linux.">
+<meta name="theme-color" content="#0D1038">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Translate">
+<meta property="og:url" content="https://translate.zolatau.com/">
+<meta property="og:title" content="AI Translate for Discord">
+<meta property="og:description" content="The plugin that lets you talk to anyone, even if you don't know their language. Translates with AI and keeps the way you write.">
+<meta property="og:image" content="https://translate.zolatau.com/assets/img/og-translate.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://translate.zolatau.com/">
+<link rel="icon" href="../assets/img/favicon-translate.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/favicon-translate-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon-translate.png">
+<link rel="preload" href="../assets/fonts/dela-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>
+(function(){var d=document.documentElement,L=["de","en","es","fr","id","pt","ro","ru","uk","tr","vi","ar","th","ja","ko","zh"];
+function g(k){var m=document.cookie.match(new RegExp("(?:^|; )zl-"+k+"=([^;]*)"));if(m)return decodeURIComponent(m[1]);try{return localStorage.getItem("zl-"+k)}catch(e){return null}}
+var q=new URLSearchParams(location.search),qt=q.get("theme"),ql=q.get("lang"),t=g("theme"),l=g("lang");if(qt==="light"||qt==="dark"){t=qt;try{localStorage.setItem("zl-theme",qt)}catch(e){}}if(L.indexOf(ql)>=0){l=ql;try{localStorage.setItem("zl-lang",ql)}catch(e){}}if(qt||ql){try{history.replaceState(null,"",location.pathname+location.hash)}catch(e){}}d.setAttribute("data-theme",t==="light"?"light":"dark");
+if(L.indexOf(l)<0){l="en";var n=navigator.languages||[navigator.language||"en"];for(var i=0;i<n.length;i++){var b=String(n[i]).toLowerCase().split("-")[0];if(L.indexOf(b)>=0){l=b;break}}}
+d.lang=l;d.dir=l==="ar"?"rtl":"ltr";d.className+=" js"+(l!=="en"?" i18n-wait":"");
+setTimeout(function(){d.classList.remove("i18n-wait")},2500);
+var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="light"?"#F3F0FA":"#0D1038";})();
+</script>
+<script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/translate.js" defer></script>
+</head>
+<body data-page="translate">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3Z"/></g></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></g></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.3 14.6A8.6 8.6 0 0 1 9.4 3.7a8.6 8.6 0 1 0 10.9 10.9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-z" viewBox="29.8 32 60.5 56"><path transform="translate(26.7 88) scale(.0771 -.0771)" d="M666 205Q696 206 736.0 208.0Q776 210 825 211Q818 164 816.5 117.0Q815 70 815 0H48V223Q103 254 168.0 299.5Q233 345 336 419Q432 489 475 519Q396 518 158 508Q76 504 48 503Q48 577 46.5 627.0Q45 677 40 726H815V502Q762 467 619 366Q459 252 372 197Q429 198 666 205Z" fill="currentColor"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21.1 3.9 13C1.4 10.5 1.4 6.5 3.9 4a5.7 5.7 0 0 1 8.1 0 5.7 5.7 0 0 1 8.1 8.9l-8.1 8.2Z" fill="currentColor"/></symbol>
+  <symbol id="i-translate" viewBox="0 96 960 960"><path d="m475 976 181-480h82l186 480h-87l-41-126H604l-47 126h-82Zm151-196h142l-70-194h-2l-70 194Zm-466 76-55-55 204-204q-38-44-67.5-88.5T190 416h87q17 33 37.5 62.5T361 539q45-47 75-97.5T487 336H40v-80h280v-80h80v80h280v80H567q-22 69-58.5 135.5T419 598l98 99-30 81-127-122-200 200Z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12" height="12" rx="2.5"/><path d="M15.5 8.5V6A2.5 2.5 0 0 0 13 3.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/></g></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2.5c.6 4.6 2.9 6.9 7.5 7.5-4.6.6-6.9 2.9-7.5 7.5-.6-4.6-2.9-6.9-7.5-7.5 4.6-.6 6.9-2.9 7.5-7.5Zm6.5 12c.3 2 1.1 2.8 3 3-1.9.3-2.7 1.1-3 3-.3-1.9-1.1-2.7-3-3 1.9-.2 2.7-1 3-3Z"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></g></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></g></symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></symbol>
+  <symbol id="i-discord" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></symbol>
+  <symbol id="i-gitlab" viewBox="0 0 24 24"><path d="m23.6004 9.5927-.0337-.0862L20.3.9814a.851.851 0 0 0-.3362-.405.8748.8748 0 0 0-.9997.0539.8748.8748 0 0 0-.29.4399l-2.2055 6.748H7.5375l-2.2057-6.748a.8573.8573 0 0 0-.29-.4412.8748.8748 0 0 0-.9997-.0537.8585.8585 0 0 0-.3362.4049L.4332 9.5015l-.0325.0862a6.0657 6.0657 0 0 0 2.0119 7.0105l.0113.0087.03.0213 4.976 3.7264 2.462 1.8633 1.4995 1.1321a1.0085 1.0085 0 0 0 1.2197 0l1.4995-1.1321 2.4619-1.8633 5.006-3.7489.0125-.01a6.0682 6.0682 0 0 0 2.0094-7.003z"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+</svg>
+<a class="skip" href="#main" data-i18n="common.skip">Skip to content</a>
+<div class="atmos" aria-hidden="true"><div class="atmos__cols"></div></div>
+<div class="loader" aria-hidden="true">
+    <div class="loader__half loader__half--top"></div>
+    <div class="loader__half loader__half--bottom"></div>
+    <div class="loader__stage">
+      <p class="loader__word" data-loader-word>&nbsp;</p>
+      <div class="loader__track">
+        <div class="loader__fill"></div>
+        <div class="loader__cat">
+        <svg class="cat-walk" viewBox="0 0 120 72" aria-hidden="true" focusable="false">
+          <g class="body">
+            <path class="wtail" d="M36 38 C 24 38 17 28 21 16 C 22 12 26 11 27 14" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+            <line class="leg l1" x1="44" y1="46" x2="43" y2="62" stroke="currentColor" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+            <line class="leg l3" x1="72" y1="46" x2="73" y2="62" stroke="currentColor" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+            <path d="M34 40 C 34 30 44 28 58 28 C 70 28 80 28 84 34 C 88 42 84 50 74 51 C 64 52 48 52 41 50 C 36 48 34 45 34 40 Z" fill="currentColor"/>
+            <line class="leg l2" x1="47" y1="47" x2="47" y2="63" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+            <line class="leg l4" x1="75" y1="47" x2="76" y2="63" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+            <path d="M80 20 L 81 6 Q 81 3 84 5 L 92 13 Z M95 13 L 103 5 Q 106 3 106 7 L 106 21 Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M84 12 L 85 8 L 89 12 Z M100 11 L 104 7 L 104 12 Z" fill="#F29BAE" opacity=".8"/>
+            <circle cx="93" cy="26" r="15" fill="currentColor"/>
+            <ellipse class="eye" cx="99" cy="24" rx="3" ry="3.6"/><ellipse class="pupil" cx="99.8" cy="24" rx="1.1" ry="2.9"/>
+            <path d="M106.6 29.6 l2.6 .1 -1.3 2z" fill="#F29BAE"/>
+          </g>
+        </svg>
+        </div>
+      </div>
+      <div class="loader__meta mono"><span>zolatau.com</span><span class="loader__count" data-loader-count>000</span></div>
+    </div>
+  </div>
+
+<header class="nav">
+  <nav class="nav__pill glass" aria-label="Main" data-i18n-attr="aria-label:nav.label">
+    <a class="nav__mark" href="#top" aria-label="AI Translate"><span class="app-mark"><svg aria-hidden="true"><use href="#i-translate"/></svg></span></a>
+    <div class="nav__links" style="--d:.05s">
+      <span class="nav__blob" aria-hidden="true"></span>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#providers" data-i18n="nav.providers">Providers</a>
+      <a href="#install" data-i18n="nav.install">Install</a>
+      <a href="#faq" data-i18n="nav.faq">Questions</a>
+    </div>
+    <span class="nav__sep" style="--d:.1s"></span>
+    <a class="nav__btn nav__home" data-link="home" href="https://zolatau.com/" aria-label="Ivan Zolatau" style="--d:.12s"><span class="app-mark"><svg aria-hidden="true"><use href="#i-z"/></svg></span></a>
+    <button class="nav__btn" type="button" data-theme-toggle aria-label="Switch to light theme" style="--d:.15s">
+      <span class="theme-ico"><svg class="moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="sun" aria-hidden="true"><use href="#i-sun"/></svg></span>
+    </button>
+    <div class="lang" style="--d:.2s">
+      <button class="nav__btn nav__lang" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-menu" aria-label="Language" data-i18n-attr="aria-label:lang.label">
+        <svg class="i" aria-hidden="true"><use href="#i-globe"/></svg><span data-lang-code>EN</span>
+      </button>
+    </div>
+    <button class="nav__btn nav__menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu" style="--d:.25s"><span class="menu-ico"></span></button>
+  </nav>
+  <ul class="lang__menu" id="lang-menu" role="listbox" aria-label="Language" data-i18n-attr="aria-label:lang.label" hidden></ul>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <ul class="menu__links">
+    <li><a href="#features"><span data-i18n="nav.features">Features</span></a></li>
+    <li><a href="#providers"><span data-i18n="nav.providers">Providers</span></a></li>
+    <li><a href="#install"><span data-i18n="nav.install">Install</span></a></li>
+    <li><a href="#faq"><span data-i18n="nav.faq">Questions</span></a></li>
+    <li><a data-link="home" href="https://zolatau.com/">zolatau.com</a></li>
+  </ul>
+  <div class="menu__foot mono"><span>translate.zolatau.com</span><span>翻訳</span></div>
+</div>
+
+<main id="main">
+  <section class="thero" id="top" aria-labelledby="tr-title">
+    <div class="wrap thero__grid">
+      <div class="thero__copy">
+        <div class="app-mark app-mark--lg" data-in style="--in:0"><svg aria-hidden="true"><use href="#i-translate"/></svg></div>
+        <h1 id="tr-title" data-in style="--in:1">AI Translate</h1>
+        <p class="thero__tagline" data-in style="--in:2" data-i18n="tr.tagline">The plugin that lets you talk to anyone, even if you don't know their language</p>
+        <p class="thero__sub" data-in style="--in:3" data-i18n="tr.sub">For the Discord app on Windows, macOS and Linux. It translates with the AI model you choose and keeps the way you write.</p>
+        <div class="cta-row" data-in style="--in:4">
+          <a class="btn btn--acc" href="#install"><span data-i18n="tr.ctaInstall">Install</span><svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" href="#features" data-i18n="tr.ctaFeatures">What it can do</a>
+        </div>
+        <ul class="chips" data-in style="--in:5">
+          <li class="chip" data-i18n="tr.chipFree">Free</li>
+          <li class="chip" data-i18n="tr.chipOpen">Open source</li>
+          <li class="chip" data-i18n="tr.chipLangs">15 interface languages</li>
+        </ul>
+      </div>
+      <div class="thero__demo" data-in style="--in:3">
+        <div class="chat glass chat--full" data-demo="full" role="img" aria-label="Example: AI Translate translating a conversation">
+          <div class="chat__head"><span class="chat__hash" aria-hidden="true">#</span><b>general</b><span class="chat__state"><svg class="i" aria-hidden="true"><use href="#i-translate"/></svg><span data-d="state">AI Translate: on here</span></span></div>
+          <div class="chat__body">
+            <div class="msg msg--me is-off" data-d="out">
+              <span class="msg__ava"><img src="../assets/img/favicon.svg" alt="" width="38" height="38"></span>
+              <div>
+                <p class="msg__meta"><b data-d="me">You</b><time>14:25</time></p>
+                <p class="msg__text" data-d="out-text"></p>
+                <p class="msg__orig is-off" data-d="orig"><span data-d="wrote">you wrote:</span> <span data-d="orig-text"></span></p>
+              </div>
+            </div>
+            <div class="msg msg--them is-off" data-d="in">
+              <span class="msg__ava" data-d="friend-ava">Y</span>
+              <div>
+                <p class="msg__meta"><b data-d="friend">Yuki</b><time>14:26</time></p>
+                <p class="msg__text" data-d="in-text"></p>
+                <div class="msg__tr is-off" data-d="tr"><small data-d="tr-from">Translated from Japanese</small><p data-d="tr-text"></p></div>
+              </div>
+              <div class="ctx is-off">
+                <div class="ctx__item"><svg class="i" aria-hidden="true"><use href="#i-translate"/></svg><span data-d="ctx-translate">AI Translate</span></div>
+                <div class="ctx__item"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg><span data-d="ctx-explain">AI Explain</span></div>
+                <div class="ctx__sep"></div>
+                <div class="ctx__bar" style="width:60%"></div>
+                <div class="ctx__bar" style="width:45%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="chat__input"><span class="chat__typing" data-d="typing" data-placeholder="Message #general"></span><span class="chat__btn"><svg class="i" aria-hidden="true"><use href="#i-translate"/></svg></span></div>
+          <span class="chat__tip is-off" data-d="tip">AI Translate: on here</span>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="vlabel" aria-hidden="true"><b>本音</b><i>honne</i></p>
+        <div>
+          <h2 class="section__title rv" id="why-title" data-i18n="tr.whyTitle">Chat is not prose</h2>
+          <p class="section__lead" data-i18n="tr.whyText">Machine translation is made for prose. Chat is lower case and unfinished, it runs on kaomoji, and a missing full stop is doing work. Most translators tidy all of that away. AI Translate leaves it alone.</p>
+        </div>
+      </div>
+      <div class="compare">
+        <div><h3 data-i18n="tr.whyYou">You typed</h3><p data-why="src">hooray, tomorrow is finally a day off :)</p></div>
+        <div class="is-bad"><h3><span data-i18n="tr.whyUsual">Usual translator</span><span class="compare__lang" data-why="lang"></span></h3><p data-why="usual"></p><p class="compare__note" data-i18n="tr.whyUsualNote">A capital letter and a full stop appeared, and the smiley is gone</p></div>
+        <div class="is-good"><h3><span>AI Translate</span><span class="compare__lang" data-why="lang"></span></h3><p data-why="ai"></p><p class="compare__note" data-i18n="tr.whyAiNote">Sounds the way you write</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section features" id="features" aria-labelledby="f-title">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="vlabel" aria-hidden="true"><b>機能</b><i>kinō</i></p>
+        <div>
+          <h2 class="section__title rv" id="f-title" data-i18n="tr.fTitle">What it can do</h2>
+        </div>
+      </div>
+      <div class="bento">
+        <article class="tile tile--c">
+          <h3 data-i18n="tr.f1t">Only in the chats you choose</h3>
+          <p data-i18n="tr.f1d">Auto-translation is switched on chat by chat. Right-click the translate button in the chat bar to switch the current chat, left-click it to open the panel.</p>
+          <div class="tile__art toggle-demo" aria-hidden="true">
+            <span class="pill-state is-on"><svg class="i"><use href="#i-translate"/></svg><span data-demo-t="on">AI Translate: on here</span></span>
+            <span class="pill-state"><svg class="i"><use href="#i-translate"/></svg><span data-demo-t="off">AI Translate: off here</span></span>
+          </div>
+        </article>
+        <article class="tile tile--c">
+          <h3 data-i18n="tr.f2t">Messages you receive</h3>
+          <p data-i18n="tr.f2d">Right-click any message and translate it into your language.</p>
+          <div class="tile__art" aria-hidden="true">
+            <div class="menu-demo">
+              <div class="ctx__item is-hot"><svg class="i"><use href="#i-translate"/></svg><span data-demo-t="ctxTranslate">AI Translate</span></div>
+              <div class="ctx__item"><svg class="i"><use href="#i-spark"/></svg><span data-demo-t="ctxExplain">AI Explain</span></div>
+              <div class="ctx__sep"></div>
+              <div class="ctx__bar" style="width:62%"></div>
+              <div class="ctx__bar" style="width:40%"></div>
+            </div>
+          </div>
+        </article>
+        <article class="tile tile--c">
+          <h3>AI Explain</h3>
+          <p data-i18n="tr.f3d">For a message that a translation alone does not make clear: chat shorthand, a regional word, an inside joke. It names the language, spells the abbreviations out and says what was meant.</p>
+          <div class="tile__art" aria-hidden="true">
+            <p class="explain__msg">ngl this is lowkey fire fr</p>
+            <p class="explain"><small data-demo-t="ctxExplain">AI Explain</small><span data-i18n="tr.f3ex">English, internet slang. ngl: not gonna lie. lowkey: kind of, quietly. fire: really good. fr: for real. So: honestly, this is really good.</span></p>
+          </div>
+        </article>
+        <article class="tile tile--a">
+          <h3 data-i18n="tr.f4t">Keep part of a message as it is</h3>
+          <p data-i18n="tr.f4d">Put a word or phrase between two backslashes and it goes out exactly as you typed it. Code in backticks is never translated.</p>
+          <div class="tile__art keep" aria-hidden="true">
+            <div><small data-i18n="tr.f4typed">You type</small><span data-keep="src"></span></div>
+            <div><small data-i18n="tr.f4sent">Goes out</small><span data-keep="tgt"></span></div>
+          </div>
+        </article>
+        <article class="tile tile--b">
+          <h3 data-i18n="tr.f5t">See what you sent</h3>
+          <p data-i18n="tr.f5d">Your own messages can keep the original underneath, visible only to you. It is off until you switch it on in the settings.</p>
+          <div class="tile__art" aria-hidden="true">
+            <div class="msg">
+              <span class="msg__ava"><img src="../assets/img/favicon.svg" alt="" width="38" height="38"></span>
+              <div><p class="msg__meta"><b data-demo-t="me">You</b><time>14:25</time></p><p class="msg__text" data-demo-t="sentTgt"></p><p class="msg__orig"><span data-demo-t="youWrote">you wrote:</span> <span data-demo-t="sentSrc"></span></p></div>
+            </div>
+          </div>
+        </article>
+        <article class="tile tile--c">
+          <h3 data-i18n="tr.f6t">Knows the conversation</h3>
+          <p data-i18n="tr.f6d">The last few messages go with each request. After "how did you like the film?" your short "not really" comes out as "i didn't really like it", not as two words on their own.</p>
+        </article>
+        <article class="tile tile--c">
+          <h3 data-i18n="tr.f7t">Your own vocabulary</h3>
+          <p data-i18n="tr.f7d">Words that are never translated, terms with one fixed translation, your grammatical gender and whether to address people formally.</p>
+          <div class="tile__art chips" aria-hidden="true"><span class="chip">Nitro</span><span class="chip">rights = permissions</span></div>
+        </article>
+        <article class="tile tile--c">
+          <h3 data-i18n="tr.f8t">Backup provider</h3>
+          <p data-i18n="tr.f8d">When the main provider is overloaded, out of quota or refuses the request, the translation quietly goes through the other one.</p>
+        </article>
+        <article class="tile tile--wide tile--langs">
+          <p class="tile__num">16</p>
+          <h3 data-i18n="tr.f9t">interface languages</h3>
+          <p data-i18n="tr.f9d">The plugin shows its interface in the same language as your Discord. You can pick another one in the settings.</p>
+        </article>
+        <article class="tile tile--c tile--free">
+          <h3 data-i18n="tr.f10t">Free to use</h3>
+          <p data-i18n="tr.f10d">Groq, Gemini and GLM have free tiers, so translating costs nothing.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section providers" id="providers" aria-labelledby="p-title">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="vlabel" aria-hidden="true"><b>鍵</b><i>kagi</i></p>
+        <div>
+          <h2 class="section__title rv" id="p-title" data-i18n="tr.pTitle">Your key, your provider</h2>
+          <p class="section__lead" data-i18n="tr.pText">You bring your own API key, and it stays yours. The plugin has no server of its own and never sees anyone else's key.</p>
+        </div>
+      </div>
+      <div class="prov">
+        <table>
+          <thead><tr><th scope="col" data-i18n="tr.pCol1">Provider</th><th scope="col" data-i18n="tr.pCol2">Free tier</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Groq</th><td><span class="yes" data-i18n="tr.pGroq">Yes, recommended</span></td></tr>
+            <tr><th scope="row">Google Gemini</th><td><span class="yes" data-i18n="tr.pYes">Yes</span></td></tr>
+            <tr><th scope="row">Z.ai GLM</th><td><span class="yes" data-i18n="tr.pGlm">Yes, and it works where the other two are blocked</span></td></tr>
+            <tr><th scope="row">Anthropic Claude</th><td><span class="no" data-i18n="tr.pNo">No</span></td></tr>
+            <tr><th scope="row" data-i18n="tr.pAny">Any OpenAI-compatible API</th><td><span data-i18n="tr.pDepends">Depends on the provider</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="prov__note" data-i18n="tr.pNote">Requests are made from Discord's background process, so your key never enters the part of Discord that a web page could reach.</p>
+    </div>
+  </section>
+
+  <section class="section install" id="install" aria-labelledby="i-title">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="vlabel" aria-hidden="true"><b>導入</b><i>dōnyū</i></p>
+        <div>
+          <h2 class="section__title rv" id="i-title" data-i18n="tr.iTitle">Install</h2>
+          <p class="section__lead" data-i18n="tr.iLead">AI Translate runs inside Vencord, a well-known mod for the Discord app. One command downloads Vencord with AI Translate already inside, about a megabyte, and patches Discord. Nothing is built on your computer.</p>
+          <p class="touch-note" data-i18n="tr.iTouch">The command runs on a computer: open this page there to copy it.</p>
+        </div>
+      </div>
+      <div class="install__box glass">
+        <div class="tabs" role="tablist" aria-label="Operating system" data-i18n-attr="aria-label:tr.iOs">
+          <button class="tab" role="tab" type="button" id="tab-win" aria-controls="os-win" aria-selected="true">Windows</button>
+          <button class="tab" role="tab" type="button" id="tab-mac" aria-controls="os-mac" aria-selected="false" tabindex="-1">macOS</button>
+          <button class="tab" role="tab" type="button" id="tab-linux" aria-controls="os-linux" aria-selected="false" tabindex="-1">Linux</button>
+        </div>
+        <div class="panel" role="tabpanel" id="os-win" aria-labelledby="tab-win">
+          <ol class="steps">
+            <li><div><p data-i18n="tr.s1win">Open Windows Terminal or PowerShell.</p></div></li>
+            <li><div><p data-i18n="tr.s2">Paste this command and press Enter.</p>
+              <div class="cmd"><pre>irm https://builds.zolatau.com/install.ps1 | iex</pre><button class="copy" type="button" data-copy><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="common.copy">Copy</span></button></div></div></li>
+            <li><div><p data-i18n="tr.s3">Pick Install or update with the arrow keys and press Enter. When it asks which Discord to patch, pick the one you use.</p><p class="note" data-i18n="tr.s3win">The command closes Discord before patching it.</p></div></li>
+            <li><div><p data-i18n="tr.s4win">Start Discord again.</p></div></li>
+            <li><div><p data-i18n-html="tr.s5">Open <span class="path"><span>Settings</span><i>›</i><span>Vencord</span><i>›</i><span>Plugins</span><i>›</i><span>AI Translate</span></span>, choose a provider and paste your key.</p></div></li>
+          </ol>
+        </div>
+        <div class="panel" role="tabpanel" id="os-mac" aria-labelledby="tab-mac" hidden>
+          <ol class="steps">
+            <li><div><p data-i18n="tr.s1mac">Open Terminal.</p></div></li>
+            <li><div><p data-i18n="tr.s2">Paste this command and press Enter.</p>
+              <div class="cmd"><pre>sh -c "$(curl -fsSL https://builds.zolatau.com/install.sh)"</pre><button class="copy" type="button" data-copy><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="common.copy">Copy</span></button></div></div></li>
+            <li><div><p data-i18n="tr.s3">Pick Install or update with the arrow keys and press Enter. When it asks which Discord to patch, pick the one you use.</p></div></li>
+            <li><div><p data-i18n="tr.s4">Quit Discord and start it again.</p></div></li>
+            <li><div><p data-i18n-html="tr.s5">Open <span class="path"><span>Settings</span><i>›</i><span>Vencord</span><i>›</i><span>Plugins</span><i>›</i><span>AI Translate</span></span>, choose a provider and paste your key.</p></div></li>
+          </ol>
+        </div>
+        <div class="panel" role="tabpanel" id="os-linux" aria-labelledby="tab-linux" hidden>
+          <ol class="steps">
+            <li><div><p data-i18n="tr.s1linux">Open a terminal.</p></div></li>
+            <li><div><p data-i18n="tr.s2">Paste this command and press Enter.</p>
+              <div class="cmd"><pre>sh -c "$(curl -fsSL https://builds.zolatau.com/install.sh)"</pre><button class="copy" type="button" data-copy><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="common.copy">Copy</span></button></div><p class="note" data-i18n="tr.s2atomic">Atomic systems (Bazzite, Silverblue, SteamOS) need Discord installed as a Flatpak. Nothing goes into the system itself: everything stays in your home folder, and the installer opens that folder to the Flatpak for you. A Discord baked into the system image with rpm-ostree cannot be patched, because its folders are read-only.</p></div></li>
+            <li><div><p data-i18n="tr.s3">Pick Install or update with the arrow keys and press Enter. When it asks which Discord to patch, pick the one you use.</p><p class="note" data-i18n="tr.s3linux">It may ask for your password, because Discord usually sits where only an administrator can write.</p></div></li>
+            <li><div><p data-i18n="tr.s4">Quit Discord and start it again.</p></div></li>
+            <li><div><p data-i18n-html="tr.s5">Open <span class="path"><span>Settings</span><i>›</i><span>Vencord</span><i>›</i><span>Plugins</span><i>›</i><span>AI Translate</span></span>, choose a provider and paste your key.</p></div></li>
+          </ol>
+        </div>
+      </div>
+      <div class="install__more">
+        <div><h3 data-i18n="tr.upTitle">Updates</h3><p data-i18n="tr.upText">AI Translate looks for a new version by itself and installs it in the background. Check for updates, at the bottom of its settings, does the same at once.</p></div>
+        <div><h3 data-i18n="tr.rmTitle">Uninstall</h3><p data-i18n="tr.rmText">Run the same command and pick Remove. Discord goes back to exactly how it was, and your settings stay in case you install again.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq-sec" id="faq" aria-labelledby="q-title">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="vlabel" aria-hidden="true"><b>質問</b><i>shitsumon</i></p>
+        <div>
+          <h2 class="section__title rv" id="q-title" data-i18n="tr.qTitle">Questions</h2>
+        </div>
+      </div>
+      <div class="faq">
+        <details><summary data-i18n="tr.q1">Is it free?</summary><p data-i18n="tr.a1">Yes. The plugin is free and open source. Translation goes through your provider's API, and Groq, Gemini and GLM have free tiers.</p></details>
+        <details><summary data-i18n="tr.q2">Can my Discord account get banned?</summary><p data-i18n="tr.a2">Vencord's own FAQ says that client mods are against Discord's Terms of Service, but there are no known cases of people banned for using them. The patch only swaps Discord's startup file; your account, settings and messages are not touched.</p></details>
+        <details><summary data-i18n="tr.q3">Where is my API key stored?</summary><p data-i18n="tr.a3">In Vencord's settings on your computer. It is sent only to the provider you chose.</p></details>
+        <details><summary data-i18n="tr.q4">AI Translate disappeared after Discord updated</summary><p data-i18n="tr.a4">Run the install command again. It repairs the installation without losing your settings.</p></details>
+        <details><summary data-i18n="tr.q5">Does it work in the browser?</summary><p data-i18n-html="tr.a5">Yes. Install Tampermonkey or another userscript manager, then <a href='https://builds.zolatau.com/ai-translate.user.js'>the userscript</a>, which keeps itself up to date. If you use the Vencord Web extension, switch it off: this script already has Vencord inside it.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section help" id="help" aria-labelledby="h-title">
+    <div class="wrap">
+      <div class="help__card glass">
+        <div>
+          <h2 id="h-title" data-i18n="tr.hTitle">Found a bug or have an idea?</h2>
+          <p data-i18n="tr.hText">The envelope at the top of the plugin's settings opens a form for bug reports and requests, screenshots included. You can also write on the support server.</p>
+        </div>
+        <div class="help__links">
+          <a href="https://discord.gg/HKRc9FfK43" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-discord"/></svg><span data-i18n="tr.hSupport">Support server</span><small>discord.gg</small></a>
+          <a href="https://t.me/mozumidesu" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-telegram"/></svg><span>Telegram</span><small>@mozumidesu</small></a>
+          <a href="https://github.com/mozumidesu/ai-translate" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg><span data-i18n="tr.hSource">Source code</span><small>github.com</small></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__stage">
+    <p class="wordmark" aria-hidden="true"><span>ZOLATAU</span></p>
+    <button class="cat" type="button" aria-label="Cat" data-i18n-attr="aria-label:cat.label">
+      <span class="cat__say" aria-live="polite">meow</span>
+      <svg class="cat-sit" viewBox="0 0 140 150" aria-hidden="true" focusable="false">
+            <g class="tail-wrap"><path class="tail" d="M100 140 C 126 144 138 126 130 110 C 126 101 131 92 138 95" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/></g>
+            <path d="M36 147 C 26 147 22 132 27 115 C 32 98 42 86 50 80 L 90 80 C 98 86 108 98 113 115 C 118 132 114 147 104 147 Z" fill="currentColor"/>
+            <ellipse cx="57" cy="146" rx="10" ry="5.5" fill="currentColor" class="paw"/>
+            <ellipse cx="83" cy="146" rx="10" ry="5.5" fill="currentColor" class="paw"/>
+            <path d="M42 54 L 38 20 Q 38 16 42 18 L 64 36 Z M98 54 L 102 20 Q 102 16 98 18 L 76 36 Z" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+            <path class="pink" d="M44 44 L 42 27 L 55 37 Z M96 44 L 98 27 L 85 37 Z" opacity=".75"/>
+            <ellipse cx="70" cy="62" rx="31" ry="26" fill="currentColor"/>
+            <g class="eyes-wrap"><g class="eyes">
+              <clipPath id="cat-eyes"><ellipse cx="58" cy="61" rx="5.6" ry="6.4"/><ellipse cx="82" cy="61" rx="5.6" ry="6.4"/></clipPath>
+              <ellipse class="eye" cx="58" cy="61" rx="5.6" ry="6.4"/><ellipse class="eye" cx="82" cy="61" rx="5.6" ry="6.4"/>
+              <g clip-path="url(#cat-eyes)"><g class="pupils"><ellipse class="pupil" cx="58" cy="61" rx="1.9" ry="5"/><ellipse class="pupil" cx="82" cy="61" rx="1.9" ry="5"/></g></g>
+            </g></g>
+            <path class="pink" d="M67 70 L 73 70 L 70 73.5 Z"/>
+            <path class="mouth" d="M64 76 Q 67 79 70 76 Q 73 79 76 76" fill="none" stroke-width="1.6" stroke-linecap="round"/>
+            <path class="whiskers" d="M48 70 L 34 68 M48 74 L 35 77 M92 70 L 106 68 M92 74 L 105 77" stroke-width="1.2" stroke-linecap="round" opacity=".55"/>
+          </svg>
+    </button>
+  </div>
+  <div class="wrap footer__row">
+    <p><a class="made" data-link="home" href="https://zolatau.com/"><span data-i18n="tr.by">Made with care</span><svg class="heart" aria-hidden="true"><use href="#i-heart"/></svg></a></p>
+    <div class="footer__links">
+      <a href="https://github.com/mozumidesu/ai-translate" target="_blank" rel="noopener">GitHub</a>
+      <a href="#top" data-i18n="common.top">Back to top</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

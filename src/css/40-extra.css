@@ -1,0 +1,22 @@
+
+/* odds and ends */
+.i18n-wait body > :not(.loader):not(.atmos) { opacity: 0; }
+.vt, .vt * { transition: none !important; }
+/* a snapshot has no backdrop to filter, so the glass would blink during the theme switch */
+.vt .glass, .vt .btn--ghost, .vt .lang__menu, .vt .menu, .vt .menu-demo {
+  backdrop-filter: none !important; -webkit-backdrop-filter: none !important;
+  background-color: var(--glass-solid) !important;
+}
+::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+.cat-sit .paw { stroke: var(--bg); stroke-width: 2; }
+.touch-note { display: none; margin-top: 14px; font-size: 14px; color: var(--ink-3); }
+@media (hover: none) and (pointer: coarse) { .touch-note { display: block; } }
+.made { display: inline-flex; align-items: center; gap: .4em; }
+.made .heart { display: inline-block; width: 1em; height: 1em; fill: currentColor; color: inherit; }
+
+/* touch screens: links in the footer and the news pill get a finger-sized tap target */
+@media (hover: none) and (pointer: coarse) {
+  .footer__row a { display: inline-flex; align-items: center; min-height: 44px; }
+  .footer__links { gap: 0 22px; }
+  .news { min-height: 44px; }
+}
