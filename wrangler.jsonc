@@ -3,6 +3,9 @@
   "main": "worker.js",
   "compatibility_date": "2026-09-22",
   "workers_dev": true,
+  // Preview deployments, the ones Cloudflare builds for a pull request. The
+  // block may be empty, but without it `wrangler preview` refuses to run.
+  "previews": {},
   // The hostnames this Worker answers on. Cloudflare creates the DNS records
   // and the certificates itself, on the first deploy.
   "routes": [
