@@ -103,6 +103,7 @@ ZL.i18n.add("id", {
   "tr.s1mac": "Buka Terminal.",
   "tr.s1linux": "Buka terminal.",
   "tr.s2": "Tempel perintah ini lalu tekan Enter.",
+  "tr.s2blocked": "Ekstensi peramban menghalangi penyalinan. Perintahnya sudah tersorot: tekan Ctrl+C, atau Cmd+C di Mac.",
   "tr.s2atomic": "Sistem atomik (Bazzite, Silverblue, SteamOS) memerlukan Discord versi Flatpak. Tidak ada yang dipasang ke sistem: semuanya tetap di folder rumah Anda, dan pemasang membukakan folder itu untuk Flatpak-nya sendiri. Discord yang menyatu dengan citra sistem lewat rpm-ostree tidak bisa ditambal, karena foldernya hanya-baca.",
   "tr.s3": "Pilih Install or update dengan tombol panah lalu tekan Enter. Saat ditanya Discord mana yang dipasangi, pilih yang Anda pakai.",
   "tr.s3win": "Perintah ini menutup Discord sebelum memasangnya.",

@@ -103,6 +103,7 @@ ZL.i18n.add("zh", {
   "tr.s1mac": "打开“终端”。",
   "tr.s1linux": "打开终端。",
   "tr.s2": "粘贴这条命令并按回车。",
+  "tr.s2blocked": "浏览器扩展拦下了这次复制。命令已经选中：按 Ctrl+C，Mac 上按 Cmd+C。",
   "tr.s2atomic": "原子化系统（Bazzite、Silverblue、SteamOS）需要用 Flatpak 版的 Discord。系统里不会安装任何东西：一切都放在你的主文件夹，安装器还会自己把这个文件夹开放给 Flatpak。用 rpm-ostree 打进系统镜像的 Discord 无法修改，因为那些目录是只读的。",
   "tr.s3": "用方向键选择 Install or update 并按回车。询问要修改哪个 Discord 时，选你正在用的那个。",
   "tr.s3win": "命令会在修改前自动关闭 Discord。",

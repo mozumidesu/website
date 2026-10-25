@@ -103,6 +103,7 @@ ZL.i18n.add("ko", {
   "tr.s1mac": "터미널을 엽니다.",
   "tr.s1linux": "터미널을 엽니다.",
   "tr.s2": "이 명령을 붙여넣고 Enter를 누릅니다.",
+  "tr.s2blocked": "브라우저 확장 프로그램이 복사를 막았습니다. 명령은 선택되어 있습니다. Ctrl+C, Mac에서는 Cmd+C를 누르세요.",
   "tr.s2atomic": "아토믹 시스템(Bazzite, Silverblue, SteamOS)에서는 Discord를 Flatpak으로 설치해야 합니다. 시스템에는 아무것도 설치되지 않습니다. 모두 홈 폴더에 들어가고, 설치 프로그램이 그 폴더를 Flatpak에 알아서 열어 줍니다. rpm-ostree로 시스템 이미지에 들어 있는 Discord는 폴더가 읽기 전용이라 수정할 수 없습니다.",
   "tr.s3": "화살표 키로 Install or update를 고르고 Enter를 누릅니다. 어느 Discord에 적용할지 물으면 쓰고 있는 것을 고릅니다.",
   "tr.s3win": "명령이 적용 전에 Discord를 알아서 닫습니다.",

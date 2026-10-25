@@ -548,23 +548,55 @@
     i18n.on(tick);
   };
 
+  // An extension can take the clipboard over and still answer as though it had
+  // written to it: uBlock Origin stops an install command like the Windows one
+  // and both ways of copying come back happy, with the clipboard untouched.
+  // The copy event is the one answer that cannot be faked, so the text goes on
+  // the clipboard from there and a copy counts only if that event fired.
+  const putOnClipboard = async (pre, text) => {
+    const sel = getSelection(), r = d.createRange();
+    r.selectNodeContents(pre); sel.removeAllRanges(); sel.addRange(r);
+
+    let wrote = false, took = false;
+    const give = e => { e.clipboardData.setData("text/plain", text); e.preventDefault(); wrote = true; };
+    d.addEventListener("copy", give, true);
+    try { took = d.execCommand("copy"); } catch {}
+    d.removeEventListener("copy", give, true);
+
+    // Refused outright rather than taken over: the asynchronous way is the
+    // other door, and old browsers without it end up here too.
+    if (!wrote && !took) { try { await navigator.clipboard.writeText(text); wrote = true; } catch {} }
+
+    // Blocked, so the command stays selected and can be copied by hand.
+    if (wrote) sel.removeAllRanges();
+    return wrote;
+  };
+
+  /** The line under a command that says the copy was stopped, put there only then. */
+  const sayBlocked = (cmd, show) => {
+    const after = cmd.nextElementSibling;
+    const note = after && after.classList.contains("cmd__blocked") ? after : null;
+
+    if (!show) return void note?.remove();
+    if (note) return;
+
+    const line = d.createElement("p");
+    line.className = "note cmd__blocked";
+    line.dataset.i18n = "tr.s2blocked";
+    line.textContent = i18n.t("tr.s2blocked");
+    cmd.after(line);
+  };
+
   const copies = () => {
     $$("[data-copy]").forEach(b => b.addEventListener("click", async () => {
-      const pre = b.closest(".cmd").querySelector("pre");
-      const text = pre.textContent;
-      let ok = false;
-      try { await navigator.clipboard.writeText(text); ok = true; } catch {}
-      if (!ok) {
-        const r = d.createRange(), s = getSelection();
-        r.selectNodeContents(pre); s.removeAllRanges(); s.addRange(r);
-        try { d.execCommand("copy"); } catch {}
-        s.removeAllRanges();
-      }
-      const lab = $("span", b);
-      b.classList.add("is-done");
-      lab.textContent = i18n.t("common.copied");
+      const cmd = b.closest(".cmd"), lab = $("span", b);
+      const ok = await putOnClipboard($("pre", cmd), $("pre", cmd).textContent);
+
+      sayBlocked(cmd, !ok);
       clearTimeout(b._t);
-      b._t = setTimeout(() => { b.classList.remove("is-done"); lab.textContent = i18n.t("common.copy"); }, 1800);
+      b.classList.toggle("is-done", ok);
+      lab.textContent = i18n.t(ok ? "common.copied" : "common.copy");
+      if (ok) b._t = setTimeout(() => { b.classList.remove("is-done"); lab.textContent = i18n.t("common.copy"); }, 1800);
     }));
   };
 

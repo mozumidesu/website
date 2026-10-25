@@ -103,6 +103,7 @@ ZL.i18n.add("tr", {
   "tr.s1mac": "Terminal'i açın.",
   "tr.s1linux": "Bir terminal açın.",
   "tr.s2": "Bu komutu yapıştırın ve Enter'a basın.",
+  "tr.s2blocked": "Bir tarayıcı eklentisi kopyalamayı engelledi. Komut seçili: Ctrl+C'ye, Mac'te Cmd+C'ye basın.",
   "tr.s2atomic": "Atomik sistemler (Bazzite, Silverblue, SteamOS) için Discord'un Flatpak sürümü gerekir. Sisteme hiçbir şey kurulmaz: her şey ev klasörünüzde kalır ve kurulum bu klasörü Flatpak'e kendisi açar. rpm-ostree ile sistem imajına gömülü bir Discord yamalanamaz, çünkü klasörleri salt okunurdur.",
   "tr.s3": "Ok tuşlarıyla Install or update'i seçip Enter'a basın. Hangi Discord'a uygulanacağını sorduğunda kullandığınızı seçin.",
   "tr.s3win": "Komut, uygulamadan önce Discord'u kapatır.",
