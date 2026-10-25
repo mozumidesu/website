@@ -103,6 +103,7 @@ ZL.i18n.add("de", {
   "tr.s1mac": "Öffne das Terminal.",
   "tr.s1linux": "Öffne ein Terminal.",
   "tr.s2": "Füge diesen Befehl ein und drücke Enter.",
+  "tr.s2blocked": "Eine Browser-Erweiterung hat das Kopieren verhindert. Der Befehl ist markiert: drücke Strg+C, auf dem Mac Cmd+C.",
   "tr.s2atomic": "Atomare Systeme (Bazzite, Silverblue, SteamOS) brauchen Discord als Flatpak. Ins System selbst kommt nichts: alles bleibt in deinem Benutzerordner, und den gibt der Installer dem Flatpak von sich aus frei. Ein Discord, das per rpm-ostree im Systemabbild steckt, lässt sich nicht patchen, weil seine Ordner nur lesbar sind.",
   "tr.s3": "Wähle mit den Pfeiltasten Install or update und drücke Enter. Wenn gefragt wird, welches Discord gepatcht werden soll, wähle das, das du benutzt.",
   "tr.s3win": "Der Befehl schließt Discord vor dem Patchen.",
