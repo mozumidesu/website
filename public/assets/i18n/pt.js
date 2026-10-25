@@ -103,6 +103,7 @@ ZL.i18n.add("pt", {
   "tr.s1mac": "Abra o Terminal.",
   "tr.s1linux": "Abra um terminal.",
   "tr.s2": "Cole este comando e pressione Enter.",
+  "tr.s2blocked": "Uma extensão do navegador impediu a cópia. O comando está selecionado: pressione Ctrl+C, ou Cmd+C no Mac.",
   "tr.s2atomic": "Sistemas atômicos (Bazzite, Silverblue, SteamOS) precisam do Discord instalado como Flatpak. No sistema não se instala nada: tudo fica na sua pasta pessoal, e o instalador libera essa pasta para o Flatpak sozinho. Um Discord embutido na imagem do sistema pelo rpm-ostree não dá para modificar: as pastas dele são somente leitura.",
   "tr.s3": "Escolha Install or update com as setas e pressione Enter. Quando perguntar qual Discord modificar, escolha o que você usa.",
   "tr.s3win": "O comando fecha o Discord antes de aplicar o patch.",
