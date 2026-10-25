@@ -103,6 +103,7 @@ ZL.i18n.add("ro", {
   "tr.s1mac": "Deschide Terminal.",
   "tr.s1linux": "Deschide un terminal.",
   "tr.s2": "Lipește comanda și apasă Enter.",
+  "tr.s2blocked": "O extensie a browserului a oprit copierea. Comanda este selectată: apasă Ctrl+C sau Cmd+C pe Mac.",
   "tr.s2atomic": "Sistemele atomice (Bazzite, Silverblue, SteamOS) au nevoie de Discord instalat prin Flatpak. În sistem nu se instalează nimic: totul rămâne în dosarul tău personal, iar instalatorul deschide singur acel dosar pentru Flatpak. Un Discord inclus în imaginea sistemului prin rpm-ostree nu poate fi modificat: dosarele lui sunt doar pentru citire.",
   "tr.s3": "Alege Install or update cu săgețile și apasă Enter. Când te întreabă ce Discord să modifice, alege-l pe cel pe care îl folosești.",
   "tr.s3win": "Comanda închide Discordul înainte să-l modifice.",

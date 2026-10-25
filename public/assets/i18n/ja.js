@@ -103,6 +103,7 @@ ZL.i18n.add("ja", {
   "tr.s1mac": "ターミナルを開きます。",
   "tr.s1linux": "ターミナルを開きます。",
   "tr.s2": "このコマンドを貼り付けて Enter を押します。",
+  "tr.s2blocked": "ブラウザーの拡張機能がコピーを止めました。コマンドは選択してあります。Ctrl+C（Mac は Cmd+C）を押してください。",
   "tr.s2atomic": "アトミックな環境（Bazzite、Silverblue、SteamOS）では、Discord を Flatpak 版にしてください。システムには何も入りません。すべてホームフォルダーに収まり、そのフォルダーへのアクセスはインストーラーが Flatpak に自分で許可します。rpm-ostree でシステムイメージに組み込まれた Discord は、フォルダーが読み取り専用のため変更できません。",
   "tr.s3": "矢印キーで Install or update を選んで Enter を押します。どの Discord に組み込むか聞かれたら、使っているものを選びます。",
   "tr.s3win": "コマンドは組み込む前に Discord を閉じます。",
