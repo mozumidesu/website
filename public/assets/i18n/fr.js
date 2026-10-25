@@ -103,6 +103,7 @@ ZL.i18n.add("fr", {
   "tr.s1mac": "Ouvrez Terminal.",
   "tr.s1linux": "Ouvrez un terminal.",
   "tr.s2": "Collez cette commande et appuyez sur Entrée.",
+  "tr.s2blocked": "Une extension du navigateur a empêché la copie. La commande est sélectionnée : appuyez sur Ctrl+C, ou Cmd+C sur un Mac.",
   "tr.s2atomic": "Les systèmes atomiques (Bazzite, Silverblue, SteamOS) demandent un Discord installé en Flatpak. Rien n'est installé dans le système : tout reste dans votre dossier personnel, et l'installateur ouvre ce dossier au Flatpak tout seul. Un Discord intégré à l'image du système par rpm-ostree ne peut pas être modifié : ses dossiers sont en lecture seule.",
   "tr.s3": "Choisissez Install or update avec les flèches et appuyez sur Entrée. Quand il demande quel Discord modifier, choisissez celui que vous utilisez.",
   "tr.s3win": "La commande ferme Discord avant de le modifier.",

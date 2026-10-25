@@ -103,6 +103,7 @@ ZL.i18n.add("vi", {
   "tr.s1mac": "Mở Terminal.",
   "tr.s1linux": "Mở một cửa sổ terminal.",
   "tr.s2": "Dán lệnh này rồi nhấn Enter.",
+  "tr.s2blocked": "Một tiện ích mở rộng của trình duyệt đã chặn việc sao chép. Lệnh đang được chọn sẵn: hãy nhấn Ctrl+C, hoặc Cmd+C trên Mac.",
   "tr.s2atomic": "Các hệ thống atomic (Bazzite, Silverblue, SteamOS) cần bản Discord cài qua Flatpak. Không có gì được cài vào hệ thống: mọi thứ nằm trong thư mục cá nhân của bạn, và trình cài đặt tự mở thư mục đó cho Flatpak. Bản Discord nằm trong ảnh hệ thống qua rpm-ostree thì không vá được, vì các thư mục đó chỉ đọc.",
   "tr.s3": "Dùng phím mũi tên chọn Install or update rồi nhấn Enter. Khi được hỏi vá Discord nào, hãy chọn bản bạn đang dùng.",
   "tr.s3win": "Lệnh sẽ đóng Discord trước khi vá.",

@@ -103,6 +103,7 @@ ZL.i18n.add("en", {
   "tr.s1mac": "Open Terminal.",
   "tr.s1linux": "Open a terminal.",
   "tr.s2": "Paste this command and press Enter.",
+  "tr.s2blocked": "A browser extension stopped the copy. The command is selected: press Ctrl+C, or Cmd+C on a Mac.",
   "tr.s2atomic": "Atomic systems (Bazzite, Silverblue, SteamOS) need Discord installed as a Flatpak. Nothing goes into the system itself: everything stays in your home folder, and the installer opens that folder to the Flatpak for you. A Discord baked into the system image with rpm-ostree cannot be patched, because its folders are read-only.",
   "tr.s3": "Pick Install or update with the arrow keys and press Enter. When it asks which Discord to patch, pick the one you use.",
   "tr.s3win": "The command closes Discord before patching it.",
