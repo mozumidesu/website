@@ -109,7 +109,7 @@ ZL.i18n.add("de", {
   "tr.s3": "Wähle mit den Pfeiltasten Install or update und drücke Enter. Wenn gefragt wird, welches Discord gepatcht werden soll, wähle das, das du benutzt.",
   "tr.s3win": "Der Befehl schließt Discord vor dem Patchen.",
   "tr.s3linux": "Eventuell wird dein Passwort abgefragt, weil Discord meist dort liegt, wo nur ein Administrator schreiben darf.",
-  "tr.s1browser": "Installiere Tampermonkey oder einen anderen Userscript-Manager. Unter Firefox kann das nur Tampermonkey.",
+  "tr.s1browser": "Installiere Tampermonkey oder einen anderen Userscript-Manager.",
   "tr.s2browser": "Öffne das Skript. Dein Userscript-Manager bietet die Installation an und hält es danach von hier aus aktuell.",
   "tr.s2browserGet": "Skript installieren",
   "tr.s3browser": "Öffne discord.com und lade die Seite neu.",

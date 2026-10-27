@@ -109,7 +109,7 @@ ZL.i18n.add("id", {
   "tr.s3": "Pilih Install or update dengan tombol panah lalu tekan Enter. Saat ditanya Discord mana yang dipasangi, pilih yang Anda pakai.",
   "tr.s3win": "Perintah ini menutup Discord sebelum memasangnya.",
   "tr.s3linux": "Mungkin akan meminta kata sandi, karena Discord biasanya berada di tempat yang hanya bisa ditulisi administrator.",
-  "tr.s1browser": "Pasang Tampermonkey, atau pengelola userscript lain. Di Firefox hanya Tampermonkey yang bisa.",
+  "tr.s1browser": "Pasang Tampermonkey, atau pengelola userscript lain.",
   "tr.s2browser": "Buka skripnya. Pengelola Anda akan menawarkan pemasangan, lalu menjaganya tetap baru dari sini.",
   "tr.s2browserGet": "Pasang skripnya",
   "tr.s3browser": "Buka discord.com lalu muat ulang halaman.",

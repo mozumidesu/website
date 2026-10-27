@@ -109,7 +109,7 @@ ZL.i18n.add("es", {
   "tr.s3": "Elige Install or update con las flechas y pulsa Enter. Cuando pregunte qué Discord parchear, elige el que usas.",
   "tr.s3win": "El comando cierra Discord antes de parchearlo.",
   "tr.s3linux": "Puede pedirte la contraseña, porque Discord suele estar donde solo un administrador puede escribir.",
-  "tr.s1browser": "Instala Tampermonkey u otro gestor de userscripts. En Firefox solo Tampermonkey puede hacerlo.",
+  "tr.s1browser": "Instala Tampermonkey u otro gestor de userscripts.",
   "tr.s2browser": "Abre el script. Tu gestor se ofrecerá a instalarlo y después lo mantendrá al día desde aquí.",
   "tr.s2browserGet": "Instalar el script",
   "tr.s3browser": "Abre discord.com y recarga la página.",

@@ -109,7 +109,7 @@ ZL.i18n.add("th", {
   "tr.s3": "ใช้ปุ่มลูกศรเลือก Install or update แล้วกด Enter เมื่อถามว่าจะแพตช์ Discord ตัวไหน ให้เลือกตัวที่คุณใช้",
   "tr.s3win": "คำสั่งจะปิด Discord ก่อนแพตช์ให้เอง",
   "tr.s3linux": "อาจมีการถามรหัสผ่าน เพราะปกติ Discord อยู่ในที่ที่มีแต่ผู้ดูแลระบบเขียนได้",
-  "tr.s1browser": "ติดตั้ง Tampermonkey หรือตัวจัดการ userscript ตัวอื่น บน Firefox มีแต่ Tampermonkey ที่ทำได้",
+  "tr.s1browser": "ติดตั้ง Tampermonkey หรือตัวจัดการ userscript ตัวอื่น",
   "tr.s2browser": "เปิดสคริปต์ ตัวจัดการจะถามว่าจะติดตั้งไหม แล้วจากนั้นจะคอยอัปเดตให้จากที่นี่เอง",
   "tr.s2browserGet": "ติดตั้งสคริปต์",
   "tr.s3browser": "เปิด discord.com แล้วโหลดหน้าใหม่",

@@ -109,7 +109,7 @@ ZL.i18n.add("ar", {
   "tr.s3": "اختر Install or update بمفاتيح الأسهم واضغط Enter. وعندما يسأل أي Discord يعدّل، اختر الذي تستخدمه.",
   "tr.s3win": "يغلق الأمر Discord قبل تعديله.",
   "tr.s3linux": "قد يطلب كلمة المرور، لأن Discord يكون عادةً في مكان لا يكتب فيه إلا المسؤول.",
-  "tr.s1browser": "ثبّت Tampermonkey أو مدير برامج نصية آخر. في Firefox لا يقدر على ذلك سوى Tampermonkey.",
+  "tr.s1browser": "ثبّت Tampermonkey أو مدير برامج نصية آخر.",
   "tr.s2browser": "افتح البرنامج النصي. سيعرض المدير تثبيته، ثم يبقيه محدَّثًا من هنا.",
   "tr.s2browserGet": "تثبيت البرنامج النصي",
   "tr.s3browser": "افتح discord.com وأعد تحميل الصفحة.",

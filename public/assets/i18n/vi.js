@@ -109,7 +109,7 @@ ZL.i18n.add("vi", {
   "tr.s3": "Dùng phím mũi tên chọn Install or update rồi nhấn Enter. Khi được hỏi vá Discord nào, hãy chọn bản bạn đang dùng.",
   "tr.s3win": "Lệnh sẽ đóng Discord trước khi vá.",
   "tr.s3linux": "Có thể sẽ hỏi mật khẩu, vì Discord thường nằm ở nơi chỉ quản trị viên mới ghi được.",
-  "tr.s1browser": "Cài Tampermonkey, hoặc một trình quản lý userscript khác. Trên Firefox chỉ Tampermonkey làm được việc này.",
+  "tr.s1browser": "Cài Tampermonkey, hoặc một trình quản lý userscript khác.",
   "tr.s2browser": "Mở tập lệnh. Trình quản lý sẽ hỏi có cài không, rồi sau đó tự cập nhật từ đây.",
   "tr.s2browserGet": "Cài tập lệnh",
   "tr.s3browser": "Mở discord.com rồi tải lại trang.",

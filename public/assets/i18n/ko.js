@@ -109,7 +109,7 @@ ZL.i18n.add("ko", {
   "tr.s3": "화살표 키로 Install or update를 고르고 Enter를 누릅니다. 어느 Discord에 적용할지 물으면 쓰고 있는 것을 고릅니다.",
   "tr.s3win": "명령이 적용 전에 Discord를 알아서 닫습니다.",
   "tr.s3linux": "비밀번호를 물어볼 수 있습니다. Discord는 보통 관리자만 쓸 수 있는 곳에 있기 때문입니다.",
-  "tr.s1browser": "Tampermonkey나 다른 유저스크립트 관리자를 설치하세요. Firefox에서는 Tampermonkey만 이 일을 할 수 있습니다.",
+  "tr.s1browser": "Tampermonkey나 다른 유저스크립트 관리자를 설치하세요.",
   "tr.s2browser": "스크립트를 엽니다. 관리자가 설치할지 묻고, 그다음부터는 여기에서 알아서 최신으로 유지합니다.",
   "tr.s2browserGet": "스크립트 설치",
   "tr.s3browser": "discord.com을 열고 페이지를 새로 고칩니다.",
