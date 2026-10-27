@@ -309,10 +309,11 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
         </div>
       </div>
       <div class="install__box glass">
-        <div class="tabs" role="tablist" aria-label="Operating system" data-i18n-attr="aria-label:tr.iOs">
+        <div class="tabs" role="tablist" aria-label="Where to install" data-i18n-attr="aria-label:tr.iWhere">
           <button class="tab" role="tab" type="button" id="tab-win" aria-controls="os-win" aria-selected="true">Windows</button>
           <button class="tab" role="tab" type="button" id="tab-mac" aria-controls="os-mac" aria-selected="false" tabindex="-1">macOS</button>
           <button class="tab" role="tab" type="button" id="tab-linux" aria-controls="os-linux" aria-selected="false" tabindex="-1">Linux</button>
+          <button class="tab" role="tab" type="button" id="tab-browser" aria-controls="os-browser" aria-selected="false" tabindex="-1" data-i18n="tr.iBrowser">Browser</button>
         </div>
         <div class="panel" role="tabpanel" id="os-win" aria-labelledby="tab-win">
           <ol class="steps">
@@ -344,6 +345,15 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
             <li><div><p data-i18n-html="tr.s5">Open <span class="path"><span>Settings</span><i>›</i><span>Vencord</span><i>›</i><span>Plugins</span><i>›</i><span>AI Translate</span></span>, choose a provider and paste your key.</p></div></li>
           </ol>
         </div>
+        <div class="panel" role="tabpanel" id="os-browser" aria-labelledby="tab-browser" hidden>
+          <ol class="steps">
+            <li><div><p data-i18n="tr.s1browser">Install Tampermonkey, or another userscript manager. Under Firefox, Tampermonkey is the only one that can do this.</p></div></li>
+            <li><div><p data-i18n="tr.s2browser">Open the script. Your userscript manager offers to install it, and keeps it up to date from here afterwards.</p>
+              <p><a class="btn btn--acc btn--sm" href="https://builds.zolatau.com/ai-translate.user.js" data-i18n="tr.s2browserGet">Install the userscript</a></p></div></li>
+            <li><div><p data-i18n="tr.s3browser">Open discord.com and reload the page.</p><p class="note" data-i18n="tr.s3browserNote">If the Vencord Web extension is installed, switch it off: this script has Vencord inside it, and two of them in one tab do not get along.</p></div></li>
+            <li><div><p data-i18n-html="tr.s5">Open <span class="path"><span>Settings</span><i>›</i><span>Vencord</span><i>›</i><span>Plugins</span><i>›</i><span>AI Translate</span></span>, choose a provider and paste your key.</p></div></li>
+          </ol>
+        </div>
       </div>
       <div class="install__more">
         <div><h3 data-i18n="tr.upTitle">Updates</h3><p data-i18n="tr.upText">AI Translate looks for a new version by itself and installs it in the background. Check for updates, at the bottom of its settings, does the same at once.</p></div>
@@ -365,7 +375,6 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
         <details><summary data-i18n="tr.q2">Can my Discord account get banned?</summary><p data-i18n="tr.a2">Vencord's own FAQ says that client mods are against Discord's Terms of Service, but there are no known cases of people banned for using them. The patch only swaps Discord's startup file; your account, settings and messages are not touched.</p></details>
         <details><summary data-i18n="tr.q3">Where is my API key stored?</summary><p data-i18n="tr.a3">In Vencord's settings on your computer. It is sent only to the provider you chose.</p></details>
         <details><summary data-i18n="tr.q4">AI Translate disappeared after Discord updated</summary><p data-i18n="tr.a4">Run the install command again. It repairs the installation without losing your settings.</p></details>
-        <details><summary data-i18n="tr.q5">Does it work in the browser?</summary><p data-i18n-html="tr.a5">Yes. Install Tampermonkey or another userscript manager, then <a href='https://builds.zolatau.com/ai-translate.user.js'>the userscript</a>, which keeps itself up to date. If you use the Vencord Web extension, switch it off: this script already has Vencord inside it.</p></details>
       </div>
     </div>
   </section>
