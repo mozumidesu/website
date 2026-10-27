@@ -109,7 +109,7 @@ ZL.i18n.add("fr", {
   "tr.s3": "Choisissez Install or update avec les flèches et appuyez sur Entrée. Quand il demande quel Discord modifier, choisissez celui que vous utilisez.",
   "tr.s3win": "La commande ferme Discord avant de le modifier.",
   "tr.s3linux": "Il peut demander votre mot de passe, car Discord se trouve souvent là où seul un administrateur peut écrire.",
-  "tr.s1browser": "Installez Tampermonkey ou un autre gestionnaire de userscripts. Sous Firefox, seul Tampermonkey en est capable.",
+  "tr.s1browser": "Installez Tampermonkey ou un autre gestionnaire de userscripts.",
   "tr.s2browser": "Ouvrez le script. Votre gestionnaire propose de l'installer, puis le tient à jour depuis ici.",
   "tr.s2browserGet": "Installer le script",
   "tr.s3browser": "Ouvrez discord.com et rechargez la page.",

@@ -109,7 +109,7 @@ ZL.i18n.add("pt", {
   "tr.s3": "Escolha Install or update com as setas e pressione Enter. Quando perguntar qual Discord modificar, escolha o que você usa.",
   "tr.s3win": "O comando fecha o Discord antes de aplicar o patch.",
   "tr.s3linux": "Ele pode pedir sua senha, porque o Discord costuma ficar onde só um administrador pode gravar.",
-  "tr.s1browser": "Instale o Tampermonkey ou outro gerenciador de userscripts. No Firefox, só o Tampermonkey dá conta.",
+  "tr.s1browser": "Instale o Tampermonkey ou outro gerenciador de userscripts.",
   "tr.s2browser": "Abra o script. Seu gerenciador oferece instalá-lo e depois o mantém atualizado daqui.",
   "tr.s2browserGet": "Instalar o script",
   "tr.s3browser": "Abra discord.com e recarregue a página.",

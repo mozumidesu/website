@@ -109,7 +109,7 @@ ZL.i18n.add("zh", {
   "tr.s3": "用方向键选择 Install or update 并按回车。询问要修改哪个 Discord 时，选你正在用的那个。",
   "tr.s3win": "命令会在修改前自动关闭 Discord。",
   "tr.s3linux": "可能会要求输入密码，因为 Discord 通常放在只有管理员才能写入的位置。",
-  "tr.s1browser": "装上 Tampermonkey，或者别的用户脚本管理器。在 Firefox 上只有 Tampermonkey 能做到。",
+  "tr.s1browser": "装上 Tampermonkey，或者别的用户脚本管理器。",
   "tr.s2browser": "打开脚本。管理器会询问是否安装，之后便从这里自动保持更新。",
   "tr.s2browserGet": "安装脚本",
   "tr.s3browser": "打开 discord.com 并刷新页面。",

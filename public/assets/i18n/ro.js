@@ -109,7 +109,7 @@ ZL.i18n.add("ro", {
   "tr.s3": "Alege Install or update cu săgețile și apasă Enter. Când te întreabă ce Discord să modifice, alege-l pe cel pe care îl folosești.",
   "tr.s3win": "Comanda închide Discordul înainte să-l modifice.",
   "tr.s3linux": "S-ar putea să-ți ceară parola, pentru că Discordul stă de obicei acolo unde doar un administrator poate scrie.",
-  "tr.s1browser": "Instalează Tampermonkey sau alt manager de userscripturi. În Firefox doar Tampermonkey poate face asta.",
+  "tr.s1browser": "Instalează Tampermonkey sau alt manager de userscripturi.",
   "tr.s2browser": "Deschide scriptul. Managerul îți propune să îl instaleze și de atunci îl ține la zi de aici.",
   "tr.s2browserGet": "Instalează scriptul",
   "tr.s3browser": "Deschide discord.com și reîncarcă pagina.",

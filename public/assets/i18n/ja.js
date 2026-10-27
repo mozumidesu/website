@@ -109,7 +109,7 @@ ZL.i18n.add("ja", {
   "tr.s3": "矢印キーで Install or update を選んで Enter を押します。どの Discord に組み込むか聞かれたら、使っているものを選びます。",
   "tr.s3win": "コマンドは組み込む前に Discord を閉じます。",
   "tr.s3linux": "パスワードを聞かれることがあります。Discord は通常、管理者しか書き込めない場所にあるためです。",
-  "tr.s1browser": "Tampermonkey か、ほかのユーザースクリプトマネージャーを入れてください。Firefox でこれができるのは Tampermonkey だけです。",
+  "tr.s1browser": "Tampermonkey か、ほかのユーザースクリプトマネージャーを入れてください。",
   "tr.s2browser": "スクリプトを開きます。マネージャーがインストールを尋ね、そのあとはここから自動で更新します。",
   "tr.s2browserGet": "スクリプトを入れる",
   "tr.s3browser": "discord.com を開いて、ページを再読み込みします。",

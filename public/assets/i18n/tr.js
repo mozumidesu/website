@@ -109,7 +109,7 @@ ZL.i18n.add("tr", {
   "tr.s3": "Ok tuşlarıyla Install or update'i seçip Enter'a basın. Hangi Discord'a uygulanacağını sorduğunda kullandığınızı seçin.",
   "tr.s3win": "Komut, uygulamadan önce Discord'u kapatır.",
   "tr.s3linux": "Parolanızı isteyebilir, çünkü Discord genelde yalnızca yöneticinin yazabildiği bir yerde durur.",
-  "tr.s1browser": "Tampermonkey'i ya da başka bir userscript yöneticisini kurun. Firefox'ta bunu yalnızca Tampermonkey yapabilir.",
+  "tr.s1browser": "Tampermonkey'i ya da başka bir userscript yöneticisini kurun.",
   "tr.s2browser": "Betiği açın. Yöneticiniz kurmayı önerir, sonrasında da buradan güncel tutar.",
   "tr.s2browserGet": "Betiği kur",
   "tr.s3browser": "discord.com'u açın ve sayfayı yenileyin.",
