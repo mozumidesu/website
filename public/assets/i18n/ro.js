@@ -95,6 +95,7 @@ ZL.i18n.add("ro", {
   "tr.pAny": "Orice API compatibil OpenAI",
   "tr.pDepends": "Depinde de furnizor",
   "tr.pNote": "Cererile pleacă din procesul de fundal al Discordului, așa că cheia ta nu ajunge niciodată în partea Discordului la care ar putea ajunge o pagină web.",
+  "tr.alpha": "O versiune timpurie. Merge, dar vor fi asperități.",
   "tr.iTitle": "Instalare",
   "tr.iLead": "AI Translate rulează în Vencord, un mod cunoscut pentru aplicația Discord. O singură comandă descarcă Vencord cu AI Translate deja inclus, cam un megabyte, și îl conectează la Discord. Nimic nu se compilează pe calculatorul tău.",
   "tr.iTouch": "Comanda se rulează pe calculator: deschide pagina acolo ca s-o copiezi.",

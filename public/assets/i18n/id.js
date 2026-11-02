@@ -95,6 +95,7 @@ ZL.i18n.add("id", {
   "tr.pAny": "API apa pun yang kompatibel dengan OpenAI",
   "tr.pDepends": "Tergantung penyedianya",
   "tr.pNote": "Permintaan dikirim dari proses latar belakang Discord, jadi kunci Anda tidak pernah masuk ke bagian Discord yang bisa dijangkau halaman web.",
+  "tr.alpha": "Versi awal. Berfungsi, tapi akan ada yang kasar.",
   "tr.iTitle": "Instalasi",
   "tr.iLead": "AI Translate berjalan di dalam Vencord, mod terkenal untuk aplikasi Discord. Satu perintah mengunduh Vencord yang sudah berisi AI Translate, sekitar satu megabita, lalu memasangnya ke Discord. Tidak ada yang dikompilasi di komputer Anda.",
   "tr.iTouch": "Perintahnya dijalankan di komputer: buka halaman ini di sana untuk menyalinnya.",

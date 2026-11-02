@@ -95,6 +95,7 @@ ZL.i18n.add("zh", {
   "tr.pAny": "任何兼容 OpenAI 的 API",
   "tr.pDepends": "取决于服务商",
   "tr.pNote": "请求从 Discord 的后台进程发出，所以你的密钥永远不会进入网页能访问到的那部分 Discord。",
+  "tr.alpha": "早期版本。能用，但会有粗糙的地方。",
   "tr.iTitle": "安装",
   "tr.iLead": "AI Translate 运行在 Vencord 里，Vencord 是 Discord 应用的知名修改版。一条命令就会下载已内置 AI Translate 的 Vencord（约 1 MB），并把它接入 Discord。你的电脑上不需要编译任何东西。",
   "tr.iTouch": "这条命令要在电脑上运行：请在电脑上打开此页面来复制。",
