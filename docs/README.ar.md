@@ -21,8 +21,6 @@
 
 كود موقع zolatau.com: صفحة عني، وصفحة AI Translate، إضافة لـ Discord تترجم رسائلك بنموذج ذكاء اصطناعي تختاره أنت.
 
-HTML و CSS فقط، بستة عشر لغة، بلا framework وبلا bundler. ملف التنسيق والخطوط في `public/assets/` تُولَّد من `src/`، وكل ما سواها يُقدَّم كما هو مكتوب بالضبط. مستضاف على Cloudflare Workers.
-
 الخطوط هي Dela Gothic One وZen Kaku Gothic New وMartian Mono وOnest وIBM Plex Sans للعربية والتايلندية والكورية، وكلها تحت رخصة SIL Open Font License 1.1. الرخص موجودة في `public/assets/fonts/LICENSES.txt`.
 
 كود الموقع تحت رخصة GNU Affero General Public License v3.0، في [LICENSE](../LICENSE). تبقى للخطوط رخصتها الخاصة، وصورتي غير مشمولة بها.

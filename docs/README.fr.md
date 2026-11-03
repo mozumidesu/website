@@ -22,11 +22,6 @@
 Le code de zolatau.com : une page qui parle de moi et la page d'AI Translate,
 un plugin Discord qui traduit vos messages avec le modèle d'IA de votre choix.
 
-Du HTML et du CSS, rien d'autre, en 16 langues, sans framework ni bundler. La
-feuille de style et les polices web de `public/assets/` sont générées depuis
-`src/` ; tout le reste est servi exactement tel qu'il est écrit. Hébergé sur
-Cloudflare Workers.
-
 Les polices sont Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest et
 IBM Plex Sans en arabe, thaï et coréen, toutes sous la SIL Open Font License
 1.1. Les licences se trouvent dans `public/assets/fonts/LICENSES.txt`.

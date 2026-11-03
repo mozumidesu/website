@@ -22,10 +22,6 @@
 Kode dari zolatau.com: satu halaman tentang saya dan halaman AI Translate,
 plugin Discord yang menerjemahkan pesan Anda dengan model AI pilihan Anda.
 
-HTML dan CSS biasa dalam 16 bahasa, tanpa framework dan tanpa bundler. Lembar
-gaya dan font web di `public/assets/` dihasilkan dari `src/`; selebihnya
-disajikan persis seperti yang ditulis. Dihosting di Cloudflare Workers.
-
 Fontnya adalah Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest dan
 IBM Plex Sans untuk Arab, Thai dan Korea, semuanya di bawah SIL Open Font
 License 1.1. Lisensinya ada di `public/assets/fonts/LICENSES.txt`.

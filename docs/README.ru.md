@@ -22,10 +22,6 @@
 Код сайта zolatau.com: страница обо мне и страница AI Translate, плагина для
 Discord, который переводит ваши сообщения выбранной вами моделью ИИ.
 
-Обычные HTML и CSS на 16 языках, без фреймворка и без сборщика. Таблица стилей
-и шрифты в `public/assets/` собираются из `src/`, всё остальное отдаётся ровно
-таким, как написано. Хостинг на Cloudflare Workers.
-
 Шрифты: Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest и IBM Plex
 Sans для арабского, тайского и корейского, все под SIL Open Font License 1.1.
 Лицензии лежат в `public/assets/fonts/LICENSES.txt`.

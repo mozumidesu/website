@@ -23,11 +23,6 @@ zolatau.com sitesinin kaynağı: hakkımda olan bir sayfa ve mesajlarınızı
 seçtiğiniz bir yapay zekâ modeliyle çeviren Discord eklentisi AI Translate'in
 sayfası.
 
-16 dilde, framework ve bundler olmadan yazılmış düz HTML ve CSS.
-`public/assets/` içindeki stil dosyası ve web fontları `src/` klasöründen
-üretilir; geri kalan her şey yazıldığı gibi sunulur. Cloudflare Workers
-üzerinde barındırılıyor.
-
 Fontlar Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest ve Arapça,
 Tayca ile Korece için IBM Plex Sans; hepsi SIL Open Font License 1.1 altında.
 Lisanslar `public/assets/fonts/LICENSES.txt` dosyasında.

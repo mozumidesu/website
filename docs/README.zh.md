@@ -21,8 +21,6 @@
 
 zolatau.com 的代码：一个关于我的页面，以及 AI Translate 的页面，那是一个用你选择的 AI 模型翻译你的消息的 Discord 插件。
 
-16 种语言的纯 HTML 和 CSS，没有框架，也没有打包工具。`public/assets/` 里的样式表和网页字体由 `src/` 生成，其余文件按写好的样子原样提供。托管在 Cloudflare Workers 上。
-
 字体是 Dela Gothic One、Zen Kaku Gothic New、Martian Mono、Onest，以及用于阿拉伯语、泰语和韩语的 IBM Plex Sans，全部采用 SIL Open Font License 1.1。许可证在 `public/assets/fonts/LICENSES.txt` 里。
 
 网站的代码采用 GNU Affero General Public License v3.0，见 [LICENSE](../LICENSE)。字体保留各自的许可证，我的照片不在这个许可证的范围内。
