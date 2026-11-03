@@ -23,11 +23,6 @@ O código de zolatau.com: uma página sobre mim e a página do AI Translate, um
 plugin para o Discord que traduz suas mensagens com o modelo de IA que você
 escolher.
 
-HTML e CSS puros, em 16 idiomas, sem framework e sem bundler. A folha de estilo
-e as fontes web em `public/assets/` são geradas a partir de `src/`; todo o
-restante é servido exatamente como foi escrito. Hospedado no Cloudflare
-Workers.
-
 As fontes são Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest e IBM
 Plex Sans em árabe, tailandês e coreano, todas sob a SIL Open Font License 1.1.
 As licenças estão em `public/assets/fonts/LICENSES.txt`.

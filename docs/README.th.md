@@ -21,8 +21,6 @@
 
 โค้ดของ zolatau.com: หน้าที่เล่าเรื่องผม และหน้าของ AI Translate ปลั๊กอินสำหรับ Discord ที่แปลข้อความของคุณด้วยโมเดล AI ที่คุณเลือก
 
-HTML และ CSS ล้วน ๆ ใน 16 ภาษา ไม่มีเฟรมเวิร์กและไม่มี bundler ไฟล์สไตล์และฟอนต์เว็บใน `public/assets/` ถูกสร้างจาก `src/` ส่วนอย่างอื่นถูกส่งออกไปตามที่เขียนไว้ทุกตัวอักษร โฮสต์อยู่บน Cloudflare Workers
-
 ฟอนต์คือ Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest และ IBM Plex Sans สำหรับภาษาอาหรับ ไทย และเกาหลี ทั้งหมดอยู่ภายใต้ SIL Open Font License 1.1 ใบอนุญาตอยู่ใน `public/assets/fonts/LICENSES.txt`
 
 โค้ดของเว็บไซต์อยู่ภายใต้ GNU Affero General Public License v3.0 ดูใน [LICENSE](../LICENSE) ฟอนต์ยังใช้ใบอนุญาตของตัวเอง และรูปถ่ายของผมไม่ได้อยู่ในใบอนุญาตนี้

@@ -22,10 +22,6 @@
 Mã của zolatau.com: một trang nói về tôi và trang của AI Translate, một plugin
 Discord dịch tin nhắn của bạn bằng mô hình AI bạn chọn.
 
-HTML và CSS thuần, 16 ngôn ngữ, không framework và không bundler. Tệp kiểu và
-các phông web trong `public/assets/` được tạo ra từ `src/`; mọi thứ còn lại
-được phục vụ đúng như đã viết. Chạy trên Cloudflare Workers.
-
 Các phông là Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest và IBM
 Plex Sans cho tiếng Ả Rập, tiếng Thái và tiếng Hàn, tất cả theo SIL Open Font
 License 1.1. Giấy phép nằm trong `public/assets/fonts/LICENSES.txt`.

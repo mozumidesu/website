@@ -23,11 +23,6 @@ The source of zolatau.com: a page about me, and the page for AI Translate, a
 plugin for Discord that translates your messages with an AI model of your
 choice.
 
-Plain HTML and CSS in 16 languages, with no framework and no bundler. The style
-sheet and the web fonts in `public/assets/` are generated from `src/`;
-everything else is served exactly as it is written. Hosted on Cloudflare
-Workers.
-
 The fonts are Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest and IBM
 Plex Sans in Arabic, Thai and Korean, all under the SIL Open Font License 1.1.
 The licences are in `public/assets/fonts/LICENSES.txt`.
