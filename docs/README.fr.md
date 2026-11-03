@@ -19,9 +19,8 @@
 
 # zolatau.com
 
-Le code de deux sites : **zolatau.com**, qui parle de moi, et
-**translate.zolatau.com**, la page d'AI Translate, un plugin Discord qui
-traduit vos messages avec le modèle d'IA de votre choix.
+Le code de zolatau.com : une page qui parle de moi et la page d'AI Translate,
+un plugin Discord qui traduit vos messages avec le modèle d'IA de votre choix.
 
 Du HTML et du CSS, rien d'autre, en 16 langues, sans framework ni bundler. La
 feuille de style et les polices web de `public/assets/` sont générées depuis

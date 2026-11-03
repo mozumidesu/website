@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-二つのサイトのコードです。**zolatau.com** は私について、**translate.zolatau.com** は AI Translate のページで、好きな AI モデルでメッセージを翻訳する Discord プラグインを紹介しています。
+zolatau.com のコードです。私について書いたページと、好きな AI モデルでメッセージを翻訳する Discord プラグイン AI Translate のページがあります。
 
 16 言語の素の HTML と CSS で、フレームワークもバンドラーもありません。`public/assets/` のスタイルシートとウェブフォントは `src/` から生成され、それ以外は書かれたとおりに配信されます。ホスティングは Cloudflare Workers です。
 

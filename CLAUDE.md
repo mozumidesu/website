@@ -1,8 +1,8 @@
 # zolatau.com
 
-Two sites in one repository: **zolatau.com**, a personal page, and
-**translate.zolatau.com**, the page for AI Translate, a Discord plugin that
-lives in its own repository.
+zolatau.com in one repository: a personal page, and the page for AI Translate,
+a Discord plugin that lives in its own repository. The plugin's page is served
+on its own subdomain, which `worker.js` and `wrangler.jsonc` route.
 
 Plain HTML and CSS in 16 languages. No framework, no bundler, no package
 manager. Cloudflare Workers serves it, and a push to this repository puts it

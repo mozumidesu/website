@@ -19,9 +19,9 @@
 
 # zolatau.com
 
-Codul a două site-uri: **zolatau.com**, care este despre mine, și
-**translate.zolatau.com**, pagina AI Translate, un plugin pentru Discord care
-îți traduce mesajele cu modelul de inteligență artificială pe care îl alegi.
+Codul site-ului zolatau.com: o pagină despre mine și pagina AI Translate, un
+plugin pentru Discord care îți traduce mesajele cu modelul de inteligență
+artificială pe care îl alegi.
 
 HTML și CSS simple, în 16 limbi, fără framework și fără bundler. Foaia de
 stiluri și fonturile web din `public/assets/` sunt generate din `src/`; tot

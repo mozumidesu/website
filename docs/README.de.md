@@ -19,9 +19,9 @@
 
 # zolatau.com
 
-Der Quellcode von zwei Websites: **zolatau.com** über mich und
-**translate.zolatau.com**, die Seite zu AI Translate, einem Discord-Plugin, das
-deine Nachrichten mit einem KI-Modell deiner Wahl übersetzt.
+Der Quellcode von zolatau.com: eine Seite über mich und die Seite zu AI
+Translate, einem Discord-Plugin, das deine Nachrichten mit einem KI-Modell
+deiner Wahl übersetzt.
 
 Reines HTML und CSS in 16 Sprachen, ohne Framework und ohne Bundler. Das
 Stylesheet und die Webfonts in `public/assets/` werden aus `src/` erzeugt,
