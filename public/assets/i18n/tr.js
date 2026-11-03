@@ -95,6 +95,7 @@ ZL.i18n.add("tr", {
   "tr.pAny": "OpenAI uyumlu herhangi bir API",
   "tr.pDepends": "Sağlayıcıya bağlı",
   "tr.pNote": "İstekler Discord'un arka plan sürecinden gönderilir, bu yüzden anahtarınız bir web sayfasının ulaşabileceği kısma hiç girmez.",
+  "tr.alpha": "Erken bir sürüm. Çalışıyor ama pürüzler olacak.",
   "tr.iTitle": "Kurulum",
   "tr.iLead": "AI Translate, Discord uygulaması için bilinen bir mod olan Vencord'un içinde çalışır. Tek bir komut, içinde AI Translate hazır olan Vencord'u indirir, yaklaşık bir megabayt, ve Discord'a uygular. Bilgisayarınızda hiçbir şey derlenmez.",
   "tr.iTouch": "Komut bilgisayarda çalıştırılır: kopyalamak için bu sayfayı orada açın.",

@@ -95,6 +95,7 @@ ZL.i18n.add("pt", {
   "tr.pAny": "Qualquer API compatível com OpenAI",
   "tr.pDepends": "Depende do provedor",
   "tr.pNote": "Os pedidos saem do processo em segundo plano do Discord, então sua chave nunca entra na parte do Discord que uma página da web poderia alcançar.",
+  "tr.alpha": "Uma versão inicial. Funciona, mas haverá arestas.",
   "tr.iTitle": "Instalação",
   "tr.iLead": "O AI Translate roda dentro do Vencord, um mod bem conhecido para o app do Discord. Um comando baixa o Vencord já com o AI Translate dentro, cerca de um megabyte, e aplica o patch no Discord. Nada é compilado no seu computador.",
   "tr.iTouch": "O comando roda em um computador: abra esta página nele para copiar.",
