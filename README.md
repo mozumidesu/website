@@ -19,9 +19,9 @@
 
 # zolatau.com
 
-The source of two sites: **zolatau.com**, which is about me, and
-**translate.zolatau.com**, the page for AI Translate, a plugin for Discord that
-translates your messages with an AI model of your choice.
+The source of zolatau.com: a page about me, and the page for AI Translate, a
+plugin for Discord that translates your messages with an AI model of your
+choice.
 
 Plain HTML and CSS in 16 languages, with no framework and no bundler. The style
 sheet and the web fonts in `public/assets/` are generated from `src/`;

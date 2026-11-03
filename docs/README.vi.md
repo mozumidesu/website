@@ -19,9 +19,8 @@
 
 # zolatau.com
 
-Mã của hai trang: **zolatau.com**, nói về tôi, và **translate.zolatau.com**,
-trang của AI Translate, một plugin Discord dịch tin nhắn của bạn bằng mô hình
-AI bạn chọn.
+Mã của zolatau.com: một trang nói về tôi và trang của AI Translate, một plugin
+Discord dịch tin nhắn của bạn bằng mô hình AI bạn chọn.
 
 HTML và CSS thuần, 16 ngôn ngữ, không framework và không bundler. Tệp kiểu và
 các phông web trong `public/assets/` được tạo ra từ `src/`; mọi thứ còn lại

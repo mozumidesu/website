@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-두 사이트의 코드입니다. **zolatau.com** 은 저에 대한 사이트이고, **translate.zolatau.com** 은 원하는 AI 모델로 메시지를 번역하는 Discord 플러그인 AI Translate의 페이지입니다.
+zolatau.com 의 코드입니다. 저에 대한 페이지와, 원하는 AI 모델로 메시지를 번역하는 Discord 플러그인 AI Translate의 페이지가 있습니다.
 
 16개 언어로 된 순수 HTML과 CSS이며, 프레임워크도 번들러도 쓰지 않습니다. `public/assets/` 의 스타일시트와 웹폰트는 `src/` 에서 생성되고, 나머지는 작성된 그대로 전달됩니다. Cloudflare Workers에서 호스팅합니다.
 

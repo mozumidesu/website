@@ -19,9 +19,8 @@
 
 # zolatau.com
 
-Kode dari dua situs: **zolatau.com**, yang bercerita tentang saya, dan
-**translate.zolatau.com**, halaman AI Translate, plugin Discord yang
-menerjemahkan pesan Anda dengan model AI pilihan Anda.
+Kode dari zolatau.com: satu halaman tentang saya dan halaman AI Translate,
+plugin Discord yang menerjemahkan pesan Anda dengan model AI pilihan Anda.
 
 HTML dan CSS biasa dalam 16 bahasa, tanpa framework dan tanpa bundler. Lembar
 gaya dan font web di `public/assets/` dihasilkan dari `src/`; selebihnya

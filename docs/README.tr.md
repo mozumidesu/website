@@ -19,9 +19,9 @@
 
 # zolatau.com
 
-İki sitenin kaynağı: hakkımda olan **zolatau.com** ve
-**translate.zolatau.com**, yani mesajlarınızı seçtiğiniz bir yapay zekâ
-modeliyle çeviren Discord eklentisi AI Translate'in sayfası.
+zolatau.com sitesinin kaynağı: hakkımda olan bir sayfa ve mesajlarınızı
+seçtiğiniz bir yapay zekâ modeliyle çeviren Discord eklentisi AI Translate'in
+sayfası.
 
 16 dilde, framework ve bundler olmadan yazılmış düz HTML ve CSS.
 `public/assets/` içindeki stil dosyası ve web fontları `src/` klasöründen

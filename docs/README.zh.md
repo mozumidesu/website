@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-两个网站的代码：**zolatau.com** 是关于我的，**translate.zolatau.com** 是 AI Translate 的页面，那是一个用你选择的 AI 模型翻译你的消息的 Discord 插件。
+zolatau.com 的代码：一个关于我的页面，以及 AI Translate 的页面，那是一个用你选择的 AI 模型翻译你的消息的 Discord 插件。
 
 16 种语言的纯 HTML 和 CSS，没有框架，也没有打包工具。`public/assets/` 里的样式表和网页字体由 `src/` 生成，其余文件按写好的样子原样提供。托管在 Cloudflare Workers 上。
 
