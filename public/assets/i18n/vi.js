@@ -97,7 +97,6 @@ ZL.i18n.add("vi", {
   "tr.pAny": "Bất kỳ API nào tương thích OpenAI",
   "tr.pDepends": "Tùy nhà cung cấp",
   "tr.pNote": "Yêu cầu được gửi từ tiến trình nền của Discord, nên khóa của bạn không bao giờ lọt vào phần Discord mà một trang web có thể chạm tới.",
-  "tr.alpha": "Một bản sớm. Dùng được, nhưng sẽ có chỗ còn thô.",
   "tr.iTitle": "Cài đặt",
   "tr.iLead": "AI Translate chạy bên trong Vencord, một bản mod nổi tiếng cho ứng dụng Discord. Một lệnh sẽ tải Vencord có sẵn AI Translate bên trong, khoảng một megabyte, rồi vá vào Discord. Không có gì được biên dịch trên máy bạn.",
   "tr.iTouch": "Lệnh này chạy trên máy tính: hãy mở trang này trên máy tính để sao chép.",

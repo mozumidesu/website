@@ -97,7 +97,6 @@ ZL.i18n.add("ko", {
   "tr.pAny": "OpenAI 호환 API 전부",
   "tr.pDepends": "제공자에 따라 다름",
   "tr.pNote": "요청은 Discord의 백그라운드 프로세스에서 나가므로, 키가 웹 페이지가 닿을 수 있는 영역으로 들어가지 않습니다.",
-  "tr.alpha": "이른 빌드입니다. 동작하지만 거친 데가 있습니다.",
   "tr.iTitle": "설치",
   "tr.iLead": "AI Translate는 Discord 앱의 잘 알려진 개조판 Vencord 안에서 동작합니다. 명령 한 줄이면 AI Translate가 들어 있는 Vencord를 약 1 MB 내려받아 Discord에 적용합니다. 컴퓨터에서 빌드할 것은 없습니다.",
   "tr.iTouch": "이 명령은 컴퓨터에서 실행합니다. 복사하려면 컴퓨터에서 이 페이지를 열어 주세요.",

@@ -97,7 +97,6 @@ ZL.i18n.add("ja", {
   "tr.pAny": "OpenAI 互換の API",
   "tr.pDepends": "プロバイダーによる",
   "tr.pNote": "リクエストは Discord のバックグラウンドプロセスから送られるので、キーがウェブページから届く部分に入ることはありません。",
-  "tr.alpha": "初期のビルドです。動きますが、粗いところはあります。",
   "tr.iTitle": "インストール",
   "tr.iLead": "AI Translate は、Discord アプリ向けの有名な改造版 Vencord の中で動きます。コマンドひとつで AI Translate 入りの Vencord（約1MB）をダウンロードし、Discord に組み込みます。あなたのパソコンでビルドするものはありません。",
   "tr.iTouch": "コマンドはパソコンで実行します。コピーするにはパソコンでこのページを開いてください。",
