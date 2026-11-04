@@ -84,6 +84,8 @@ ZL.i18n.add("vi", {
   "tr.f9d": "Plugin hiển thị giao diện theo ngôn ngữ Discord của bạn. Bạn có thể chọn ngôn ngữ khác trong cài đặt.",
   "tr.f10t": "Dùng miễn phí",
   "tr.f10d": "Groq, Gemini và GLM đều có gói miễn phí, nên dịch không tốn gì.",
+  "tr.f11d": "Bạn tự viết bằng ngôn ngữ mình dịch sang, tin nhắn đi nguyên văn, bên dưới là bản của người bản ngữ với những từ đã đổi được đánh dấu. Khi đang bật, mọi thứ viết bằng chữ viết của ngôn ngữ đó sẽ được sửa chứ không được dịch. Chỉ mình bạn thấy, và mặc định nó đang tắt.",
+  "tr.f11n": "người bản ngữ sẽ viết:",
   "tr.pTitle": "Khóa của bạn, nhà cung cấp của bạn",
   "tr.pText": "Bạn dùng khóa API của chính mình, và nó vẫn là của bạn. Plugin không có máy chủ riêng và không bao giờ thấy khóa của người khác.",
   "tr.pCol1": "Nhà cung cấp",

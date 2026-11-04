@@ -84,6 +84,8 @@ ZL.i18n.add("ro", {
   "tr.f9d": "Pluginul afișează interfața în limba Discordului tău. Poți alege alta din setări.",
   "tr.f10t": "Gratuit",
   "tr.f10d": "Groq, Gemini și GLM au planuri gratuite, așa că traducerea nu te costă nimic.",
+  "tr.f11d": "Scrii în limba în care traduci, iar mesajul pleacă așa cum l-ai scris, cu varianta unui vorbitor nativ dedesubt și cuvintele schimbate marcate. Cât timp e pornit, tot ce e scris cu alfabetul acelei limbi se corectează, nu se traduce. O vezi doar tu, iar funcția e oprită până o pornești.",
+  "tr.f11n": "un vorbitor nativ ar scrie:",
   "tr.pTitle": "Cheia ta, furnizorul tău",
   "tr.pText": "Folosești propria cheie API, iar ea rămâne a ta. Pluginul nu are server propriu și nu vede cheile altora.",
   "tr.pCol1": "Furnizor",

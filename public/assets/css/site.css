@@ -830,10 +830,19 @@ code, kbd, pre { font-family: var(--font-mono); }
 .tile--b { grid-column: span 3; }
 .tile--c { grid-column: span 2; }
 .tile--wide { grid-column: span 4; }
+.tile--full { grid-column: span 6; }
+/* Full width is for the row, not for the words. Wide enough for two columns,
+   the text keeps a readable measure and the demonstration stands beside it;
+   narrower than that, the tile is an ordinary one again. */
+@media (min-width: 1001px) {
+  .tile--full { display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; align-items: start; }
+  .tile--full > h3, .tile--full > p { grid-column: 1; }
+  .tile--full > .tile__art { grid-column: 2; grid-row: 1 / span 2; margin-top: 0; padding-top: 4px; }
+}
 .tile__art { margin-top: auto; padding-top: 18px; }
 .tile .tile__num { font-family: var(--font-display); font-size: clamp(56px, 5vw, 84px); line-height: .9; color: var(--acc-text); }
-@media (max-width: 1000px) { .tile--a, .tile--b { grid-column: span 6; } .tile--c { grid-column: span 3; } .tile--wide { grid-column: span 6; } }
-@media (max-width: 640px) { .bento { grid-template-columns: minmax(0, 1fr); } .tile--a, .tile--b, .tile--c, .tile--wide { grid-column: auto; } }
+@media (max-width: 1000px) { .tile--a, .tile--b { grid-column: span 6; } .tile--c { grid-column: span 3; } .tile--wide, .tile--full { grid-column: span 6; } }
+@media (max-width: 640px) { .bento { grid-template-columns: minmax(0, 1fr); } .tile--a, .tile--b, .tile--c, .tile--wide, .tile--full { grid-column: auto; } }
 
 .toggle-demo { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .pill-state {

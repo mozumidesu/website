@@ -84,6 +84,8 @@ ZL.i18n.add("tr", {
   "tr.f9d": "Eklenti arayüzünü Discord'unuzun diliyle gösterir. Ayarlardan başka bir dil seçebilirsiniz.",
   "tr.f10t": "Ücretsiz kullanım",
   "tr.f10d": "Groq, Gemini ve GLM'nin ücretsiz planları var, yani çeviri hiçbir şeye mal olmaz.",
+  "tr.f11d": "Çevirdiğiniz dilde kendiniz yazarsınız, mesaj yazdığınız gibi gider ve altında bir ana dili konuşanın yazdığı hâli, değişen kelimeler işaretlenmiş olarak görünür. Açıkken o dilin alfabesiyle yazılan her şey çevrilmez, düzeltilir. Bunu yalnızca siz görürsünüz ve siz açana kadar kapalıdır.",
+  "tr.f11n": "ana dili konuşan biri şöyle yazardı:",
   "tr.pTitle": "Anahtar sizin, sağlayıcı sizin",
   "tr.pText": "Kendi API anahtarınızı kullanırsınız ve anahtar sizde kalır. Eklentinin kendi sunucusu yoktur ve başkasının anahtarını asla görmez.",
   "tr.pCol1": "Sağlayıcı",

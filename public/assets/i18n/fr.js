@@ -84,6 +84,8 @@ ZL.i18n.add("fr", {
   "tr.f9d": "Le plugin affiche son interface dans la langue de votre Discord. Vous pouvez en choisir une autre dans les réglages.",
   "tr.f10t": "Gratuit",
   "tr.f10d": "Groq, Gemini et GLM ont des offres gratuites, donc traduire ne coûte rien.",
+  "tr.f11d": "Vous écrivez dans la langue vers laquelle vous traduisez et le message part tel quel, avec la version d'un locuteur natif en dessous et les mots modifiés mis en évidence. Tant que c'est activé, tout ce qui est écrit dans l'alphabet de cette langue est corrigé plutôt que traduit. Vous seul la voyez, et c'est désactivé jusqu'à ce que vous l'activiez.",
+  "tr.f11n": "un locuteur natif écrirait :",
   "tr.pTitle": "Votre clé, votre fournisseur",
   "tr.pText": "Vous utilisez votre propre clé d'API, et elle reste à vous. Le plugin n'a pas de serveur à lui et ne voit jamais la clé de quelqu'un d'autre.",
   "tr.pCol1": "Fournisseur",

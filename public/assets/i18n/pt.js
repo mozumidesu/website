@@ -84,6 +84,8 @@ ZL.i18n.add("pt", {
   "tr.f9d": "O plugin mostra a interface no idioma do seu Discord. Dá para escolher outro nas configurações.",
   "tr.f10t": "Grátis",
   "tr.f10d": "Groq, Gemini e GLM têm planos gratuitos, então traduzir não custa nada.",
+  "tr.f11d": "Você escreve no idioma para o qual traduz e a mensagem sai como foi digitada, com a versão de um falante nativo abaixo e as palavras alteradas destacadas. Enquanto está ligado, tudo escrito no alfabeto desse idioma é corrigido em vez de traduzido. Só você a vê, e fica desligado até você ligar.",
+  "tr.f11n": "um falante nativo escreveria:",
   "tr.pTitle": "Sua chave, seu provedor",
   "tr.pText": "Você usa sua própria chave de API, e ela continua sendo sua. O plugin não tem servidor próprio e nunca vê a chave de mais ninguém.",
   "tr.pCol1": "Provedor",

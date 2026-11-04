@@ -84,6 +84,8 @@ ZL.i18n.add("id", {
   "tr.f9d": "Plugin menampilkan antarmukanya dalam bahasa Discord Anda. Anda bisa memilih bahasa lain di pengaturan.",
   "tr.f10t": "Gratis dipakai",
   "tr.f10d": "Groq, Gemini, dan GLM punya paket gratis, jadi menerjemahkan tidak perlu biaya.",
+  "tr.f11d": "Anda menulis dalam bahasa tujuan terjemahan, pesannya terkirim apa adanya, dan di bawahnya ada versi penutur asli dengan kata-kata yang berubah ditandai. Selama menyala, semua yang ditulis dengan aksara bahasa itu dikoreksi, bukan diterjemahkan. Hanya Anda yang melihatnya, dan ini mati sampai Anda menyalakannya.",
+  "tr.f11n": "penutur asli akan menulis:",
   "tr.pTitle": "Kunci Anda, penyedia Anda",
   "tr.pText": "Anda memakai kunci API sendiri, dan kunci itu tetap milik Anda. Plugin tidak punya server sendiri dan tidak pernah melihat kunci orang lain.",
   "tr.pCol1": "Penyedia",

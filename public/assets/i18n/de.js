@@ -84,6 +84,8 @@ ZL.i18n.add("de", {
   "tr.f9d": "Das Plugin zeigt seine Oberfläche in der Sprache deines Discord. In den Einstellungen kannst du eine andere wählen.",
   "tr.f10t": "Kostenlos nutzbar",
   "tr.f10d": "Groq, Gemini und GLM haben kostenlose Kontingente, das Übersetzen kostet also nichts.",
+  "tr.f11d": "Du schreibst in der Sprache, in die du übersetzt, und die Nachricht geht so raus, wie du sie getippt hast, mit der Fassung eines Muttersprachlers darunter und den geänderten Wörtern markiert. Solange es an ist, wird alles im Alphabet dieser Sprache korrigiert statt übersetzt. Nur du siehst es, und es ist aus, bis du es einschaltest.",
+  "tr.f11n": "ein Muttersprachler würde schreiben:",
   "tr.pTitle": "Dein Schlüssel, dein Anbieter",
   "tr.pText": "Du nutzt deinen eigenen API-Schlüssel, und er bleibt deiner. Das Plugin hat keinen eigenen Server und sieht nie die Schlüssel anderer.",
   "tr.pCol1": "Anbieter",
