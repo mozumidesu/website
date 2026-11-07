@@ -94,7 +94,7 @@ ZL.i18n.add("ko", {
   "tr.pYes": "있음",
   "tr.pGlm": "있음. 다른 두 곳이 막힌 지역에서도 동작합니다",
   "tr.pNo": "없음",
-  "tr.pAny": "OpenAI 호환 API 전부",
+  "tr.pAny": "OpenAI 호환이면 무엇이든",
   "tr.pDepends": "제공자에 따라 다름",
   "tr.pNote": "요청은 Discord의 백그라운드 프로세스에서 나가므로, 키가 웹 페이지가 닿을 수 있는 영역으로 들어가지 않습니다.",
   "tr.iTitle": "설치",

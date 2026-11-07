@@ -94,7 +94,7 @@ ZL.i18n.add("ja", {
   "tr.pYes": "あり",
   "tr.pGlm": "あり。ほかの2つが使えない地域でも動きます",
   "tr.pNo": "なし",
-  "tr.pAny": "OpenAI 互換の API",
+  "tr.pAny": "OpenAI 互換ならどれでも",
   "tr.pDepends": "プロバイダーによる",
   "tr.pNote": "リクエストは Discord のバックグラウンドプロセスから送られるので、キーがウェブページから届く部分に入ることはありません。",
   "tr.iTitle": "インストール",

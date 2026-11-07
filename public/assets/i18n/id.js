@@ -94,7 +94,7 @@ ZL.i18n.add("id", {
   "tr.pYes": "Ya",
   "tr.pGlm": "Ya, dan bisa dipakai di tempat yang memblokir dua lainnya",
   "tr.pNo": "Tidak",
-  "tr.pAny": "API apa pun yang kompatibel dengan OpenAI",
+  "tr.pAny": "Penyedia apa pun yang kompatibel dengan OpenAI",
   "tr.pDepends": "Tergantung penyedianya",
   "tr.pNote": "Permintaan dikirim dari proses latar belakang Discord, jadi kunci Anda tidak pernah masuk ke bagian Discord yang bisa dijangkau halaman web.",
   "tr.iTitle": "Instalasi",

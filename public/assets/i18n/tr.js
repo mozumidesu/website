@@ -94,7 +94,7 @@ ZL.i18n.add("tr", {
   "tr.pYes": "Var",
   "tr.pGlm": "Var, ve diğer ikisinin engellendiği yerlerde çalışır",
   "tr.pNo": "Yok",
-  "tr.pAny": "OpenAI uyumlu herhangi bir API",
+  "tr.pAny": "OpenAI uyumlu herhangi biri",
   "tr.pDepends": "Sağlayıcıya bağlı",
   "tr.pNote": "İstekler Discord'un arka plan sürecinden gönderilir, bu yüzden anahtarınız bir web sayfasının ulaşabileceği kısma hiç girmez.",
   "tr.iTitle": "Kurulum",

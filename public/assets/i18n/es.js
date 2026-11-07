@@ -94,7 +94,7 @@ ZL.i18n.add("es", {
   "tr.pYes": "Sí",
   "tr.pGlm": "Sí, y funciona donde los otros dos están bloqueados",
   "tr.pNo": "No",
-  "tr.pAny": "Cualquier API compatible con OpenAI",
+  "tr.pAny": "Cualquiera compatible con OpenAI",
   "tr.pDepends": "Depende del proveedor",
   "tr.pNote": "Las peticiones salen del proceso en segundo plano de Discord, así que tu clave nunca entra en la parte de Discord a la que podría llegar una página web.",
   "tr.iTitle": "Instalación",

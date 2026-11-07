@@ -94,7 +94,7 @@ ZL.i18n.add("en", {
   "tr.pYes": "Yes",
   "tr.pGlm": "Yes, and it works where the other two are blocked",
   "tr.pNo": "No",
-  "tr.pAny": "Any OpenAI-compatible API",
+  "tr.pAny": "Any OpenAI-compatible",
   "tr.pDepends": "Depends on the provider",
   "tr.pNote": "Requests are made from Discord's background process, so your key never enters the part of Discord that a web page could reach.",
   "tr.iTitle": "Install",

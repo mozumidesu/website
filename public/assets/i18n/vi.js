@@ -94,7 +94,7 @@ ZL.i18n.add("vi", {
   "tr.pYes": "Có",
   "tr.pGlm": "Có, và dùng được ở nơi hai cái kia bị chặn",
   "tr.pNo": "Không",
-  "tr.pAny": "Bất kỳ API nào tương thích OpenAI",
+  "tr.pAny": "Bất kỳ nhà cung cấp nào tương thích OpenAI",
   "tr.pDepends": "Tùy nhà cung cấp",
   "tr.pNote": "Yêu cầu được gửi từ tiến trình nền của Discord, nên khóa của bạn không bao giờ lọt vào phần Discord mà một trang web có thể chạm tới.",
   "tr.iTitle": "Cài đặt",

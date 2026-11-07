@@ -94,7 +94,7 @@ ZL.i18n.add("ro", {
   "tr.pYes": "Da",
   "tr.pGlm": "Da, și merge acolo unde primii doi sunt blocați",
   "tr.pNo": "Nu",
-  "tr.pAny": "Orice API compatibil OpenAI",
+  "tr.pAny": "Oricare compatibil cu OpenAI",
   "tr.pDepends": "Depinde de furnizor",
   "tr.pNote": "Cererile pleacă din procesul de fundal al Discordului, așa că cheia ta nu ajunge niciodată în partea Discordului la care ar putea ajunge o pagină web.",
   "tr.iTitle": "Instalare",

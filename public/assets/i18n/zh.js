@@ -94,7 +94,7 @@ ZL.i18n.add("zh", {
   "tr.pYes": "有",
   "tr.pGlm": "有，而且在前两家被封锁的地方也能用",
   "tr.pNo": "无",
-  "tr.pAny": "任何兼容 OpenAI 的 API",
+  "tr.pAny": "任何兼容 OpenAI 的服务",
   "tr.pDepends": "取决于服务商",
   "tr.pNote": "请求从 Discord 的后台进程发出，所以你的密钥永远不会进入网页能访问到的那部分 Discord。",
   "tr.iTitle": "安装",
