@@ -8,6 +8,14 @@ Plain HTML and CSS in 16 languages. No framework, no bundler, no package
 manager. Cloudflare Workers serves it, and a push to this repository puts it
 online again within a minute or two.
 
+## Branches and sessions
+
+Work goes on `claude/website`. `main` is what Cloudflare serves, so it moves
+only on the owner's word, by bringing `claude/website` into it. A session sends
+its whole history with every request, which is what spends the usage limits, so
+a new task gets a new session, handed over in English: the branch, the files,
+and what done looks like. The effort level is set in `.claude/settings.json`.
+
 ## The one thing that is easy to get wrong
 
 **`public/assets/css/site.css` is generated. Never edit it directly.**

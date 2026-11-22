@@ -92,6 +92,7 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
       <a href="#features" data-i18n="nav.features">Features</a>
       <a href="#providers" data-i18n="nav.providers">Providers</a>
       <a href="#install" data-i18n="nav.install">Install</a>
+      <a href="#telegram">Telegram</a>
       <a href="#faq" data-i18n="nav.faq">Questions</a>
     </div>
     <span class="nav__sep" style="--d:.1s"></span>
@@ -114,6 +115,7 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
     <li><a href="#features"><span data-i18n="nav.features">Features</span></a></li>
     <li><a href="#providers"><span data-i18n="nav.providers">Providers</span></a></li>
     <li><a href="#install"><span data-i18n="nav.install">Install</span></a></li>
+    <li><a href="#telegram"><span>Telegram</span></a></li>
     <li><a href="#faq"><span data-i18n="nav.faq">Questions</span></a></li>
     <li><a data-link="home" href="https://zolatau.com/">zolatau.com</a></li>
   </ul>
@@ -124,6 +126,11 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
   <section class="thero" id="top" aria-labelledby="tr-title">
     <div class="wrap thero__grid">
       <div class="thero__copy">
+        <a class="news glass thero__news" href="#telegram" data-in style="--in:0">
+          <span class="news__tag" data-i18n="home.newsTag">New</span>
+          <span data-i18n="tr.tgNews">Now also for Telegram Web</span>
+          <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
         <div class="app-mark app-mark--lg" data-in style="--in:0"><svg aria-hidden="true"><use href="#i-translate"/></svg></div>
         <h1 id="tr-title" data-in style="--in:1">AI Translate</h1>
         <p class="thero__tagline" data-in style="--in:2" data-i18n="tr.tagline">The plugin that lets you talk to anyone, even if you don't know their language</p>
@@ -265,8 +272,8 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
           <div class="tile__art chips" aria-hidden="true"><span class="chip">Nitro</span><span class="chip">rights = permissions</span></div>
         </article>
         <article class="tile tile--c">
-          <h3 data-i18n="tr.f8t">Backup provider</h3>
-          <p data-i18n="tr.f8d">When the main provider is overloaded, out of quota or refuses the request, the translation quietly goes through the other one.</p>
+          <h3 data-i18n="tr.f8t">Backup providers</h3>
+          <p data-i18n="tr.f8d">Up to four can stand behind the main provider. When it is overloaded, out of quota or refuses the request, the translation goes through the next one by itself.</p>
         </article>
         <article class="tile tile--wide tile--langs">
           <p class="tile__num">16</p>
@@ -298,7 +305,7 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
             <tr><th scope="row">Google Gemini</th><td><span class="yes" data-i18n="tr.pYes">Yes</span></td></tr>
             <tr><th scope="row">Z.ai GLM</th><td><span class="yes" data-i18n="tr.pGlm">Yes, and it works where the other two are blocked</span></td></tr>
             <tr><th scope="row">Anthropic Claude</th><td><span class="no" data-i18n="tr.pNo">No</span></td></tr>
-            <tr><th scope="row" data-i18n="tr.pAny">Any OpenAI-compatible</th><td><span data-i18n="tr.pDepends">Depends on the provider</span></td></tr>
+            <tr><th scope="row" data-i18n="tr.pAny">Other (any OpenAI-compatible API)</th><td><span data-i18n="tr.pDepends">Depends on the provider</span></td></tr>
           </tbody>
         </table>
       </div>
@@ -366,6 +373,39 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
       <div class="install__more">
         <div><h3 data-i18n="tr.upTitle">Updates</h3><p data-i18n="tr.upText">AI Translate looks for a new version by itself and installs it in the background. Check for updates, at the bottom of its settings, does the same at once.</p></div>
         <div><h3 data-i18n="tr.rmTitle">Uninstall</h3><p data-i18n="tr.rmText">Run the same command and pick Remove. Discord goes back to exactly how it was, and your settings stay in case you install again.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tg" id="telegram" aria-labelledby="tg-title">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="vlabel" aria-hidden="true"><b>電報</b><i>denpō</i></p>
+        <div>
+          <h2 class="section__title rv" id="tg-title" data-i18n="tr.tgTitle">AI Translate for Telegram</h2>
+          <p class="section__lead" data-i18n="tr.tgLead">A userscript that brings AI Translate into Telegram Web, Telegram's own web client, in both Web A and Web K. It has the same features, providers and backup providers as the plugin for Discord.</p>
+          <ul class="chips">
+            <li class="chip">Web A · Web K</li>
+            <li class="chip" data-i18n="tr.tgChipBrowser">Desktop browser</li>
+          </ul>
+        </div>
+      </div>
+      <div class="install__box glass">
+        <div class="panel">
+          <ol class="steps">
+            <li><div><p data-i18n="tr.tgS1">In a desktop browser, install Tampermonkey or another userscript manager.</p></div></li>
+            <li><div><p data-i18n="tr.tgS2">Open the script, and your userscript manager offers to install it.</p>
+              <p class="tg__links"><a class="btn btn--acc btn--sm" href="https://github.com/mozumidesu/ai-translate-telegram/raw/main/dist/ai-translate.user.js" data-i18n="tr.s2browserGet">Install the userscript</a><a class="btn btn--ghost btn--sm" href="https://github.com/mozumidesu/ai-translate-telegram" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg><span data-i18n="tr.hSource">Source code</span></a></p></div></li>
+            <li><div><p data-i18n="tr.tgS3">Open web.telegram.org and reload the page.</p></div></li>
+            <li><div><p data-i18n-html="tr.tgS4">Click the translate button in the chat bar, press <span class="path"><span>All plugin settings</span></span>, choose a provider and paste your key.</p><p class="note" data-i18n="tr.tgS4note">The first time the script reaches your provider, your userscript manager may ask whether it can. Allow that address.</p></div></li>
+          </ol>
+        </div>
+      </div>
+      <div class="install__more">
+        <div><h3 data-i18n="tr.tgKeyTitle">Your key stays with you</h3><p data-i18n="tr.tgKeyText">It is kept in your userscript manager's storage on your computer, and requests go from your browser to the provider you chose. There is no server in between.</p></div>
+        <div><h3 data-i18n="tr.tgAppsTitle">Telegram Desktop and phones</h3><p data-i18n="tr.tgAppsText">Telegram Desktop is a native app and cannot be patched, so on a computer AI Translate for Telegram is the userscript in a browser. There is no version for phones yet.</p></div>
+        <div><h3 data-i18n="tr.upTitle">Updates</h3><p data-i18n="tr.tgUpText">Your userscript manager looks for a new version by itself. Check for updates, at the bottom of the settings, asks at once.</p></div>
+        <div><h3 data-i18n="tr.rmTitle">Uninstall</h3><p data-i18n="tr.tgRmText">Delete the script in your userscript manager. Nothing else was installed, so nothing else needs removing.</p></div>
       </div>
     </div>
   </section>
