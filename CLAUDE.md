@@ -14,7 +14,7 @@ Work goes on `claude/website`. `main` is what Cloudflare serves, so it moves
 only on the owner's word, by bringing `claude/website` into it. A session sends
 its whole history with every request, which is what spends the usage limits, so
 a new task gets a new session, handed over in English: the branch, the files,
-and what done looks like. The effort level is set in `.claude/settings.json`.
+and what done looks like.
 
 ## The one thing that is easy to get wrong
 
