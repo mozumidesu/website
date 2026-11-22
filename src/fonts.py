@@ -46,7 +46,7 @@ used = {c for c in text if cjk(c)}
 hangul = lambda c: 0xAC00 <= ord(c) <= 0xD7A3 or 0x3130 <= ord(c) <= 0x318F
 korean_chars = {c for c in text if hangul(c)}
 kana = {chr(c) for c in list(range(0x3000, 0x3040)) + list(range(0x3041, 0x3097)) + list(range(0x309B, 0x30FF))}
-decor_chars = set('茂住翻訳自己紹介連絡本音機能鍵導入質問助歳') | set('イヴァン伊万こんにちは你好') \
+decor_chars = set('茂住翻訳自己紹介連絡本音機能鍵導入質問電報助歳') | set('イヴァン伊万こんにちは你好') \
     | set('アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワン') \
     | set('言語文字翻訳話中心大小山川水火木金土日月人口手目耳')
 full_chars = (used | kana) - decor_chars
@@ -104,7 +104,7 @@ for fam in ['ZL Text', 'ZL Text Latin']:
         if fam == 'ZL Text':
             got = subset(plexkr / f'ibm-plex-sans-kr-korean-{w}-normal.woff2', korean_chars, f'plexkr-korean-{w}.woff2')
             face(fam, f'plexkr-korean-{w}.woff2', w, urange_of(got))
-zen_decor = set('翻訳自己紹介連絡本音機能鍵導入質問助')
+zen_decor = set('翻訳自己紹介連絡本音機能鍵導入質問電報助')
 got = subset(zen / 'zen-kaku-gothic-new-japanese-700-normal.woff2', zen_decor, 'zen-ja-decor-700.woff2')
 face('ZL Text', 'zen-ja-decor-700.woff2', 700, urange_of(got))
 for w in (400, 700):
