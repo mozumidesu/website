@@ -140,7 +140,7 @@ ZL.i18n.add("ko", {
   "tr.hLicense": "라이선스 GPL-3.0",
   "tr.tgNews": "이제 Telegram Web에서도",
   "tr.tgTitle": "Telegram용 AI Translate",
-  "tr.tgLead": "Telegram 공식 웹 클라이언트인 Telegram Web에 AI Translate를 넣어 주는 유저스크립트입니다. Web A와 Web K 모두에서 동작합니다. 기능, 제공자, 예비 제공자가 Discord용 플러그인과 같고, 버전 번호도 같습니다.",
+  "tr.tgLead": "Telegram 공식 웹 클라이언트인 Telegram Web에 AI Translate를 넣어 주는 유저스크립트입니다. Web A와 Web K 모두에서 동작합니다. 기능, 제공자, 예비 제공자가 Discord용 플러그인과 같습니다.",
   "tr.tgChipBrowser": "컴퓨터 브라우저",
   "tr.tgS1": "컴퓨터 브라우저에 Tampermonkey나 다른 유저스크립트 관리자를 설치하세요.",
   "tr.tgS2": "스크립트를 열면 관리자가 설치할지 묻습니다.",

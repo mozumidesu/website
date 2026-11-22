@@ -140,7 +140,7 @@ ZL.i18n.add("ar", {
   "tr.hLicense": "رخصة GPL-3.0",
   "tr.tgNews": "الآن لـ Telegram Web أيضًا",
   "tr.tgTitle": "AI Translate لـ Telegram",
-  "tr.tgLead": "برنامج نصي يُدخل AI Translate إلى Telegram Web، عميل الويب الرسمي لـ Telegram، في نسختيه Web A وWeb K. له الميزات نفسها والمزوّدون أنفسهم والمزوّدون الاحتياطيون كإضافة Discord، ورقم الإصدار نفسه.",
+  "tr.tgLead": "برنامج نصي يُدخل AI Translate إلى Telegram Web، عميل الويب الرسمي لـ Telegram، في نسختيه Web A وWeb K. له الميزات نفسها والمزوّدون أنفسهم والمزوّدون الاحتياطيون كإضافة Discord.",
   "tr.tgChipBrowser": "متصفح على الحاسوب",
   "tr.tgS1": "في متصفح على الحاسوب، ثبّت Tampermonkey أو مدير برامج نصية آخر.",
   "tr.tgS2": "افتح البرنامج النصي، وسيعرض المدير تثبيته.",

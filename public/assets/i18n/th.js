@@ -140,7 +140,7 @@ ZL.i18n.add("th", {
   "tr.hLicense": "สัญญาอนุญาต GPL-3.0",
   "tr.tgNews": "ตอนนี้ใช้กับ Telegram Web ได้แล้ว",
   "tr.tgTitle": "AI Translate สำหรับ Telegram",
-  "tr.tgLead": "userscript ที่นำ AI Translate เข้าไปใน Telegram Web เว็บไคลเอนต์ทางการของ Telegram ใช้ได้ทั้ง Web A และ Web K มีฟีเจอร์ ผู้ให้บริการ และผู้ให้บริการสำรองเหมือนปลั๊กอินสำหรับ Discord และใช้หมายเลขเวอร์ชันเดียวกัน",
+  "tr.tgLead": "userscript ที่นำ AI Translate เข้าไปใน Telegram Web เว็บไคลเอนต์ทางการของ Telegram ใช้ได้ทั้ง Web A และ Web K มีฟีเจอร์ ผู้ให้บริการ และผู้ให้บริการสำรองเหมือนปลั๊กอินสำหรับ Discord",
   "tr.tgChipBrowser": "เบราว์เซอร์บนคอมพิวเตอร์",
   "tr.tgS1": "ในเบราว์เซอร์บนคอมพิวเตอร์ ติดตั้ง Tampermonkey หรือตัวจัดการ userscript ตัวอื่น",
   "tr.tgS2": "เปิดสคริปต์ แล้วตัวจัดการจะถามว่าจะติดตั้งไหม",

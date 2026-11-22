@@ -140,7 +140,7 @@ ZL.i18n.add("de", {
   "tr.hLicense": "Lizenz GPL-3.0",
   "tr.tgNews": "Jetzt auch für Telegram Web",
   "tr.tgTitle": "AI Translate für Telegram",
-  "tr.tgLead": "Ein Userscript, das AI Translate in Telegram Web bringt, den offiziellen Webclient von Telegram, in Web A und Web K gleichermaßen. Es hat dieselben Funktionen, Anbieter und Ersatzanbieter wie das Plugin für Discord und dieselbe Versionsnummer.",
+  "tr.tgLead": "Ein Userscript, das AI Translate in Telegram Web bringt, den offiziellen Webclient von Telegram, in Web A und Web K gleichermaßen. Es hat dieselben Funktionen, Anbieter und Ersatzanbieter wie das Plugin für Discord.",
   "tr.tgChipBrowser": "Browser am Computer",
   "tr.tgS1": "Installiere in einem Browser am Computer Tampermonkey oder einen anderen Userscript-Manager.",
   "tr.tgS2": "Öffne das Skript, und dein Userscript-Manager bietet die Installation an.",

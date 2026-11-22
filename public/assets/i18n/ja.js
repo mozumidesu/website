@@ -140,7 +140,7 @@ ZL.i18n.add("ja", {
   "tr.hLicense": "ライセンス GPL-3.0",
   "tr.tgNews": "Telegram Web にも対応しました",
   "tr.tgTitle": "Telegram 向け AI Translate",
-  "tr.tgLead": "Telegram の公式ウェブ版、Telegram Web に AI Translate を組み込むユーザースクリプトです。Web A と Web K の両方で動きます。機能、プロバイダー、予備のプロバイダーは Discord 向けプラグインと同じで、バージョン番号も同じです。",
+  "tr.tgLead": "Telegram の公式ウェブ版、Telegram Web に AI Translate を組み込むユーザースクリプトです。Web A と Web K の両方で動きます。機能、プロバイダー、予備のプロバイダーは Discord 向けプラグインと同じです。",
   "tr.tgChipBrowser": "パソコンのブラウザー",
   "tr.tgS1": "パソコンのブラウザーに、Tampermonkey か、ほかのユーザースクリプトマネージャーを入れてください。",
   "tr.tgS2": "スクリプトを開くと、マネージャーがインストールを尋ねます。",
