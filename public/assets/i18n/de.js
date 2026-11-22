@@ -94,7 +94,7 @@ ZL.i18n.add("de", {
   "tr.pYes": "Ja",
   "tr.pGlm": "Ja, und erreichbar, wo die anderen beiden gesperrt sind",
   "tr.pNo": "Nein",
-  "tr.pAny": "Jeder OpenAI-kompatible Anbieter",
+  "tr.pAny": "Anderer Anbieter (jede OpenAI-kompatible API)",
   "tr.pDepends": "Hängt vom Anbieter ab",
   "tr.pNote": "Die Anfragen gehen vom Hintergrundprozess von Discord aus, dein Schlüssel gelangt also nie in den Teil von Discord, den eine Webseite erreichen könnte.",
   "tr.iTitle": "Installation",
