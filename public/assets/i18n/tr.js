@@ -46,7 +46,7 @@ ZL.i18n.add("tr", {
   "home.contactLead": "Hangi dilde olursa",
   "home.server": "sunucusu",
 
-  "translate.title": "Discord için AI Translate",
+  "translate.title": "AI Translate",
   "translate.meta": "Mesajlarınızı seçtiğiniz yapay zekâ modeliyle çeviren ve yazış tarzınızı koruyan bir Discord eklentisi. Windows, macOS ve Linux'ta tek komutla kurulur.",
   "tr.tagline": "Dilini bilmeseniz bile herkesle konuşmanızı sağlayan eklenti",
   "tr.sub": "Windows, macOS ve Linux'taki Discord uygulaması için. Seçtiğiniz yapay zekâ modeliyle çevirir ve yazış tarzınızı korur.",

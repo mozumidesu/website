@@ -46,7 +46,7 @@ ZL.i18n.add("id", {
   "home.contactLead": "Dalam bahasa apa pun",
   "home.server": "server",
 
-  "translate.title": "AI Translate untuk Discord",
+  "translate.title": "AI Translate",
   "translate.meta": "Plugin untuk Discord yang menerjemahkan pesan Anda dengan model AI pilihan Anda dan mempertahankan gaya menulis Anda. Dipasang dengan satu perintah di Windows, macOS, dan Linux.",
   "tr.tagline": "Plugin yang memungkinkan Anda mengobrol dengan siapa pun, meski tidak tahu bahasanya",
   "tr.sub": "Untuk aplikasi Discord di Windows, macOS, dan Linux. Menerjemahkan dengan model AI pilihan Anda dan mempertahankan gaya menulis Anda.",

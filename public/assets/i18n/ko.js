@@ -46,7 +46,7 @@ ZL.i18n.add("ko", {
   "home.contactLead": "어떤 언어로든",
   "home.server": "서버",
 
-  "translate.title": "Discord용 AI Translate",
+  "translate.title": "AI Translate",
   "translate.meta": "고른 AI 모델로 메시지를 번역하고 쓰는 방식을 그대로 남기는 Discord 플러그인. Windows, macOS, Linux에 명령 한 줄로 설치합니다.",
   "tr.tagline": "상대의 언어를 몰라도 누구와든 이야기할 수 있게 해 주는 플러그인",
   "tr.sub": "Windows, macOS, Linux의 Discord 앱용. 고른 AI 모델로 번역하고, 쓰는 방식을 그대로 남깁니다.",

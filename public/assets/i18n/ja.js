@@ -46,7 +46,7 @@ ZL.i18n.add("ja", {
   "home.contactLead": "何語でもどうぞ",
   "home.server": "サーバー",
 
-  "translate.title": "Discord 向け AI Translate",
+  "translate.title": "AI Translate",
   "translate.meta": "選んだ AI モデルでメッセージを翻訳し、あなたの書き方をそのまま残す Discord プラグイン。Windows、macOS、Linux にコマンドひとつでインストールできます。",
   "tr.tagline": "相手の言語を知らなくても、誰とでも話せるようになるプラグイン",
   "tr.sub": "Windows、macOS、Linux の Discord アプリ向け。選んだ AI モデルで翻訳し、あなたの書き方をそのまま残します。",

@@ -46,7 +46,7 @@ ZL.i18n.add("zh", {
   "home.contactLead": "用什么语言都行",
   "home.server": "服务器",
 
-  "translate.title": "Discord 版 AI Translate",
+  "translate.title": "AI Translate",
   "translate.meta": "一个 Discord 插件，用你选择的 AI 模型翻译你的消息，并保留你的写法。在 Windows、macOS 和 Linux 上一条命令即可安装。",
   "tr.tagline": "即使不懂对方的语言，也能和任何人聊天的插件",
   "tr.sub": "适用于 Windows、macOS 和 Linux 上的 Discord 应用。用你选择的 AI 模型翻译，并保留你的写法。",

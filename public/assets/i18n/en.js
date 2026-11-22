@@ -46,7 +46,7 @@ ZL.i18n.add("en", {
   "home.contactLead": "In any language",
   "home.server": "server",
 
-  "translate.title": "AI Translate for Discord",
+  "translate.title": "AI Translate",
   "translate.meta": "A plugin for Discord that translates your messages with the AI model of your choice and keeps the way you write. One command installs it on Windows, macOS and Linux.",
   "tr.tagline": "The plugin that lets you talk to anyone, even if you don't know their language",
   "tr.sub": "For the Discord app on Windows, macOS and Linux. It translates with the AI model you choose and keeps the way you write.",

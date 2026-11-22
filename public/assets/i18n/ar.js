@@ -46,7 +46,7 @@ ZL.i18n.add("ar", {
   "home.contactLead": "بأي لغة",
   "home.server": "خادم",
 
-  "translate.title": "AI Translate لـ Discord",
+  "translate.title": "AI Translate",
   "translate.meta": "إضافة لـ Discord تترجم رسائلك بنموذج الذكاء الاصطناعي الذي تختاره وتحافظ على أسلوب كتابتك. تُثبَّت بأمر واحد على Windows وmacOS وLinux.",
   "tr.tagline": "الإضافة التي تتيح لك التحدث مع أي شخص حتى لو لم تكن تعرف لغته",
   "tr.sub": "لتطبيق Discord على Windows وmacOS وLinux. تترجم بنموذج الذكاء الاصطناعي الذي تختاره وتحافظ على أسلوب كتابتك.",

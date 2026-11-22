@@ -46,7 +46,7 @@ ZL.i18n.add("vi", {
   "home.contactLead": "Bằng ngôn ngữ nào cũng được",
   "home.server": "máy chủ",
 
-  "translate.title": "AI Translate cho Discord",
+  "translate.title": "AI Translate",
   "translate.meta": "Plugin cho Discord dịch tin nhắn của bạn bằng mô hình AI bạn chọn và giữ nguyên cách bạn viết. Cài bằng một lệnh trên Windows, macOS và Linux.",
   "tr.tagline": "Plugin giúp bạn trò chuyện với bất kỳ ai, kể cả khi không biết ngôn ngữ của họ",
   "tr.sub": "Dành cho ứng dụng Discord trên Windows, macOS và Linux. Dịch bằng mô hình AI bạn chọn và giữ nguyên cách bạn viết.",

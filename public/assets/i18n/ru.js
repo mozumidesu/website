@@ -46,7 +46,7 @@ ZL.i18n.add("ru", {
   "home.contactLead": "На любом языке",
   "home.server": "сервер",
 
-  "translate.title": "AI Translate для Discord",
+  "translate.title": "AI Translate",
   "translate.meta": "Плагин для Discord, который переводит ваши сообщения с помощью выбранной модели ИИ и сохраняет то, как вы пишете. Устанавливается одной командой на Windows, macOS и Linux.",
   "tr.tagline": "Плагин, с помощью которого можно общаться с человеком, даже если не знаешь его языка",
   "tr.sub": "Для приложения Discord на Windows, macOS и Linux. Переводит с помощью выбранной вами модели ИИ и сохраняет то, как вы пишете.",
