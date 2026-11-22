@@ -79,7 +79,7 @@ ZL.i18n.add("vi", {
   "tr.f7t": "Từ vựng của riêng bạn",
   "tr.f7d": "Những từ không bao giờ dịch, thuật ngữ có bản dịch cố định, giống ngữ pháp của bạn và cách xưng hô trang trọng hay thân mật.",
   "tr.f8t": "Nhà cung cấp dự phòng",
-  "tr.f8d": "Khi nhà cung cấp chính quá tải, hết hạn mức hoặc từ chối yêu cầu, bản dịch sẽ lặng lẽ đi qua nhà cung cấp còn lại.",
+  "tr.f8d": "Có thể đặt tối đa bốn nhà cung cấp dự phòng sau nhà cung cấp chính. Khi nhà cung cấp chính quá tải, hết hạn mức hoặc từ chối yêu cầu, bản dịch sẽ tự đi qua nhà cung cấp kế tiếp.",
   "tr.f9t": "ngôn ngữ giao diện",
   "tr.f9d": "Plugin hiển thị giao diện theo ngôn ngữ Discord của bạn. Bạn có thể chọn ngôn ngữ khác trong cài đặt.",
   "tr.f10t": "Dùng miễn phí",

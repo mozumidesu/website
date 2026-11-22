@@ -79,7 +79,7 @@ ZL.i18n.add("id", {
   "tr.f7t": "Kosakata Anda sendiri",
   "tr.f7d": "Kata yang tidak pernah diterjemahkan, istilah dengan terjemahan tetap, gender gramatikal Anda, dan apakah menyapa orang dengan formal atau tidak.",
   "tr.f8t": "Penyedia cadangan",
-  "tr.f8d": "Jika penyedia utama kelebihan beban, kehabisan kuota, atau menolak permintaan, terjemahan diam-diam lewat penyedia lainnya.",
+  "tr.f8d": "Hingga empat penyedia cadangan bisa berdiri di belakang penyedia utama. Jika penyedia utama kelebihan beban, kehabisan kuota, atau menolak permintaan, terjemahan otomatis lewat penyedia berikutnya.",
   "tr.f9t": "bahasa antarmuka",
   "tr.f9d": "Plugin menampilkan antarmukanya dalam bahasa Discord Anda. Anda bisa memilih bahasa lain di pengaturan.",
   "tr.f10t": "Gratis dipakai",

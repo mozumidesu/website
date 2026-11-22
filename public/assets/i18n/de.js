@@ -79,7 +79,7 @@ ZL.i18n.add("de", {
   "tr.f7t": "Dein eigenes Vokabular",
   "tr.f7d": "Wörter, die nie übersetzt werden, Begriffe mit fester Übersetzung, dein grammatisches Geschlecht und ob du duzt oder siezt.",
   "tr.f8t": "Ersatzanbieter",
-  "tr.f8d": "Ist der Hauptanbieter überlastet, am Limit oder lehnt die Anfrage ab, läuft die Übersetzung still über den anderen.",
+  "tr.f8d": "Hinter dem Hauptanbieter können bis zu vier Ersatzanbieter stehen. Ist er überlastet, am Limit oder lehnt die Anfrage ab, läuft die Übersetzung von selbst über den nächsten.",
   "tr.f9t": "Sprachen der Oberfläche",
   "tr.f9d": "Das Plugin zeigt seine Oberfläche in der Sprache deines Discord. In den Einstellungen kannst du eine andere wählen.",
   "tr.f10t": "Kostenlos nutzbar",
