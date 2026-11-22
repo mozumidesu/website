@@ -142,7 +142,6 @@ ZL.i18n.add("ro", {
   "tr.tgTitle": "AI Translate pentru Telegram",
   "tr.tgLead": "Un userscript care aduce AI Translate în Telegram Web, clientul web oficial al Telegram, în ambele variante, Web A și Web K. Are aceleași funcții, aceiași furnizori și furnizori de rezervă ca pluginul pentru Discord, și același număr de versiune.",
   "tr.tgChipBrowser": "Browser pe computer",
-  "tr.tgVersion": "Versiunea",
   "tr.tgS1": "Într-un browser pe computer, instalează Tampermonkey sau alt manager de userscripturi.",
   "tr.tgS2": "Deschide scriptul, iar managerul îți propune să îl instaleze.",
   "tr.tgS3": "Deschide web.telegram.org și reîncarcă pagina.",

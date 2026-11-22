@@ -142,7 +142,6 @@ ZL.i18n.add("ja", {
   "tr.tgTitle": "Telegram 向け AI Translate",
   "tr.tgLead": "Telegram の公式ウェブ版、Telegram Web に AI Translate を組み込むユーザースクリプトです。Web A と Web K の両方で動きます。機能、プロバイダー、予備のプロバイダーは Discord 向けプラグインと同じで、バージョン番号も同じです。",
   "tr.tgChipBrowser": "パソコンのブラウザー",
-  "tr.tgVersion": "バージョン",
   "tr.tgS1": "パソコンのブラウザーに、Tampermonkey か、ほかのユーザースクリプトマネージャーを入れてください。",
   "tr.tgS2": "スクリプトを開くと、マネージャーがインストールを尋ねます。",
   "tr.tgS3": "web.telegram.org を開いて、ページを再読み込みします。",

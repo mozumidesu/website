@@ -142,7 +142,6 @@ ZL.i18n.add("id", {
   "tr.tgTitle": "AI Translate untuk Telegram",
   "tr.tgLead": "Userscript yang membawa AI Translate ke Telegram Web, klien web resmi Telegram, baik di Web A maupun Web K. Fitur, penyedia, dan penyedia cadangannya sama dengan plugin untuk Discord, begitu juga nomor versinya.",
   "tr.tgChipBrowser": "Browser di komputer",
-  "tr.tgVersion": "Versi",
   "tr.tgS1": "Di browser komputer, pasang Tampermonkey atau pengelola userscript lain.",
   "tr.tgS2": "Buka skripnya, dan pengelola Anda akan menawarkan pemasangan.",
   "tr.tgS3": "Buka web.telegram.org lalu muat ulang halaman.",

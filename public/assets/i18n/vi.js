@@ -142,7 +142,6 @@ ZL.i18n.add("vi", {
   "tr.tgTitle": "AI Translate cho Telegram",
   "tr.tgLead": "Một userscript đưa AI Translate vào Telegram Web, ứng dụng web chính thức của Telegram, chạy được cả trên Web A lẫn Web K. Nó có cùng tính năng, cùng nhà cung cấp và nhà cung cấp dự phòng như plugin cho Discord, và cùng số phiên bản.",
   "tr.tgChipBrowser": "Trình duyệt trên máy tính",
-  "tr.tgVersion": "Phiên bản",
   "tr.tgS1": "Trong trình duyệt trên máy tính, cài Tampermonkey hoặc một trình quản lý userscript khác.",
   "tr.tgS2": "Mở tập lệnh, trình quản lý sẽ hỏi có cài không.",
   "tr.tgS3": "Mở web.telegram.org rồi tải lại trang.",

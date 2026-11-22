@@ -142,7 +142,6 @@ ZL.i18n.add("zh", {
   "tr.tgTitle": "Telegram 版 AI Translate",
   "tr.tgLead": "一个用户脚本，把 AI Translate 带进 Telegram 官方网页版 Telegram Web，Web A 和 Web K 都能用。功能、服务商和备用服务商都与 Discord 版插件相同，版本号也一样。",
   "tr.tgChipBrowser": "电脑浏览器",
-  "tr.tgVersion": "版本",
   "tr.tgS1": "在电脑浏览器里装上 Tampermonkey，或者别的用户脚本管理器。",
   "tr.tgS2": "打开脚本，管理器会询问是否安装。",
   "tr.tgS3": "打开 web.telegram.org 并刷新页面。",

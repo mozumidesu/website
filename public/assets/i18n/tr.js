@@ -142,7 +142,6 @@ ZL.i18n.add("tr", {
   "tr.tgTitle": "Telegram için AI Translate",
   "tr.tgLead": "AI Translate'i Telegram'ın resmi web istemcisi Telegram Web'e getiren bir userscript; hem Web A'da hem Web K'de çalışır. Discord eklentisiyle aynı özelliklere, aynı sağlayıcılara ve yedek sağlayıcılara, aynı sürüm numarasına sahiptir.",
   "tr.tgChipBrowser": "Bilgisayar tarayıcısı",
-  "tr.tgVersion": "Sürüm",
   "tr.tgS1": "Bilgisayardaki bir tarayıcıya Tampermonkey'i ya da başka bir userscript yöneticisini kurun.",
   "tr.tgS2": "Betiği açın, yöneticiniz kurmayı önerir.",
   "tr.tgS3": "web.telegram.org'u açın ve sayfayı yenileyin.",
