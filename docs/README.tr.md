@@ -21,7 +21,7 @@
 
 zolatau.com sitesinin kaynağı: hakkımda olan bir sayfa ve mesajlarınızı
 seçtiğiniz bir yapay zekâ modeliyle çeviren Discord ve Telegram eklentisi AI Translate'in
-sayfası.
+sayfaları.
 
 Fontlar Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest ve Arapça,
 Tayca ile Korece için IBM Plex Sans; hepsi SIL Open Font License 1.1 altında.

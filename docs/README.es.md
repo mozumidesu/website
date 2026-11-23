@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-El código de zolatau.com: una página sobre mí y la página de AI Translate, un
+El código de zolatau.com: una página sobre mí y las páginas de AI Translate, un
 plugin para Discord y Telegram que traduce tus mensajes con el modelo de IA que elijas.
 
 Las fuentes son Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest e IBM

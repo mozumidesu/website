@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-Le code de zolatau.com : une page qui parle de moi et la page d'AI Translate,
+Le code de zolatau.com : une page qui parle de moi et les pages d'AI Translate,
 un plugin Discord et Telegram qui traduit vos messages avec le modèle d'IA de votre choix.
 
 Les polices sont Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest et

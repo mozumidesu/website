@@ -56,9 +56,9 @@ ZL.i18n.add("ro", {
   "home.server": "serverul",
 
   "translate.title": "AI Translate",
-  "translate.meta": "Un plugin pentru Discord care îți traduce mesajele cu modelul AI ales de tine și păstrează felul în care scrii. Se instalează cu o singură comandă pe Windows, macOS și Linux.",
+  "translate.meta": "AI Translate îți traduce mesajele în Discord și Telegram cu modelul AI pe care îl alegi și păstrează felul în care scrii. Gratuit și cu cod deschis.",
   "tr.tagline": "Pluginul cu care poți vorbi cu oricine, chiar dacă nu îi știi limba",
-  "tr.sub": "Pentru aplicația Discord pe Windows, macOS și Linux. Traduce cu modelul AI pe care îl alegi și păstrează felul în care scrii.",
+  "tr.sub": "Pentru Discord și Telegram. Traduce cu modelul AI pe care îl alegi și păstrează felul în care scrii.",
   "tr.ctaInstall": "Instalează",
   "tr.ctaFeatures": "Ce poate face",
   "tr.chipFree": "Gratuit",
@@ -138,7 +138,7 @@ ZL.i18n.add("ro", {
   "tr.q2": "Îmi poate fi blocat contul de Discord?",
   "tr.a2": "Chiar în FAQ-ul Vencord scrie că modurile de client încalcă Termenii de utilizare ai Discord, dar nu se cunosc cazuri de blocare pentru folosirea lor. Instalarea doar înlocuiește fișierul de pornire al Discordului; contul, setările și mesajele tale rămân neatinse.",
   "tr.q3": "Unde e păstrată cheia mea API?",
-  "tr.a3": "În setările Vencord de pe calculatorul tău. E trimisă doar furnizorului pe care l-ai ales.",
+  "tr.a3": "Pe computerul tău: în setările Vencord pentru Discord, în managerul de userscripturi pentru Telegram. Este trimisă doar furnizorului pe care l-ai ales.",
   "tr.q4": "AI Translate a dispărut după o actualizare a Discordului",
   "tr.a4": "Rulează din nou comanda de instalare. Repară instalarea fără să pierzi setările.",
   "tr.hTitle": "Ai găsit o eroare sau ai o idee?",
@@ -163,6 +163,15 @@ ZL.i18n.add("ro", {
   "tr.tgUpText": "Managerul de userscripturi caută singur o versiune nouă. Butonul „Caută actualizări” din josul setărilor verifică imediat.",
   "tr.tgRmText": "Șterge scriptul din managerul de userscripturi. Nu s-a instalat nimic altceva, deci nu mai e nimic de șters.",
   "tr.by": "Făcut cu grijă",
+
+  "tr.forkGo": "Cum se instalează",
+  "dc.a3": "În setările Vencord de pe calculatorul tău. E trimisă doar furnizorului pe care l-ai ales.",
+  "plat.after": "Bine de știut",
+
+  "discord.title": "AI Translate pentru Discord",
+  "discord.meta": "Instalează AI Translate pentru Discord: o singură comandă pe Windows, macOS și Linux sau un userscript pentru Discord în browser. Gratuit și cu cod deschis.",
+  "telegram.title": "AI Translate pentru Telegram",
+  "telegram.meta": "Instalează AI Translate pentru Telegram: un userscript care aduce traducerea cu AI în Telegram Web, într-un browser pe computer. Gratuit și cu cod deschis.",
 
   "lost.title": "Pagina nu a fost găsită",
   "lost.home": "Pagina principală",

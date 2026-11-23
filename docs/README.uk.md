@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-Код сайту zolatau.com: сторінка про мене і сторінка AI Translate, плагіна для
+Код сайту zolatau.com: сторінка про мене і сторінки AI Translate, плагіна для
 Discord і Telegram, який перекладає ваші повідомлення вибраною вами моделлю ШІ.
 
 Шрифти: Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest та IBM Plex

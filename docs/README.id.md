@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-Kode dari zolatau.com: satu halaman tentang saya dan halaman AI Translate,
+Kode dari zolatau.com: satu halaman tentang saya dan halaman-halaman AI Translate,
 plugin Discord dan Telegram yang menerjemahkan pesan Anda dengan model AI pilihan Anda.
 
 Fontnya adalah Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest dan

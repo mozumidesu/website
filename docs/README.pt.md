@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-O código de zolatau.com: uma página sobre mim e a página do AI Translate, um
+O código de zolatau.com: uma página sobre mim e as páginas do AI Translate, um
 plugin para o Discord e o Telegram que traduz suas mensagens com o modelo de IA que você
 escolher.
 

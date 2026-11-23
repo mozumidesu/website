@@ -56,9 +56,9 @@ ZL.i18n.add("ko", {
   "home.server": "서버",
 
   "translate.title": "AI Translate",
-  "translate.meta": "고른 AI 모델로 메시지를 번역하고 쓰는 방식을 그대로 남기는 Discord 플러그인. Windows, macOS, Linux에 명령 한 줄로 설치합니다.",
+  "translate.meta": "AI Translate는 Discord와 Telegram의 메시지를 원하는 AI 모델로 번역하고, 쓰는 방식을 그대로 살려 줍니다. 무료이며 오픈 소스입니다.",
   "tr.tagline": "상대의 언어를 몰라도 누구와든 이야기할 수 있게 해 주는 플러그인",
-  "tr.sub": "Windows, macOS, Linux의 Discord 앱용. 고른 AI 모델로 번역하고, 쓰는 방식을 그대로 남깁니다.",
+  "tr.sub": "Discord와 Telegram용. 원하는 AI 모델로 번역하고, 쓰는 방식을 그대로 살려 줍니다.",
   "tr.ctaInstall": "설치",
   "tr.ctaFeatures": "무엇을 할 수 있나",
   "tr.chipFree": "무료",
@@ -138,7 +138,7 @@ ZL.i18n.add("ko", {
   "tr.q2": "Discord 계정이 정지될 수 있나요?",
   "tr.a2": "Vencord의 FAQ에는 클라이언트 개조가 Discord 이용약관에 어긋나지만, 그것 때문에 정지된 사례는 알려진 바 없다고 적혀 있습니다. 적용 과정은 Discord의 시작 파일만 바꿀 뿐, 계정과 설정과 메시지는 건드리지 않습니다.",
   "tr.q3": "제 API 키는 어디에 저장되나요?",
-  "tr.a3": "내 컴퓨터의 Vencord 설정 안에 있습니다. 내가 고른 제공자에게만 전송됩니다.",
+  "tr.a3": "내 컴퓨터에 저장됩니다. Discord는 Vencord 설정에, Telegram은 유저스크립트 관리자에 있습니다. 키는 선택한 제공자에게만 전송됩니다.",
   "tr.q4": "Discord 업데이트 후에 AI Translate가 사라졌어요",
   "tr.a4": "설치 명령을 한 번 더 실행하세요. 설정을 잃지 않고 설치를 고쳐 줍니다.",
   "tr.hTitle": "오류를 찾았거나 아이디어가 있나요?",
@@ -163,6 +163,15 @@ ZL.i18n.add("ko", {
   "tr.tgUpText": "유저스크립트 관리자가 알아서 새 버전을 찾습니다. 설정 맨 아래의 '업데이트 확인'을 누르면 바로 확인합니다.",
   "tr.tgRmText": "유저스크립트 관리자에서 스크립트를 삭제하세요. 다른 것은 설치되지 않았으니 따로 지울 것도 없습니다.",
   "tr.by": "정성껏 만들었습니다",
+
+  "tr.forkGo": "설치 방법",
+  "dc.a3": "내 컴퓨터의 Vencord 설정 안에 있습니다. 내가 고른 제공자에게만 전송됩니다.",
+  "plat.after": "알아 두면 좋은 점",
+
+  "discord.title": "Discord용 AI Translate",
+  "discord.meta": "Discord용 AI Translate 설치: Windows, macOS, Linux에서는 명령어 하나, 브라우저의 Discord에서는 유저스크립트로. 무료이며 오픈 소스입니다.",
+  "telegram.title": "Telegram용 AI Translate",
+  "telegram.meta": "Telegram용 AI Translate 설치: 컴퓨터 브라우저의 Telegram Web에 AI 번역을 더하는 유저스크립트입니다. 무료이며 오픈 소스입니다.",
 
   "lost.title": "페이지를 찾을 수 없습니다",
   "lost.home": "홈페이지",

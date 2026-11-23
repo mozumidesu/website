@@ -56,9 +56,9 @@ ZL.i18n.add("zh", {
   "home.server": "服务器",
 
   "translate.title": "AI Translate",
-  "translate.meta": "一个 Discord 插件，用你选择的 AI 模型翻译你的消息，并保留你的写法。在 Windows、macOS 和 Linux 上一条命令即可安装。",
+  "translate.meta": "AI Translate 用你选的 AI 模型翻译你在 Discord 和 Telegram 里的消息，并保留你的写法。免费且开源。",
   "tr.tagline": "即使不懂对方的语言，也能和任何人聊天的插件",
-  "tr.sub": "适用于 Windows、macOS 和 Linux 上的 Discord 应用。用你选择的 AI 模型翻译，并保留你的写法。",
+  "tr.sub": "适用于 Discord 和 Telegram。用你选的 AI 模型翻译，并保留你的写法。",
   "tr.ctaInstall": "安装",
   "tr.ctaFeatures": "它能做什么",
   "tr.chipFree": "免费",
@@ -138,7 +138,7 @@ ZL.i18n.add("zh", {
   "tr.q2": "我的 Discord 账号会被封吗？",
   "tr.a2": "Vencord 自己的常见问题里写道，客户端修改违反 Discord 的服务条款，但目前没有因为使用它们而被封号的已知案例。安装只会替换 Discord 的启动文件，不会动你的账号、设置和消息。",
   "tr.q3": "我的 API 密钥存在哪里？",
-  "tr.a3": "存在你电脑上的 Vencord 设置里，只会发送给你选择的服务商。",
+  "tr.a3": "在你自己的电脑上：Discord 存在 Vencord 的设置里，Telegram 存在用户脚本管理器里。密钥只会发给你选的服务商。",
   "tr.q4": "Discord 更新后 AI Translate 不见了",
   "tr.a4": "再运行一次安装命令即可。它会修复安装，设置不会丢失。",
   "tr.hTitle": "发现了问题或有想法？",
@@ -163,6 +163,15 @@ ZL.i18n.add("zh", {
   "tr.tgUpText": "用户脚本管理器会自己检查新版本。设置底部的“检查更新”可以立即检查。",
   "tr.tgRmText": "在用户脚本管理器里删除这个脚本即可。没有安装别的东西，所以也没有别的要删。",
   "tr.by": "用心制作",
+
+  "tr.forkGo": "怎么安装",
+  "dc.a3": "存在你电脑上的 Vencord 设置里，只会发送给你选择的服务商。",
+  "plat.after": "值得了解",
+
+  "discord.title": "Discord 版 AI Translate",
+  "discord.meta": "安装 Discord 版 AI Translate：在 Windows、macOS 和 Linux 上只需一条命令，在浏览器里的 Discord 上用用户脚本。免费且开源。",
+  "telegram.title": "Telegram 版 AI Translate",
+  "telegram.meta": "安装 Telegram 版 AI Translate：一个用户脚本，在电脑浏览器里给 Telegram Web 加上 AI 翻译。免费且开源。",
 
   "lost.title": "页面不存在",
   "lost.home": "主页",

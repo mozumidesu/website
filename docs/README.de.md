@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-Der Quellcode von zolatau.com: eine Seite über mich und die Seite zu AI
+Der Quellcode von zolatau.com: eine Seite über mich und die Seiten zu AI
 Translate, einem Plugin für Discord und Telegram, das deine Nachrichten mit einem KI-Modell
 deiner Wahl übersetzt.
 

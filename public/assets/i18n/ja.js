@@ -56,9 +56,9 @@ ZL.i18n.add("ja", {
   "home.server": "サーバー",
 
   "translate.title": "AI Translate",
-  "translate.meta": "選んだ AI モデルでメッセージを翻訳し、あなたの書き方をそのまま残す Discord プラグイン。Windows、macOS、Linux にコマンドひとつでインストールできます。",
+  "translate.meta": "AI Translate は、Discord と Telegram のメッセージを選んだ AI モデルで翻訳し、あなたの書き方をそのまま残します。無料でオープンソースです。",
   "tr.tagline": "相手の言語を知らなくても、誰とでも話せるようになるプラグイン",
-  "tr.sub": "Windows、macOS、Linux の Discord アプリ向け。選んだ AI モデルで翻訳し、あなたの書き方をそのまま残します。",
+  "tr.sub": "Discord と Telegram 向け。選んだ AI モデルで翻訳し、あなたの書き方をそのまま残します。",
   "tr.ctaInstall": "インストール",
   "tr.ctaFeatures": "できること",
   "tr.chipFree": "無料",
@@ -138,7 +138,7 @@ ZL.i18n.add("ja", {
   "tr.q2": "Discord のアカウントが停止されることはありますか？",
   "tr.a2": "Vencord 自身の FAQ には、クライアントの改造は Discord の利用規約に反するものの、使っただけで停止された例は知られていないと書かれています。組み込みは Discord の起動ファイルを差し替えるだけで、アカウント、設定、メッセージには触れません。",
   "tr.q3": "API キーはどこに保存されますか？",
-  "tr.a3": "あなたのパソコンの Vencord の設定内です。送られるのは選んだプロバイダーだけです。",
+  "tr.a3": "あなたのパソコンの中です。Discord では Vencord の設定、Telegram ではユーザースクリプトマネージャーに保存されます。送られるのは選んだプロバイダーだけです。",
   "tr.q4": "Discord のアップデート後に AI Translate が消えました",
   "tr.a4": "インストールのコマンドをもう一度実行してください。設定を失わずにインストールを修復します。",
   "tr.hTitle": "バグを見つけた、アイデアがある？",
@@ -163,6 +163,15 @@ ZL.i18n.add("ja", {
   "tr.tgUpText": "新しいバージョンはマネージャーが自分で探します。設定のいちばん下の「アップデートを確認」を押すと、すぐに確認します。",
   "tr.tgRmText": "ユーザースクリプトマネージャーでスクリプトを削除します。ほかには何も入れていないので、ほかに消すものはありません。",
   "tr.by": "心を込めて制作",
+
+  "tr.forkGo": "インストール方法",
+  "dc.a3": "あなたのパソコンの Vencord の設定内です。送られるのは選んだプロバイダーだけです。",
+  "plat.after": "知っておくこと",
+
+  "discord.title": "Discord 向け AI Translate",
+  "discord.meta": "Discord 向け AI Translate のインストール。Windows、macOS、Linux ならコマンドひとつ、ブラウザーの Discord ならユーザースクリプトで。無料でオープンソースです。",
+  "telegram.title": "Telegram 向け AI Translate",
+  "telegram.meta": "Telegram 向け AI Translate のインストール。パソコンのブラウザーで Telegram Web に AI 翻訳を加えるユーザースクリプトです。無料でオープンソースです。",
 
   "lost.title": "ページが見つかりません",
   "lost.home": "ホーム",

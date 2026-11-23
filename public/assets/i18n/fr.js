@@ -56,9 +56,9 @@ ZL.i18n.add("fr", {
   "home.server": "serveur",
 
   "translate.title": "AI Translate",
-  "translate.meta": "Un plugin pour Discord qui traduit vos messages avec le modèle d'IA de votre choix et garde votre façon d'écrire. Une seule commande l'installe sur Windows, macOS et Linux.",
+  "translate.meta": "AI Translate traduit vos messages dans Discord et Telegram avec le modèle d'IA de votre choix et garde votre façon d'écrire. Gratuit et open source.",
   "tr.tagline": "Le plugin qui permet de parler avec n'importe qui, même sans connaître sa langue",
-  "tr.sub": "Pour l'application Discord sur Windows, macOS et Linux. Il traduit avec le modèle d'IA de votre choix et garde votre façon d'écrire.",
+  "tr.sub": "Pour Discord et Telegram. Traduit avec le modèle d'IA de votre choix et garde votre façon d'écrire.",
   "tr.ctaInstall": "Installer",
   "tr.ctaFeatures": "Ce qu'il sait faire",
   "tr.chipFree": "Gratuit",
@@ -138,7 +138,7 @@ ZL.i18n.add("fr", {
   "tr.q2": "Mon compte Discord peut-il être banni ?",
   "tr.a2": "La FAQ de Vencord indique que les mods de client vont à l'encontre des Conditions d'utilisation de Discord, mais aucun cas de bannissement pour leur usage n'est connu. Le patch remplace seulement le fichier de démarrage de Discord ; votre compte, vos paramètres et vos messages ne sont pas touchés.",
   "tr.q3": "Où est stockée ma clé d'API ?",
-  "tr.a3": "Dans les paramètres de Vencord, sur votre ordinateur. Elle n'est envoyée qu'au fournisseur choisi.",
+  "tr.a3": "Sur votre ordinateur : dans les réglages de Vencord pour Discord, dans votre gestionnaire de userscripts pour Telegram. Elle n'est envoyée qu'au fournisseur que vous avez choisi.",
   "tr.q4": "AI Translate a disparu après une mise à jour de Discord",
   "tr.a4": "Relancez la commande d'installation. Elle répare l'installation sans perdre vos paramètres.",
   "tr.hTitle": "Un bug ou une idée ?",
@@ -163,6 +163,15 @@ ZL.i18n.add("fr", {
   "tr.tgUpText": "Votre gestionnaire de userscripts cherche lui-même une nouvelle version. « Rechercher des mises à jour », en bas des paramètres, vérifie tout de suite.",
   "tr.tgRmText": "Supprimez le script dans votre gestionnaire de userscripts. Rien d'autre n'a été installé, donc il n'y a rien d'autre à retirer.",
   "tr.by": "Fait avec soin",
+
+  "tr.forkGo": "Comment l'installer",
+  "dc.a3": "Dans les paramètres de Vencord, sur votre ordinateur. Elle n'est envoyée qu'au fournisseur choisi.",
+  "plat.after": "Bon à savoir",
+
+  "discord.title": "AI Translate pour Discord",
+  "discord.meta": "Installez AI Translate pour Discord : une commande sous Windows, macOS et Linux, ou un userscript pour Discord dans le navigateur. Gratuit et open source.",
+  "telegram.title": "AI Translate pour Telegram",
+  "telegram.meta": "Installez AI Translate pour Telegram : un userscript qui apporte la traduction par IA dans Telegram Web, dans un navigateur sur ordinateur. Gratuit et open source.",
 
   "lost.title": "Page introuvable",
   "lost.home": "Page d'accueil",

@@ -56,9 +56,9 @@ ZL.i18n.add("id", {
   "home.server": "server",
 
   "translate.title": "AI Translate",
-  "translate.meta": "Plugin untuk Discord yang menerjemahkan pesan Anda dengan model AI pilihan Anda dan mempertahankan gaya menulis Anda. Dipasang dengan satu perintah di Windows, macOS, dan Linux.",
+  "translate.meta": "AI Translate menerjemahkan pesanmu di Discord dan Telegram dengan model AI pilihanmu dan menjaga cara kamu menulis. Gratis dan sumber terbuka.",
   "tr.tagline": "Plugin yang memungkinkan Anda mengobrol dengan siapa pun, meski tidak tahu bahasanya",
-  "tr.sub": "Untuk aplikasi Discord di Windows, macOS, dan Linux. Menerjemahkan dengan model AI pilihan Anda dan mempertahankan gaya menulis Anda.",
+  "tr.sub": "Untuk Discord dan Telegram. Menerjemahkan dengan model AI pilihanmu dan menjaga cara kamu menulis.",
   "tr.ctaInstall": "Pasang",
   "tr.ctaFeatures": "Apa saja yang bisa",
   "tr.chipFree": "Gratis",
@@ -138,7 +138,7 @@ ZL.i18n.add("id", {
   "tr.q2": "Apakah akun Discord saya bisa diblokir?",
   "tr.a2": "FAQ Vencord sendiri menyebut mod klien melanggar Ketentuan Layanan Discord, tetapi belum ada kasus orang diblokir karena memakainya. Pemasangan hanya mengganti file awal Discord; akun, pengaturan, dan pesan Anda tidak disentuh.",
   "tr.q3": "Di mana kunci API saya disimpan?",
-  "tr.a3": "Di pengaturan Vencord di komputer Anda. Kunci hanya dikirim ke penyedia yang Anda pilih.",
+  "tr.a3": "Di komputermu: di pengaturan Vencord untuk Discord, di pengelola userscript untuk Telegram. Kunci hanya dikirim ke penyedia yang kamu pilih.",
   "tr.q4": "AI Translate hilang setelah Discord diperbarui",
   "tr.a4": "Jalankan lagi perintah instalasi. Perintah itu memperbaiki instalasi tanpa menghapus pengaturan Anda.",
   "tr.hTitle": "Menemukan bug atau punya ide?",
@@ -163,6 +163,15 @@ ZL.i18n.add("id", {
   "tr.tgUpText": "Pengelola userscript Anda mencari versi baru sendiri. \"Periksa pembaruan\" di bagian bawah pengaturan langsung memeriksanya.",
   "tr.tgRmText": "Hapus skrip di pengelola userscript Anda. Tidak ada hal lain yang dipasang, jadi tidak ada hal lain yang perlu dihapus.",
   "tr.by": "Dibuat dengan sepenuh hati",
+
+  "tr.forkGo": "Cara memasang",
+  "dc.a3": "Di pengaturan Vencord di komputer Anda. Kunci hanya dikirim ke penyedia yang Anda pilih.",
+  "plat.after": "Perlu diketahui",
+
+  "discord.title": "AI Translate untuk Discord",
+  "discord.meta": "Pasang AI Translate untuk Discord: satu perintah di Windows, macOS, dan Linux, atau userscript untuk Discord di browser. Gratis dan sumber terbuka.",
+  "telegram.title": "AI Translate untuk Telegram",
+  "telegram.meta": "Pasang AI Translate untuk Telegram: userscript yang membawa terjemahan AI ke Telegram Web di browser komputer. Gratis dan sumber terbuka.",
 
   "lost.title": "Halaman tidak ditemukan",
   "lost.home": "Halaman utama",

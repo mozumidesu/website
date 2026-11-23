@@ -540,7 +540,7 @@ html:not(.js) :is(.pb, .btn):hover::before { transform: scale(1); }
 .rail__btn:disabled { opacity: .35; cursor: default; }
 .rail__btn:disabled::before { display: none; }
 [dir="rtl"] .rail__btn .i { transform: scaleX(-1); }
-.rail__count { min-width: 66px; text-align: center; font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.rail__count { direction: ltr; unicode-bidi: isolate; min-width: 66px; text-align: center; font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
 .rail__track {
   position: relative; display: flex; gap: 16px; margin-top: 28px; padding: 6px var(--gut) 22px;
   overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain;
@@ -1237,6 +1237,162 @@ html:not(.js) :is(.pb, .btn):hover::before { transform: scale(1); }
 .help__links .i { font-size: 20px; }
 .help__links small { margin-inline-start: auto; font-family: var(--font-mono); font-weight: 400; font-size: 11.5px; opacity: .7; }
 @media (max-width: 860px) { .help__card { grid-template-columns: minmax(0, 1fr); } }
+
+/* ───────── platforms: tints ───────── */
+
+/* Discord keeps the vermilion of the seal; Telegram takes the gold. Both stay
+   inside the Sumi palette, never the services' own colours. */
+.fork__card--dc, .pother__card--discord {
+  --acc: #D93D23; --acc-hi: #F2603F; --acc-lo: #A82A16; --acc-press: #B8301A; --acc-text: #FF8E70; --on-acc: #FFFFFF;
+}
+.plat--telegram, .fork__card--tg, .pother__card--telegram {
+  --acc: #E2B24F; --acc-hi: #F0C66A; --acc-lo: #B88A2C; --acc-press: #C99A3A; --acc-soft: rgba(226, 178, 79, .16);
+  --acc-text: #F0C66A; --on-acc: #14110F; --glow-a: rgba(226, 178, 79, .13); --glow-b: rgba(217, 61, 35, .06);
+}
+:root[data-theme="light"] .phero__kanji { -webkit-text-stroke-color: color-mix(in srgb, var(--acc) 20%, transparent); }
+/* the marks of AI Translate and of the site stay vermilion on every page */
+.plat--telegram :is(.app-mark, .nav__home) { --acc: #D93D23; --acc-hi: #F2603F; --acc-lo: #A82A16; --on-acc: #FFFFFF; }
+:root[data-theme="light"] .plat--telegram :is(.app-mark, .nav__home) { --acc: #C3321B; --acc-hi: #DB4A2E; --acc-lo: #9C2512; }
+:root[data-theme="light"] :is(.fork__card--dc, .pother__card--discord) {
+  --acc: #C3321B; --acc-hi: #DB4A2E; --acc-lo: #9C2512; --acc-press: #9C2512; --acc-text: #A82912; --on-acc: #FFFFFF;
+}
+:root[data-theme="light"] :is(.plat--telegram, .fork__card--tg, .pother__card--telegram) {
+  --acc: #7E5A0C; --acc-hi: #9A6E12; --acc-lo: #634608; --acc-press: #634608; --acc-soft: rgba(126, 90, 12, .1);
+  --acc-text: #6E4E0A; --on-acc: #FFFFFF; --glass-hi: rgba(126, 90, 12, .06); --glow-a: rgba(126, 90, 12, .09); --glow-b: rgba(195, 50, 27, .05);
+}
+
+/* ───────── translate: where do you chat ───────── */
+
+.fork__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: clamp(40px, 5vw, 64px); }
+.fork__card, .pother__card {
+  display: grid; align-content: end; gap: 10px; min-height: clamp(250px, 26vw, 360px); padding: clamp(24px, 3vw, 40px);
+  border-radius: var(--r-l); background: var(--acc); color: var(--on-acc); --pb-fill: var(--acc-press);
+  box-shadow: 0 24px 60px -34px color-mix(in srgb, var(--acc) 80%, transparent);
+}
+.fork__kanji {
+  position: absolute; z-index: -1; inset-block-start: -.08em; inset-inline-end: -.1em; pointer-events: none; white-space: nowrap;
+  font-family: var(--font-display); font-size: clamp(100px, 10.5vw, 170px); line-height: 1;
+  color: transparent; -webkit-text-stroke: 1.5px color-mix(in srgb, var(--on-acc) 30%, transparent);
+  transition: transform 1.1s var(--ease);
+}
+.fork__card.is-hot .fork__kanji, .pother__card.is-hot .fork__kanji { transform: translateY(14px); }
+.fork__ico { display: grid; place-items: center; width: 52px; height: 52px; margin-bottom: auto; border-radius: 16px; background: color-mix(in srgb, var(--on-acc) 14%, transparent); }
+.fork__ico .i { font-size: 26px; }
+.fork__name { font-family: var(--font-display); font-weight: 400; font-size: clamp(38px, 1.4rem + 3.4vw, 72px); line-height: 1; letter-spacing: -.03em; }
+.fork__note { max-width: 26em; font-size: var(--fs-m); opacity: .88; }
+.fork__go { display: inline-flex; align-items: center; gap: 10px; margin-top: 10px; font-weight: 700; }
+.fork__go .i { font-size: 20px; transition: transform .5s var(--ease); }
+.fork__card.is-hot .fork__go .i { transform: translateX(4px); }
+[dir="rtl"] .fork__go .i { transform: scaleX(-1); }
+[dir="rtl"] .fork__card.is-hot .fork__go .i { transform: scaleX(-1) translateX(4px); }
+@media (max-width: 720px) { .fork__grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* ───────── platforms: hero ───────── */
+
+.phero { position: relative; isolation: isolate; overflow: clip; padding-top: calc(var(--nav-h) + clamp(34px, 6vw, 86px)); padding-bottom: clamp(40px, 6vw, 86px); }
+.phero__kanji {
+  position: absolute; z-index: -1; inset-block-start: calc(var(--nav-h) + 10px); inset-inline-end: max(var(--pad), calc((100% - var(--maxw)) / 2));
+  font-family: var(--font-display); font-size: clamp(170px, 34vw, 520px); line-height: 1; writing-mode: vertical-rl; pointer-events: none;
+  color: transparent; -webkit-text-stroke: 1.5px color-mix(in srgb, var(--acc) 30%, transparent);
+  animation: kanji-drift 14s var(--ease-io) infinite alternate;
+}
+@keyframes kanji-drift { from { transform: translateY(-2%); } to { transform: translateY(4%); } }
+.phero__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .95fr); gap: clamp(36px, 6vw, 90px); align-items: center; }
+.phero__copy { min-width: 0; container-type: inline-size; }
+.phero__kicker { display: inline-flex; align-items: center; gap: 12px; font-weight: 700; color: var(--ink-2); transition: color .3s; }
+.phero__kicker:hover { color: var(--ink); }
+.phero__kicker .app-mark { width: 38px; height: 38px; border-radius: 11px; }
+.phero h1 {
+  margin-top: 22px; font-family: var(--font-display); font-weight: 400; font-size: min(12.5cqi, 150px);
+  line-height: .95; letter-spacing: -.04em; white-space: nowrap; direction: ltr; text-align: start;
+}
+[dir="rtl"] .phero h1 { text-align: end; }
+.phero h1::after { content: "."; color: var(--acc); }
+.phero__lead { margin-top: 24px; max-width: 34em; color: var(--ink-2); font-size: var(--fs-l); line-height: 1.6; text-wrap: pretty; }
+.phero__art { min-width: 0; }
+.js .phero [data-in] { opacity: 0; transform: translateY(18px); }
+.is-ready .phero [data-in] { opacity: 1; transform: none; transition: opacity .9s var(--ease), transform 1.1s var(--ease); transition-delay: calc(var(--in, 0) * 90ms + 120ms); }
+@media (max-width: 960px) {
+  .phero__grid { grid-template-columns: minmax(0, 1fr); }
+  .phero__kanji { font-size: clamp(170px, 52vw, 420px); }
+}
+
+/* the terminal on the Discord page: the lines come in one by one, and at rest all of them are there */
+.term, .webwin { border-radius: var(--r-l); overflow: hidden; background: var(--glass-strong); box-shadow: inset 0 0 0 1px var(--glass-line), var(--shadow); direction: ltr; }
+.term__bar, .webwin__bar { display: flex; align-items: center; gap: 7px; height: 44px; padding: 0 16px; border-bottom: 1px solid var(--glass-line); color: var(--ink-3); }
+.term__bar i, .webwin__bar i { width: 10px; height: 10px; border-radius: 50%; box-shadow: inset 0 0 0 1.5px var(--line-strong); }
+.term__bar span { margin-inline-start: 10px; }
+.term__body { display: grid; gap: 12px; padding: clamp(20px, 3vw, 30px); font-size: clamp(11.5px, .62rem + .42vw, 14px); line-height: 1.6; color: var(--ink-2); }
+.term__cmd { color: var(--ink); overflow-wrap: anywhere; }
+.term__p { color: var(--acc-text); }
+.term__l b { color: var(--ink); font-weight: 600; }
+.term__sel { color: var(--acc-text); }
+.term__ok { display: flex; align-items: center; gap: 8px; color: var(--kin); }
+.term__ok .i { font-size: 18px; }
+:root[data-theme="light"] .term, :root[data-theme="light"] .webwin { background: var(--surface); }
+.js .term__l { opacity: 0; transform: translateY(6px); }
+.is-ready .term__l { opacity: 1; transform: none; transition: opacity .5s var(--ease), transform .7s var(--ease); transition-delay: calc(var(--l) * 380ms + 900ms); }
+.term__sel::after { content: ""; display: inline-block; width: .55em; height: 1.1em; margin-inline-start: 6px; vertical-align: -.2em; background: currentColor; animation: caret 1.1s steps(1) infinite; }
+@keyframes caret { 50% { opacity: 0; } }
+
+/* Telegram Web in a window: what you wrote goes out translated, a reply comes in translated */
+.webwin__url { flex: 1; margin-inline: 10px; padding: 5px 12px; border-radius: 999px; background: var(--glass-hi); box-shadow: inset 0 0 0 1px var(--glass-line); color: var(--ink-2); text-align: center; }
+.webwin__us { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 9px; background: var(--acc); color: var(--on-acc); }
+.webwin__us .i { font-size: 16px; }
+.webwin__chat { display: grid; gap: 16px; padding: clamp(20px, 3vw, 30px); }
+.bub { display: grid; gap: 6px; max-width: 86%; padding: 12px 16px; border-radius: 18px; font-size: clamp(14.5px, .8rem + .3vw, 16.5px); line-height: 1.5; overflow-wrap: anywhere; }
+.bub small { font-size: 12.5px; line-height: 1.45; }
+.bub--me { justify-self: end; border-end-end-radius: 6px; background: var(--acc); color: var(--on-acc); }
+.bub--me small { opacity: .78; }
+.bub--them { justify-self: start; border-end-start-radius: 6px; background: var(--glass-hi); box-shadow: inset 0 0 0 1px var(--glass-line); }
+.bub__tr { display: grid; gap: 2px; padding-inline-start: 10px; border-inline-start: 2px solid var(--acc); color: var(--ink-2); }
+.bub__tr b { color: var(--acc-text); font-size: 11.5px; }
+.js .bub { opacity: 0; transform: translateY(10px) scale(.98); }
+.is-ready .bub { opacity: 1; transform: none; transition: opacity .6s var(--ease), transform .9s var(--ease); transition-delay: 1s; }
+.is-ready .bub--them { transition-delay: 1.7s; }
+
+/* ───────── platforms: install on a rail ───────── */
+
+.ptabs { display: inline-flex; max-width: 100%; margin-top: clamp(32px, 4vw, 48px); border: 0; border-radius: 16px; background: var(--glass); box-shadow: inset 0 0 0 1px var(--glass-line); }
+.ppanel { margin-top: 26px; }
+.pinst > .prail { margin-top: clamp(32px, 4vw, 48px); }
+.prail .rail__title { font-family: var(--font-mono); font-size: var(--fs-xs); font-weight: 400; letter-spacing: .04em; }
+.scard {
+  display: flex; flex-direction: column; gap: 14px; width: clamp(260px, 27vw, 340px); min-height: 260px; padding: clamp(22px, 2.4vw, 30px);
+  border-radius: var(--r-l); background: var(--glass); box-shadow: inset 0 0 0 1px var(--glass-line);
+}
+.scard--wide { width: clamp(290px, 44vw, 580px); }
+.scard__n { margin-bottom: auto; padding-bottom: 18px; font-family: var(--font-display); font-size: clamp(48px, 4vw, 68px); line-height: .9; color: var(--acc-text); }
+.scard > p { font-size: var(--fs-m); line-height: 1.55; }
+.scard .note { font-size: 14px; color: var(--ink-3); }
+.scard .cmd pre { font-size: 12.5px; padding: 14px 16px; }
+.scard .path span { font-size: 13.5px; }
+@media (max-width: 560px) {
+  .prail .rail__track { align-items: flex-start; }
+  .scard, .scard--wide { width: min(84vw, 360px); min-height: 0; }
+  .scard__n { margin-bottom: 0; padding-bottom: 6px; }
+}
+
+/* ───────── platforms: good to know, the other platform ───────── */
+
+.pafter__grid { margin-top: clamp(40px, 5vw, 64px); grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pafter__grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1200px) { .pafter__grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 1000px) { .pafter__grid { grid-template-columns: minmax(0, 1fr); } .pafter__grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .pafter__grid--4 { grid-template-columns: minmax(0, 1fr); } }
+
+.pother__grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 14px; }
+.pother__card { min-height: clamp(220px, 22vw, 300px); }
+.pother__card small { opacity: .8; }
+.pother__card b { font-family: var(--font-display); font-weight: 400; font-size: clamp(34px, 1.3rem + 2.8vw, 64px); line-height: 1.02; letter-spacing: -.03em; text-wrap: balance; }
+.pother__card > span:not(.fork__kanji) { font-size: var(--fs-m); opacity: .88; }
+.pother__card > .i { font-size: 26px; margin-top: 6px; transition: transform .5s var(--ease); }
+.pother__card.is-hot > .i { transform: translateX(5px); }
+[dir="rtl"] .pother__card > .i { transform: scaleX(-1); }
+[dir="rtl"] .pother__card.is-hot > .i { transform: scaleX(-1) translateX(5px); }
+.pother__card--all { background: var(--glass); color: var(--ink); box-shadow: inset 0 0 0 1px var(--glass-line); --pb-fill: var(--glass-hi); }
+.pother__card--all .fork__kanji { -webkit-text-stroke-color: var(--line-strong); }
+@media (max-width: 760px) { .pother__grid { grid-template-columns: minmax(0, 1fr); } }
 
 /* ───────── 404 ───────── */
 

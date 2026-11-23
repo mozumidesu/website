@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AI Translate</title>
-<meta name="description" content="A plugin for Discord that translates your messages with the AI model of your choice and keeps the way you write. One command installs it on Windows, macOS and Linux.">
+<meta name="description" content="AI Translate translates your messages in Discord and Telegram with the AI model you choose and keeps the way you write. Free and open source.">
 <meta name="theme-color" content="#14110F">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AI Translate">
 <meta property="og:url" content="https://translate.zolatau.com/">
 <meta property="og:title" content="AI Translate">
-<meta property="og:description" content="The plugin that lets you talk to anyone, even if you don't know their language. Translates with AI and keeps the way you write.">
+<meta property="og:description" content="A plugin for Discord and Telegram that lets you talk to anyone, even if you don't know their language. Translates with AI and keeps the way you write.">
 <meta property="og:image" content="https://translate.zolatau.com/assets/img/og-translate.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -94,8 +94,8 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
       <span class="nav__blob" aria-hidden="true"></span>
       <a href="#features"><span data-i18n="nav.features">Features</span></a>
       <a href="#providers"><span data-i18n="nav.providers">Providers</span></a>
-      <a href="#install"><span data-i18n="nav.install">Install</span></a>
-      <a href="#telegram"><span>Telegram</span></a>
+      <a data-link="discord" href="https://zolatau.com/discord/"><span>Discord</span></a>
+      <a data-link="telegram" href="https://zolatau.com/telegram/"><span>Telegram</span></a>
       <a href="#faq"><span data-i18n="nav.faq">Questions</span></a>
     </div>
     <span class="nav__sep" style="--d:.1s"></span>
@@ -117,8 +117,8 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
   <ul class="menu__links">
     <li><a href="#features"><span data-i18n="nav.features">Features</span><i aria-hidden="true">機能</i></a></li>
     <li><a href="#providers"><span data-i18n="nav.providers">Providers</span><i aria-hidden="true">鍵</i></a></li>
-    <li><a href="#install"><span data-i18n="nav.install">Install</span><i aria-hidden="true">導入</i></a></li>
-    <li><a href="#telegram"><span>Telegram</span><i aria-hidden="true">電報</i></a></li>
+    <li><a data-link="discord" href="https://zolatau.com/discord/"><span>Discord</span><i aria-hidden="true">声</i></a></li>
+    <li><a data-link="telegram" href="https://zolatau.com/telegram/"><span>Telegram</span><i aria-hidden="true">電報</i></a></li>
     <li><a href="#faq"><span data-i18n="nav.faq">Questions</span><i aria-hidden="true">質問</i></a></li>
     <li><a data-link="home" href="https://zolatau.com/"><span>zolatau.com</span><i aria-hidden="true">茂住</i></a></li>
   </ul>
@@ -132,17 +132,12 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
   <section class="thero" id="top" aria-labelledby="tr-title">
     <div class="wrap thero__grid">
       <div class="thero__copy">
-        <a class="news glass thero__news" href="#telegram" data-in style="--in:0">
-          <span class="news__tag" data-i18n="home.newsTag">New</span>
-          <span data-i18n="tr.tgNews">Now also for Telegram Web</span>
-          <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
-        </a>
         <div class="app-mark app-mark--lg" data-in style="--in:0"><svg aria-hidden="true"><use href="#i-translate"/></svg></div>
         <h1 id="tr-title" data-in style="--in:1">AI Translate</h1>
         <p class="thero__tagline" data-in style="--in:2" data-i18n="tr.tagline">The plugin that lets you talk to anyone, even if you don't know their language</p>
-        <p class="thero__sub" data-in style="--in:3" data-i18n="tr.sub">For the Discord app on Windows, macOS and Linux. It translates with the AI model you choose and keeps the way you write.</p>
+        <p class="thero__sub" data-in style="--in:3" data-i18n="tr.sub">For Discord and Telegram. It translates with the AI model you choose and keeps the way you write.</p>
         <div class="cta-row" data-in style="--in:4">
-          <a class="btn btn--acc" href="#install"><span data-i18n="tr.ctaInstall">Install</span><svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <button class="btn btn--acc" type="button" data-pick aria-haspopup="dialog" aria-expanded="false" aria-controls="pick"><span data-i18n="tr.ctaInstall">Install</span><svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
           <a class="btn btn--ghost" href="#features" data-i18n="tr.ctaFeatures">What it can do</a>
         </div>
         <ul class="chips" data-in style="--in:5">
@@ -183,6 +178,33 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
           <span class="chat__tip is-off" data-d="tip">AI Translate: on here</span>
 
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fork" id="install" aria-labelledby="fork-title">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="vlabel" aria-hidden="true"><b>導入</b><i>dōnyū</i></p>
+        <div>
+          <h2 class="section__title rv" id="fork-title" data-i18n="pick.title">Where do you chat?</h2>
+        </div>
+      </div>
+      <div class="fork__grid">
+        <a class="fork__card fork__card--dc pb" data-link="discord" href="https://zolatau.com/discord/">
+          <span class="fork__kanji" aria-hidden="true">声</span>
+          <span class="fork__ico" aria-hidden="true"><svg class="i"><use href="#i-discord"/></svg></span>
+          <b class="fork__name">Discord</b>
+          <span class="fork__note" data-i18n="pick.discord">The app on Windows, macOS and Linux, or in a browser</span>
+          <span class="fork__go"><span data-i18n="tr.forkGo">How to install</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="fork__card fork__card--tg pb" id="telegram" data-link="telegram" href="https://zolatau.com/telegram/">
+          <span class="fork__kanji" aria-hidden="true">電報</span>
+          <span class="fork__ico" aria-hidden="true"><svg class="i"><use href="#i-telegram"/></svg></span>
+          <b class="fork__name">Telegram</b>
+          <span class="fork__note" data-i18n="pick.telegram">Telegram Web in a desktop browser</span>
+          <span class="fork__go"><span data-i18n="tr.forkGo">How to install</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
       </div>
     </div>
   </section>
@@ -315,104 +337,6 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
           </tbody>
         </table>
       </div>
-      <p class="prov__note" data-i18n="tr.pNote">Requests are made from Discord's background process, so your key never enters the part of Discord that a web page could reach.</p>
-    </div>
-  </section>
-
-  <section class="section install" id="install" aria-labelledby="i-title">
-    <div class="wrap">
-      <div class="section__head">
-        <p class="vlabel" aria-hidden="true"><b>導入</b><i>dōnyū</i></p>
-        <div>
-          <h2 class="section__title rv" id="i-title" data-i18n="tr.iTitle">Install</h2>
-          <p class="section__lead" data-i18n="tr.iLead">AI Translate runs inside Vencord, a well-known mod for the Discord app. One command downloads Vencord with AI Translate already inside, about a megabyte, and patches Discord. Nothing is built on your computer.</p>
-          <p class="touch-note" data-i18n="tr.iTouch">The command runs on a computer: open this page there to copy it.</p>
-        </div>
-      </div>
-      <div class="install__box glass">
-        <div class="tabs" role="tablist" aria-label="Where to install" data-i18n-attr="aria-label:tr.iWhere">
-          <button class="tab" role="tab" type="button" id="tab-win" aria-controls="os-win" aria-selected="true">Windows</button>
-          <button class="tab" role="tab" type="button" id="tab-mac" aria-controls="os-mac" aria-selected="false" tabindex="-1">macOS</button>
-          <button class="tab" role="tab" type="button" id="tab-linux" aria-controls="os-linux" aria-selected="false" tabindex="-1">Linux</button>
-          <button class="tab" role="tab" type="button" id="tab-browser" aria-controls="os-browser" aria-selected="false" tabindex="-1" data-i18n="tr.iBrowser">Browser</button>
-        </div>
-        <div class="panel" role="tabpanel" id="os-win" aria-labelledby="tab-win">
-          <ol class="steps">
-            <li><div><p data-i18n="tr.s1win">Open Windows Terminal or PowerShell.</p></div></li>
-            <li><div><p data-i18n="tr.s2">Paste this command and press Enter.</p>
-              <div class="cmd"><pre>irm https://builds.zolatau.com/install.ps1 | iex</pre><button class="copy" type="button" data-copy><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="common.copy">Copy</span></button></div></div></li>
-            <li><div><p data-i18n="tr.s3">Pick Install or update with the arrow keys and press Enter. When it asks which Discord to patch, pick the one you use.</p><p class="note" data-i18n="tr.s3win">The command closes Discord before patching it.</p></div></li>
-            <li><div><p data-i18n="tr.s4win">Start Discord again.</p></div></li>
-            <li><div><p data-i18n-html="tr.s5">Open <span class="path"><span>Settings</span><i>›</i><span>Vencord</span><i>›</i><span>Plugins</span><i>›</i><span>AI Translate</span></span>, choose a provider and paste your key.</p></div></li>
-          </ol>
-        </div>
-        <div class="panel" role="tabpanel" id="os-mac" aria-labelledby="tab-mac" hidden>
-          <ol class="steps">
-            <li><div><p data-i18n="tr.s1mac">Open Terminal.</p></div></li>
-            <li><div><p data-i18n="tr.s2">Paste this command and press Enter.</p>
-              <div class="cmd"><pre>sh -c "$(curl -fsSL https://builds.zolatau.com/install.sh)"</pre><button class="copy" type="button" data-copy><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="common.copy">Copy</span></button></div></div></li>
-            <li><div><p data-i18n="tr.s3">Pick Install or update with the arrow keys and press Enter. When it asks which Discord to patch, pick the one you use.</p></div></li>
-            <li><div><p data-i18n="tr.s4">Quit Discord and start it again.</p></div></li>
-            <li><div><p data-i18n-html="tr.s5">Open <span class="path"><span>Settings</span><i>›</i><span>Vencord</span><i>›</i><span>Plugins</span><i>›</i><span>AI Translate</span></span>, choose a provider and paste your key.</p></div></li>
-          </ol>
-        </div>
-        <div class="panel" role="tabpanel" id="os-linux" aria-labelledby="tab-linux" hidden>
-          <ol class="steps">
-            <li><div><p data-i18n="tr.s1linux">Open a terminal.</p></div></li>
-            <li><div><p data-i18n="tr.s2">Paste this command and press Enter.</p>
-              <div class="cmd"><pre>sh -c "$(curl -fsSL https://builds.zolatau.com/install.sh)"</pre><button class="copy" type="button" data-copy><svg class="i" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="common.copy">Copy</span></button></div><p class="note" data-i18n="tr.s2atomic">Atomic systems (Bazzite, Silverblue, SteamOS) need Discord installed as a Flatpak. Nothing goes into the system itself: everything stays in your home folder, and the installer opens that folder to the Flatpak for you. A Discord baked into the system image with rpm-ostree cannot be patched, because its folders are read-only.</p></div></li>
-            <li><div><p data-i18n="tr.s3">Pick Install or update with the arrow keys and press Enter. When it asks which Discord to patch, pick the one you use.</p><p class="note" data-i18n="tr.s3linux">It may ask for your password, because Discord usually sits where only an administrator can write.</p></div></li>
-            <li><div><p data-i18n="tr.s4">Quit Discord and start it again.</p></div></li>
-            <li><div><p data-i18n-html="tr.s5">Open <span class="path"><span>Settings</span><i>›</i><span>Vencord</span><i>›</i><span>Plugins</span><i>›</i><span>AI Translate</span></span>, choose a provider and paste your key.</p></div></li>
-          </ol>
-        </div>
-        <div class="panel" role="tabpanel" id="os-browser" aria-labelledby="tab-browser" hidden>
-          <ol class="steps">
-            <li><div><p data-i18n="tr.s1browser">Install Tampermonkey, or another userscript manager.</p></div></li>
-            <li><div><p data-i18n="tr.s2browser">Open the script. Your userscript manager offers to install it, and keeps it up to date from here afterwards.</p>
-              <p><a class="btn btn--acc btn--sm" href="https://builds.zolatau.com/ai-translate.user.js" data-i18n="tr.s2browserGet">Install the userscript</a></p></div></li>
-            <li><div><p data-i18n="tr.s3browser">Open discord.com and reload the page.</p><p class="note" data-i18n="tr.s3browserNote">If the Vencord Web extension is installed, switch it off: this script has Vencord inside it, and two of them in one tab do not get along.</p></div></li>
-            <li><div><p data-i18n-html="tr.s5">Open <span class="path"><span>Settings</span><i>›</i><span>Vencord</span><i>›</i><span>Plugins</span><i>›</i><span>AI Translate</span></span>, choose a provider and paste your key.</p></div></li>
-          </ol>
-        </div>
-      </div>
-      <div class="install__more">
-        <div><h3 data-i18n="tr.upTitle">Updates</h3><p data-i18n="tr.upText">AI Translate looks for a new version by itself and installs it in the background. Check for updates, at the bottom of its settings, does the same at once.</p></div>
-        <div><h3 data-i18n="tr.rmTitle">Uninstall</h3><p data-i18n="tr.rmText">Run the same command and pick Remove. Discord goes back to exactly how it was, and your settings stay in case you install again.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section tg" id="telegram" aria-labelledby="tg-title">
-    <div class="wrap">
-      <div class="section__head">
-        <p class="vlabel" aria-hidden="true"><b>電報</b><i>denpō</i></p>
-        <div>
-          <h2 class="section__title rv" id="tg-title" data-i18n="tr.tgTitle">AI Translate for Telegram</h2>
-          <p class="section__lead" data-i18n="tr.tgLead">A userscript that brings AI Translate into Telegram Web, Telegram's own web client, in both Web A and Web K. It has the same features, providers and backup providers as the plugin for Discord.</p>
-          <ul class="chips">
-            <li class="chip">Web A · Web K</li>
-            <li class="chip" data-i18n="tr.tgChipBrowser">Desktop browser</li>
-          </ul>
-        </div>
-      </div>
-      <div class="install__box glass">
-        <div class="panel">
-          <ol class="steps">
-            <li><div><p data-i18n="tr.tgS1">In a desktop browser, install Tampermonkey or another userscript manager.</p></div></li>
-            <li><div><p data-i18n="tr.tgS2">Open the script, and your userscript manager offers to install it.</p>
-              <p class="tg__links"><a class="btn btn--acc btn--sm" href="https://github.com/mozumidesu/ai-translate-telegram/raw/main/dist/ai-translate.user.js" data-i18n="tr.s2browserGet">Install the userscript</a><a class="btn btn--ghost btn--sm" href="https://github.com/mozumidesu/ai-translate-telegram" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg><span data-i18n="tr.hSource">Source code</span></a></p></div></li>
-            <li><div><p data-i18n="tr.tgS3">Open web.telegram.org and reload the page.</p></div></li>
-            <li><div><p data-i18n-html="tr.tgS4">Click the translate button in the chat bar, press <span class="path"><span>All plugin settings</span></span>, choose a provider and paste your key.</p><p class="note" data-i18n="tr.tgS4note">The first time the script reaches your provider, your userscript manager may ask whether it can. Allow that address.</p></div></li>
-          </ol>
-        </div>
-      </div>
-      <div class="install__more">
-        <div><h3 data-i18n="tr.tgKeyTitle">Your key stays with you</h3><p data-i18n="tr.tgKeyText">It is kept in your userscript manager's storage on your computer, and requests go from your browser to the provider you chose. There is no server in between.</p></div>
-        <div><h3 data-i18n="tr.tgAppsTitle">Telegram Desktop and phones</h3><p data-i18n="tr.tgAppsText">Telegram Desktop is a native app and cannot be patched, so on a computer AI Translate for Telegram is the userscript in a browser. There is no version for phones yet.</p></div>
-        <div><h3 data-i18n="tr.upTitle">Updates</h3><p data-i18n="tr.tgUpText">Your userscript manager looks for a new version by itself. Check for updates, at the bottom of the settings, asks at once.</p></div>
-        <div><h3 data-i18n="tr.rmTitle">Uninstall</h3><p data-i18n="tr.tgRmText">Delete the script in your userscript manager. Nothing else was installed, so nothing else needs removing.</p></div>
-      </div>
     </div>
   </section>
 
@@ -426,9 +350,7 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
       </div>
       <div class="faq">
         <details><summary data-i18n="tr.q1">Is it free?</summary><p data-i18n="tr.a1">Yes. The plugin is free and open source. Translation goes through your provider's API, and Groq, Gemini and GLM have free tiers.</p></details>
-        <details><summary data-i18n="tr.q2">Can my Discord account get banned?</summary><p data-i18n="tr.a2">Vencord's own FAQ says that client mods are against Discord's Terms of Service, but there are no known cases of people banned for using them. The patch only swaps Discord's startup file; your account, settings and messages are not touched.</p></details>
-        <details><summary data-i18n="tr.q3">Where is my API key stored?</summary><p data-i18n="tr.a3">In Vencord's settings on your computer. It is sent only to the provider you chose.</p></details>
-        <details><summary data-i18n="tr.q4">AI Translate disappeared after Discord updated</summary><p data-i18n="tr.a4">Run the install command again. It repairs the installation without losing your settings.</p></details>
+        <details><summary data-i18n="tr.q3">Where is my API key stored?</summary><p data-i18n="tr.a3">On your computer: in Vencord's settings for Discord, in your userscript manager for Telegram. It is sent only to the provider you chose.</p></details>
       </div>
     </div>
   </section>
@@ -512,8 +434,8 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
     <p class="pick__kicker">AI Translate</p>
     <h2 id="pick-title" data-i18n="pick.title">Where do you chat?</h2>
     <ul class="pick__list">
-      <li><a class="pick__opt pb" href="https://zolatau.com/discord"><span class="pick__ico"><svg class="i" aria-hidden="true"><use href="#i-discord"/></svg></span><span><b>Discord</b><small data-i18n="pick.discord">The app on Windows, macOS and Linux, or in a browser</small></span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
-      <li><a class="pick__opt pb" href="https://zolatau.com/telegram"><span class="pick__ico"><svg class="i" aria-hidden="true"><use href="#i-telegram"/></svg></span><span><b>Telegram</b><small data-i18n="pick.telegram">Telegram Web in a desktop browser</small></span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a class="pick__opt pb" data-link="discord" href="https://zolatau.com/discord/"><span class="pick__ico"><svg class="i" aria-hidden="true"><use href="#i-discord"/></svg></span><span><b>Discord</b><small data-i18n="pick.discord">The app on Windows, macOS and Linux, or in a browser</small></span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a class="pick__opt pb" data-link="telegram" href="https://zolatau.com/telegram/"><span class="pick__ico"><svg class="i" aria-hidden="true"><use href="#i-telegram"/></svg></span><span><b>Telegram</b><small data-i18n="pick.telegram">Telegram Web in a desktop browser</small></span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
     </ul>
     <button class="pick__close pb" type="button" data-pick-close aria-label="Close" data-i18n-attr="aria-label:common.close"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
   </div>

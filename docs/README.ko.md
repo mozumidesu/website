@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-zolatau.com 의 코드입니다. 저에 대한 페이지와, 원하는 AI 모델로 메시지를 번역하는 Discord와 Telegram 플러그인 AI Translate의 페이지가 있습니다.
+zolatau.com 의 코드입니다. 저에 대한 페이지와, 원하는 AI 모델로 메시지를 번역하는 Discord와 Telegram 플러그인 AI Translate의 페이지들이 있습니다.
 
 폰트는 Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest, 그리고 아랍어·타이어·한국어용 IBM Plex Sans이며 모두 SIL Open Font License 1.1을 따릅니다. 라이선스는 `public/assets/fonts/LICENSES.txt` 에 있습니다.
 

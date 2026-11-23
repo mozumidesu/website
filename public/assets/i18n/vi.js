@@ -56,9 +56,9 @@ ZL.i18n.add("vi", {
   "home.server": "máy chủ",
 
   "translate.title": "AI Translate",
-  "translate.meta": "Plugin cho Discord dịch tin nhắn của bạn bằng mô hình AI bạn chọn và giữ nguyên cách bạn viết. Cài bằng một lệnh trên Windows, macOS và Linux.",
+  "translate.meta": "AI Translate dịch tin nhắn của bạn trên Discord và Telegram bằng mô hình AI bạn chọn và giữ nguyên cách bạn viết. Miễn phí và mã nguồn mở.",
   "tr.tagline": "Plugin giúp bạn trò chuyện với bất kỳ ai, kể cả khi không biết ngôn ngữ của họ",
-  "tr.sub": "Dành cho ứng dụng Discord trên Windows, macOS và Linux. Dịch bằng mô hình AI bạn chọn và giữ nguyên cách bạn viết.",
+  "tr.sub": "Dành cho Discord và Telegram. Dịch bằng mô hình AI bạn chọn và giữ nguyên cách bạn viết.",
   "tr.ctaInstall": "Cài đặt",
   "tr.ctaFeatures": "Nó làm được gì",
   "tr.chipFree": "Miễn phí",
@@ -138,7 +138,7 @@ ZL.i18n.add("vi", {
   "tr.q2": "Tài khoản Discord của tôi có thể bị khóa không?",
   "tr.a2": "Chính trang FAQ của Vencord nói rằng các bản mod client vi phạm Điều khoản dịch vụ của Discord, nhưng chưa có trường hợp nào bị khóa vì dùng chúng. Bản vá chỉ thay tệp khởi động của Discord; tài khoản, cài đặt và tin nhắn của bạn không bị động đến.",
   "tr.q3": "Khóa API của tôi được lưu ở đâu?",
-  "tr.a3": "Trong phần cài đặt của Vencord trên máy bạn. Khóa chỉ được gửi tới nhà cung cấp bạn đã chọn.",
+  "tr.a3": "Trên máy tính của bạn: trong phần cài đặt của Vencord với Discord, trong trình quản lý userscript với Telegram. Khóa chỉ được gửi đến nhà cung cấp bạn đã chọn.",
   "tr.q4": "AI Translate biến mất sau khi Discord cập nhật",
   "tr.a4": "Chạy lại lệnh cài đặt. Lệnh sẽ sửa lại bản cài mà không làm mất cài đặt của bạn.",
   "tr.hTitle": "Tìm thấy lỗi hay có ý tưởng?",
@@ -163,6 +163,15 @@ ZL.i18n.add("vi", {
   "tr.tgUpText": "Trình quản lý userscript tự tìm phiên bản mới. Nút \"Kiểm tra cập nhật\" ở cuối phần cài đặt sẽ kiểm tra ngay.",
   "tr.tgRmText": "Xóa tập lệnh trong trình quản lý userscript. Không có gì khác được cài, nên cũng không có gì khác phải gỡ.",
   "tr.by": "Làm bằng cả tấm lòng",
+
+  "tr.forkGo": "Cách cài đặt",
+  "dc.a3": "Trong phần cài đặt của Vencord trên máy bạn. Khóa chỉ được gửi tới nhà cung cấp bạn đã chọn.",
+  "plat.after": "Nên biết",
+
+  "discord.title": "AI Translate cho Discord",
+  "discord.meta": "Cài AI Translate cho Discord: một lệnh trên Windows, macOS và Linux, hoặc một userscript cho Discord trong trình duyệt. Miễn phí và mã nguồn mở.",
+  "telegram.title": "AI Translate cho Telegram",
+  "telegram.meta": "Cài AI Translate cho Telegram: một userscript đưa tính năng dịch bằng AI vào Telegram Web trên trình duyệt máy tính. Miễn phí và mã nguồn mở.",
 
   "lost.title": "Không tìm thấy trang",
   "lost.home": "Trang chủ",

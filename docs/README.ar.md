@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-كود موقع zolatau.com: صفحة عني، وصفحة AI Translate، إضافة لـ Discord وTelegram تترجم رسائلك بنموذج ذكاء اصطناعي تختاره أنت.
+كود موقع zolatau.com: صفحة عني، وصفحات AI Translate، إضافة لـ Discord وTelegram تترجم رسائلك بنموذج ذكاء اصطناعي تختاره أنت.
 
 الخطوط هي Dela Gothic One وZen Kaku Gothic New وMartian Mono وOnest وIBM Plex Sans للعربية والتايلندية والكورية، وكلها تحت رخصة SIL Open Font License 1.1. الرخص موجودة في `public/assets/fonts/LICENSES.txt`.
 

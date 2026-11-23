@@ -56,9 +56,9 @@ ZL.i18n.add("tr", {
   "home.server": "sunucusu",
 
   "translate.title": "AI Translate",
-  "translate.meta": "Mesajlarınızı seçtiğiniz yapay zekâ modeliyle çeviren ve yazış tarzınızı koruyan bir Discord eklentisi. Windows, macOS ve Linux'ta tek komutla kurulur.",
+  "translate.meta": "AI Translate, Discord ve Telegram'daki mesajlarını seçtiğin yapay zekâ modeliyle çevirir ve yazış biçimini korur. Ücretsiz ve açık kaynak.",
   "tr.tagline": "Dilini bilmeseniz bile herkesle konuşmanızı sağlayan eklenti",
-  "tr.sub": "Windows, macOS ve Linux'taki Discord uygulaması için. Seçtiğiniz yapay zekâ modeliyle çevirir ve yazış tarzınızı korur.",
+  "tr.sub": "Discord ve Telegram için. Seçtiğin yapay zekâ modeliyle çevirir ve yazış biçimini korur.",
   "tr.ctaInstall": "Kur",
   "tr.ctaFeatures": "Neler yapabilir",
   "tr.chipFree": "Ücretsiz",
@@ -138,7 +138,7 @@ ZL.i18n.add("tr", {
   "tr.q2": "Discord hesabım yasaklanabilir mi?",
   "tr.a2": "Vencord'un kendi SSS'sinde istemci modlarının Discord Hizmet Şartları'na aykırı olduğu, ancak bunları kullandığı için yasaklanan bilinen bir vaka olmadığı yazıyor. Kurulum yalnızca Discord'un başlangıç dosyasını değiştirir; hesabınıza, ayarlarınıza ve mesajlarınıza dokunulmaz.",
   "tr.q3": "API anahtarım nerede saklanıyor?",
-  "tr.a3": "Bilgisayarınızdaki Vencord ayarlarında. Yalnızca seçtiğiniz sağlayıcıya gönderilir.",
+  "tr.a3": "Kendi bilgisayarında: Discord için Vencord ayarlarında, Telegram için userscript yöneticinde. Yalnızca seçtiğin sağlayıcıya gönderilir.",
   "tr.q4": "Discord güncellendikten sonra AI Translate kayboldu",
   "tr.a4": "Kurulum komutunu yeniden çalıştırın. Ayarlarınızı kaybetmeden kurulumu onarır.",
   "tr.hTitle": "Hata mı buldunuz, fikriniz mi var?",
@@ -163,6 +163,15 @@ ZL.i18n.add("tr", {
   "tr.tgUpText": "Userscript yöneticiniz yeni sürümü kendiliğinden arar. Ayarların en altındaki \"Güncellemeleri denetle\" hemen denetler.",
   "tr.tgRmText": "Betiği userscript yöneticinizden silin. Başka hiçbir şey kurulmadı, yani kaldırılacak başka bir şey de yok.",
   "tr.by": "Özenle yapıldı",
+
+  "tr.forkGo": "Nasıl kurulur",
+  "dc.a3": "Bilgisayarınızdaki Vencord ayarlarında. Yalnızca seçtiğiniz sağlayıcıya gönderilir.",
+  "plat.after": "Bilmekte fayda var",
+
+  "discord.title": "Discord için AI Translate",
+  "discord.meta": "Discord için AI Translate'i kur: Windows, macOS ve Linux'ta tek bir komut ya da tarayıcıdaki Discord için bir userscript. Ücretsiz ve açık kaynak.",
+  "telegram.title": "Telegram için AI Translate",
+  "telegram.meta": "Telegram için AI Translate'i kur: bilgisayar tarayıcısındaki Telegram Web'e yapay zekâ çevirisi getiren bir userscript. Ücretsiz ve açık kaynak.",
 
   "lost.title": "Sayfa bulunamadı",
   "lost.home": "Ana sayfa",

@@ -1,4 +1,5 @@
 // translate.zolatau.com is served from public/translate/, everything else from public/.
+// zolatau.com/discord and zolatau.com/telegram are public/discord/ and public/telegram/.
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -16,17 +17,15 @@ export default {
       return Response.redirect("https://builds.zolatau.com" + rest + url.search, 301);
     }
 
-    // Temporary until phase 2 builds zolatau.com/discord and zolatau.com/telegram
-    // as pages of their own; then these two redirects go away.
-    const TEMP = { "/discord": "https://translate.zolatau.com/#install", "/telegram": "https://translate.zolatau.com/#telegram" };
-    const temp = TEMP[url.pathname.replace(/\/+$/, "")];
-    if (temp && (host === "zolatau.com" || host.endsWith(".workers.dev"))) {
-      return Response.redirect(temp, 302);
-    }
-
     const onTranslate = host.startsWith("translate.");
     const ours = host === "zolatau.com" || host.endsWith(".zolatau.com");
     const inTranslateDir = url.pathname === "/translate" || url.pathname.startsWith("/translate/");
+
+    // The install pages of the two platforms live on zolatau.com.
+    const platform = url.pathname.match(/^\/(discord|telegram)(\/.*)?$/);
+    if (platform && host !== "zolatau.com" && !host.endsWith(".workers.dev")) {
+      return Response.redirect("https://zolatau.com/" + platform[1] + "/" + url.search, 301);
+    }
 
     if (onTranslate) {
       if (inTranslateDir) {

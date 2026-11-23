@@ -38,10 +38,10 @@
     const file = location.protocol === "file:";
     const dev = file || /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) || location.hostname.endsWith(".workers.dev");
     if (!dev) return;
-    const inTr = page === "translate";
+    const up = file && page !== "home" && page !== "lost" ? "../" : "";
     const base = file
-      ? { home: inTr ? "../index.html" : "index.html", translate: inTr ? "index.html" : "translate/index.html" }
-      : { home: "/", translate: "/translate/" };
+      ? { home: up + "index.html", translate: up + "translate/index.html", discord: up + "discord/index.html", telegram: up + "telegram/index.html" }
+      : { home: "/", translate: "/translate/", discord: "/discord/", telegram: "/telegram/" };
     $$("[data-link]").forEach(a => {
       const hash = a.getAttribute("href").split("#")[1];
       a.href = base[a.dataset.link] + (hash ? "#" + hash : "");
@@ -762,6 +762,73 @@
   };
 
 
+  /* ── tabs: arrow keys, Home and End; the first visit opens the tab for this computer ── */
+  const tabsets = () => {
+    $$('[role="tablist"]').forEach(list => {
+      const tabs = $$('[role="tab"]', list);
+      const select = (tab, focus) => {
+        tabs.forEach(t => {
+          const on = t === tab;
+          t.setAttribute("aria-selected", String(on));
+          t.tabIndex = on ? 0 : -1;
+          $("#" + t.getAttribute("aria-controls")).hidden = !on;
+        });
+        if (focus) tab.focus();
+      };
+      tabs.forEach((t, i) => {
+        t.addEventListener("click", () => select(t));
+        t.addEventListener("keydown", e => {
+          const rtl = root.dir === "rtl";
+          const next = { ArrowRight: rtl ? -1 : 1, ArrowLeft: rtl ? 1 : -1 }[e.key];
+          if (next) { e.preventDefault(); select(tabs[(i + next + tabs.length) % tabs.length], true); }
+          if (e.key === "Home") { e.preventDefault(); select(tabs[0], true); }
+          if (e.key === "End") { e.preventDefault(); select(tabs[tabs.length - 1], true); }
+        });
+      });
+      const ua = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || navigator.userAgent || "";
+      const mac = $("[data-os=mac]", list), linux = $("[data-os=linux]", list);
+      if (mac && /mac/i.test(ua) && !/iphone|ipad/i.test(navigator.userAgent)) select(mac);
+      else if (linux && /linux|x11|cros/i.test(ua) && !/android/i.test(navigator.userAgent)) select(linux);
+    });
+  };
+
+  /* ── questions open and close with a little height animation ── */
+  const faqs = () => {
+    $$(".faq details").forEach(det => {
+      const sum = $("summary", det), body = $("p", det);
+      let anim = null;
+      const run = (frames, opts, done) => {
+        if (anim) anim.cancel();
+        body.classList.add("is-moving");
+        const a = anim = body.animate(frames, Object.assign({ fill: "forwards" }, opts));
+        a.onfinish = () => { if (done) done(); a.cancel(); if (anim === a) anim = null; body.classList.remove("is-moving"); };
+      };
+      sum.addEventListener("click", e => {
+        if (reduce.matches || !body.animate) return;
+        e.preventDefault();
+        const pad = getComputedStyle(body).paddingBlockEnd;
+        if (det.open && !det.classList.contains("is-closing")) {
+          det.classList.add("is-closing");
+          run([{ height: body.offsetHeight + "px", paddingBlockEnd: pad, opacity: 1 }, { height: "0px", paddingBlockEnd: "0px", opacity: 0 }],
+            { duration: 420, easing: "cubic-bezier(.4, 0, .2, 1)" },
+            () => { det.open = false; det.classList.remove("is-closing"); });
+        } else {
+          det.classList.remove("is-closing");
+          det.open = true;
+          run([{ height: "0px", paddingBlockEnd: "0px", opacity: 0 }, { height: body.offsetHeight + "px", paddingBlockEnd: pad, opacity: 1 }],
+            { duration: 480, easing: "cubic-bezier(.16, 1, .3, 1)" });
+        }
+      });
+    });
+  };
+
+  /* ── still examples ([data-ex]) take their words from the demo texts of the home page ── */
+  const examples = () => {
+    const els = $$("[data-ex]");
+    if (!els.length) return;
+    i18n.on(() => { const D = demoData(false); els.forEach(el => { const v = D[el.dataset.ex]; if (v != null) el.textContent = v; }); });
+  };
+
   /* ── rails: native sideways scrollers; buttons, keys, a counter and mouse drag on top ── */
   const rails = () => {
     $$("[data-rail]").forEach(root => {
@@ -855,6 +922,9 @@
   marquees();
   hoverFill();
   picker();
+  tabsets();
+  faqs();
+  examples();
   rails();
   i18n.set(i18n.lang).then(() => { clock(); readyI18n(); });
   loader();

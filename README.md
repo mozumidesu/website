@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-The source of zolatau.com: a page about me, and the page for AI Translate, a
+The source of zolatau.com: a page about me, and the pages for AI Translate, a
 plugin for Discord and Telegram that translates your messages with an AI model of your
 choice.
 

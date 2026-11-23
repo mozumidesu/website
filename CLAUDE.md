@@ -1,8 +1,10 @@
 # zolatau.com
 
-zolatau.com in one repository: a personal page, and the page for AI Translate,
-a Discord plugin that lives in its own repository. The plugin's page is served
-on its own subdomain, which `worker.js` and `wrangler.jsonc` route.
+zolatau.com in one repository: a personal page, and the pages for AI Translate,
+a plugin for Discord and Telegram that lives in repositories of its own. The
+plugin's main page is served on its own subdomain, and its install pages for
+each platform at zolatau.com/discord and zolatau.com/telegram; `worker.js` and
+`wrangler.jsonc` route all of it.
 
 Plain HTML and CSS in 16 languages. No framework, no bundler, no package
 manager. Cloudflare Workers serves it, and a push to this repository puts it
@@ -52,14 +54,16 @@ needs `pip install fonttools brotli`.
 | Path | Responsible for |
 |---|---|
 | `public/index.html` | zolatau.com |
-| `public/translate/index.html` | translate.zolatau.com |
+| `public/translate/index.html` | translate.zolatau.com: what the plugin does, for every platform, and the way to each platform's page |
+| `public/discord/index.html` | zolatau.com/discord: installing AI Translate for Discord |
+| `public/telegram/index.html` | zolatau.com/telegram: installing AI Translate for Telegram |
 | `public/404.html` | Not-found page for both domains. Follows the saved theme and language like every other page |
 | `public/_headers` | Cache and security headers |
 | `public/robots.txt` | Crawling |
 | `public/assets/i18n/*.js` | Interface text in 16 languages, one file each; `en.js` is the reference |
-| `public/assets/js/site.js` | Shared behaviour: language, theme, the loading screen |
+| `public/assets/js/site.js` | Shared behaviour: language, theme, the loading screen, tabs, rails, questions, the platform chooser |
 | `public/assets/js/home.js` | Only the personal page |
-| `public/assets/js/translate.js` | Only the plugin page |
+| `public/assets/js/translate.js` | Only translate.zolatau.com: its examples |
 | `public/assets/css/site.css` | **Generated** from `src/css/` |
 | `public/assets/css/fonts.css` | **Generated** by `src/fonts.py` |
 | `public/assets/fonts/` | The web fonts and `LICENSES.txt`. Generated |
@@ -95,7 +99,8 @@ sixteen and keeping their structure identical.
 `tools preview --root .` serves `public/` on `localhost:8787` for a look at a
 change before it goes up. It is not the Worker: the redirects below and the
 rules in `public/_headers` are not reproduced, and nothing is cached. The
-personal page is at `/` and the plugin's page at `/translate/`.
+personal page is at `/`, the plugin's page at `/translate/`, the install pages
+at `/discord/` and `/telegram/`.
 
 Cloudflare Workers, built from this repository on every push. `wrangler.jsonc`
 lists the routes; DNS records and certificates are created by Cloudflare itself
@@ -106,11 +111,11 @@ on the first publish.
 that hands out the plugin's builds — this site has no control over it and
 cannot break it.
 
-`zolatau.com/discord` and `zolatau.com/telegram` are where the platform chooser
-(the "Install" and "AI Translate" buttons) sends people. For now `worker.js`
-answers them with temporary 302 redirects to the install sections of
-translate.zolatau.com; phase 2 of the redesign replaces them with pages of
-their own. Both paths are in `run_worker_first`.
+`zolatau.com/discord/` and `zolatau.com/telegram/` are the install pages, where
+the platform chooser (the "Install" and "AI Translate" buttons) sends people.
+The same paths on translate.zolatau.com redirect there, which is why both are in
+`run_worker_first`. Old links to translate.zolatau.com/#install and #telegram
+land on the section that leads to the two pages.
 
 ## Style
 

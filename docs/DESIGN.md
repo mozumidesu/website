@@ -79,7 +79,7 @@ cards and rail buttons.
 **Nav pill.** Floating glass pill, centred. On the left the seal: a small
 vermilion stamp that shows the tategaki label of the section in view (茂住 at
 the top of the home page, 翻訳, 自己紹介, 連絡; on the AI Translate page 翻訳,
-機能, 鍵, 導入, 電報, 質問) and stamps itself again on every change. The
+導入, 本音, 機能, 鍵, 質問; 声 or 電報, then 導入, 更新, 質問 on the platform pages) and stamps itself again on every change. The
 current link sits in a drop of accent that stretches from link to link: the
 edge in front runs ahead, the one behind catches up. Link labels roll up on
 hover, the round buttons lean a little toward the pointer. No progress line.
@@ -112,8 +112,8 @@ for AI Translate that opens the platform chooser, and the source code), Site
 seal. The Minsk clock lives only at the bottom of the home hero.
 
 **Platform chooser.** One `<dialog>` per page, opened by every `[data-pick]`
-button (Install in the AI Translate section, the AI Translate card in the
-footer). Two options, Discord and Telegram, going to zolatau.com/discord and
+button (Install in the AI Translate section and in the hero of
+translate.zolatau.com, the AI Translate card in the footer). Two options, Discord and Telegram, going to zolatau.com/discord and
 zolatau.com/telegram. Focus moves to the first option and back to the button
 on close; Tab goes round inside; Escape, the close button and a click on the
 dimmed page outside close it. Works by touch and right to left.
@@ -125,9 +125,31 @@ dimmed page outside close it. Works by touch and right to left.
 **Loader.** Only on the first visit in a tab. The cat walks the progress line,
 then the screen splits along it. About 2 s to a ready page.
 
-## For /discord and /telegram (phase 2)
+## The plugin's pages (phase 2)
 
-Same foundation, nav and footer. Each page has its own leading rail and its
-own tint inside the Sumi palette (vermilion and gold), never the services' own
-brand colours or logos as the page's identity. Until those pages exist,
-`worker.js` answers both paths with temporary redirects to translate.zolatau.com.
+**translate.zolatau.com** speaks of both platforms: the hero, then "Where do
+you chat?" (導入, `#install`), two large cards that lead to the platform pages,
+vermilion for Discord and gold for Telegram (`#telegram`), each with its kanji
+drawn in outline. Then what the plugin does, providers and the general
+questions. The nav links straight to the two pages.
+
+**zolatau.com/discord** and **zolatau.com/telegram**: same foundation, nav,
+footer and chooser. Each page has its own tint inside the Sumi palette:
+Discord keeps the vermilion, Telegram takes the gold (`.plat--telegram`
+redefines the `--acc` tokens; dark text on gold in the dark theme, white on
+the deep gold in light). The marks of AI Translate and of the site stay
+vermilion everywhere. Never the services' own colours or logos as identity.
+
+- Hero: "AI Translate" above the platform name in display type with an accent
+  full stop, and a giant outlined kanji drifting behind (声 for Discord, 電報
+  for Telegram; the seal in the bar starts with it). On the right a still
+  scene that comes in line by line: the installer in a terminal for Discord;
+  Telegram Web with a message going out and a reply translated, in the page
+  language, for Telegram. At rest all of it is there.
+- Install (導入): the steps on a rail, one numbered card each, wide cards for
+  the ones with a command or a button. Discord has the system tabs above the
+  rail, opened for the visitor's system. On a phone the cards keep their own
+  height.
+- Good to know (更新): updates, removal, where the key lives.
+- Questions on the Discord page; then two cards: the other platform in its
+  own tint, and the plugin's main page.
