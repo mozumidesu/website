@@ -41,8 +41,11 @@ to a source file. The joining itself is still the only thing that makes
 
 `public/assets/css/fonts.css` and everything in `public/assets/fonts/` are
 generated too, by `src/fonts.py`, which also subsets the Japanese fonts down to
-the characters the site actually uses. Re-run it after adding Japanese text, or
-the new characters fall back to a system font.
+the characters the site actually uses. Re-run it after adding Japanese or
+Chinese text, or the new characters fall back to a system font. It reads the
+unpacked Fontsource packages from `/tmp/claude-0/fonts/x` (`npm pack` each
+`@fontsource` package it names, untar into a folder of the tarball's name) and
+needs `pip install fonttools brotli`.
 
 ## What each file does
 
@@ -50,7 +53,7 @@ the new characters fall back to a system font.
 |---|---|
 | `public/index.html` | zolatau.com |
 | `public/translate/index.html` | translate.zolatau.com |
-| `public/404.html` | Not-found page for both domains. Always dark, whatever the saved theme |
+| `public/404.html` | Not-found page for both domains. Follows the saved theme and language like every other page |
 | `public/_headers` | Cache and security headers |
 | `public/robots.txt` | Crawling |
 | `public/assets/i18n/*.js` | Interface text in 16 languages, one file each; `en.js` is the reference |
@@ -63,6 +66,7 @@ the new characters fall back to a system font.
 | `public/assets/img/` | Photo, the 茂住 seal, icons, link-preview images |
 | `src/css/` | The real stylesheet sources, in four files by number |
 | `src/fonts.py` | Copies and subsets the fonts, writes `fonts.css` |
+| `docs/DESIGN.md` | The agreed design direction: tokens, motion rules, components. Read it before changing how anything looks |
 | `worker.js` | Which domain serves what, and the redirects |
 | `wrangler.jsonc` | Cloudflare settings: the routes for both domains |
 | `README.md`, `docs/README.<code>.md` | Description in 16 languages |

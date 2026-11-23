@@ -56,9 +56,9 @@
     }, true);
   };
 
-  /* ── how many years have passed since a fixed day; the bio counts itself ── */
+  /* ── how many years have passed since a fixed day, by the clock in Minsk (UTC+3); the bio counts itself ── */
   const YEARS = (() => {
-    const from = new Date(0x341C * 864e5), now = new Date();
+    const from = new Date(0x341C * 864e5), now = new Date(Date.now() + 3 * 36e5);
     const early = now.getUTCMonth() < from.getUTCMonth() ||
       (now.getUTCMonth() === from.getUTCMonth() && now.getUTCDate() < from.getUTCDate());
     return now.getUTCFullYear() - from.getUTCFullYear() - (early ? 1 : 0);
@@ -131,7 +131,7 @@
   i18n.ready = new Promise(r => (readyI18n = r));
 
   /* ── theme: dark by default, the switch opens the new theme in a circle from the button ── */
-  const THEME_BG = { dark: "#0D1038", light: "#F3F0FA" };
+  const THEME_BG = { dark: "#0D1038", light: "#F6F4FC" };
   const theme = {
     get: () => (root.dataset.theme === "light" ? "light" : "dark"),
     meta() { const m = $('meta[name="theme-color"]'); if (m) m.content = THEME_BG[this.get()]; },
@@ -212,11 +212,19 @@
     const keyboardInside = () => {
       try { return !!el.querySelector(":focus-visible"); } catch { return el.contains(d.activeElement); }
     };
+    const pill = $(".nav__pill", el);
+    const progress = () => {
+      const m = d.documentElement.scrollHeight - innerHeight;
+      if (pill) pill.style.setProperty("--progress", m > 0 ? Math.min(1, scrollY / m).toFixed(4) : "0");
+    };
+    progress();
+    addEventListener("resize", progress, { passive: true });
     let last = scrollY, busy = false;
     addEventListener("scroll", () => {
       if (busy) return;
       busy = true;
       requestAnimationFrame(() => {
+        progress();
         const y = scrollY;
         const hide = y > last && y > 260 && !root.classList.contains("menu-lock") && !keyboardInside();
         el.classList.toggle("is-hidden", hide);
@@ -226,26 +234,40 @@
       });
     }, { passive: true });
 
+    /* the blob follows the pointer and comes to rest on the section in view */
     const links = $(".nav__links", el), blob = $(".nav__blob", el);
+    const blobTo = a => {
+      if (!blob) return;
+      if (!a || !a.offsetWidth) { blob.style.opacity = "0"; return; }
+      blob.style.width = a.offsetWidth + "px";
+      blob.style.transform = `translateX(${a.offsetLeft}px)`;
+      blob.style.opacity = "1";
+    };
+    const restBlob = () => blobTo(links && $("a.is-active", links));
     if (links && blob) {
-      links.addEventListener("pointerover", e => {
-        const a = e.target.closest("a");
-        if (!a) return;
-        blob.style.width = a.offsetWidth + "px";
-        blob.style.transform = `translateX(${a.offsetLeft}px)`;
-        blob.style.opacity = "1";
-      });
-      links.addEventListener("pointerleave", () => (blob.style.opacity = "0"));
+      links.addEventListener("pointerover", e => blobTo(e.target.closest("a")));
+      links.addEventListener("pointerleave", restBlob);
+      i18n.on(() => requestAnimationFrame(restBlob));
     }
 
     const anchors = $$('.nav__links a[href^="#"], .menu__links a[href^="#"]');
     const targets = [...new Set(anchors.map(a => a.hash))].map(h => $(h)).filter(Boolean);
     if (targets.length) {
       const io = new IntersectionObserver(entries => entries.forEach(en => {
-        if (en.isIntersecting) anchors.forEach(a => a.classList.toggle("is-active", a.hash === "#" + en.target.id));
+        if (!en.isIntersecting) return;
+        anchors.forEach(a => a.classList.toggle("is-active", a.hash === "#" + en.target.id));
+        if (!links || !links.matches(":hover")) restBlob();
       }), { rootMargin: "-45% 0px -50% 0px" });
       targets.forEach(t => io.observe(t));
     }
+
+    /* the language button in the footer opens the picker in the bar */
+    $$("[data-lang-open]").forEach(b => b.addEventListener("click", e => {
+      e.stopPropagation();
+      el.classList.remove("is-hidden");
+      const l = $(".nav__lang", el);
+      if (l) l.click();
+    }));
 
     $$("[data-theme-toggle]").forEach(b => b.addEventListener("click", () => theme.toggle(b)));
   };
@@ -363,7 +385,7 @@
     ];
     let finished = 0;
     jobs.forEach(j => j.then(() => { finished++; target = Math.max(target, 0.08 + (0.92 * finished) / jobs.length); }));
-    const t0 = performance.now(), MIN = 1600, MAX = 4500;
+    const t0 = performance.now(), MIN = 1150, MAX = 4000;
     let p = 0, wi = 0, swap = 0;
     await new Promise(res => {
       const frame = now => {
@@ -372,7 +394,7 @@
         p = Math.min(goal, p + Math.max(0.004, (goal - p) * 0.09));
         el.style.setProperty("--p", p.toFixed(4));
         count.textContent = String(Math.round(p * 100)).padStart(3, "0");
-        if (now - swap > 240 && p < 0.95) {
+        if (now - swap > 200 && p < 0.95) {
           const [code, text] = words[wi++ % words.length];
           word.textContent = text;
           word.lang = code;
@@ -383,16 +405,16 @@
       };
       requestAnimationFrame(frame);
     });
-    await sleep(320);
+    await sleep(200);
     el.classList.add("is-done");
-    await sleep(160);
+    await sleep(120);
     finish();
     await sleep(1100);
     el.remove();
   };
 
   /* ── chat demo: a message is typed, translated before sending, a reply is translated from the menu ── */
-  const demoData = full => Object.assign({}, i18n.data.demo, full ? i18n.data.demo2 : null);
+  const demoData = full => Object.assign({}, i18n.data.demo, full ? i18n.data.demo2 : i18n.data.demoHome);
   const demos = () => {
     $$("[data-demo]").forEach(box => {
       const full = box.dataset.demo === "full";
@@ -514,7 +536,7 @@
   const cats = () => {
     $$(".cat").forEach(cat => {
       const pupils = $(".pupils", cat), say = $(".cat__say", cat);
-      addEventListener("pointermove", e => {
+      if (pupils) addEventListener("pointermove", e => {
         const r = cat.getBoundingClientRect();
         if (r.bottom < -200 || r.top > innerHeight + 200) return;
         const dx = e.clientX - (r.left + r.width / 2), dy = e.clientY - (r.top + r.height * 0.38);
@@ -527,6 +549,8 @@
       let t;
       cat.addEventListener("click", () => {
         if (say) say.textContent = i18n.t("cat.meow");
+        cat.classList.remove("is-happy");
+        void cat.offsetWidth;
         cat.classList.add("is-happy");
         clearTimeout(t);
         t = setTimeout(() => cat.classList.remove("is-happy"), 1500);
@@ -601,25 +625,132 @@
   };
 
   const reveal = () => {
+    const els = $$(".rv, .langs");
+    const all = () => els.forEach(el => el.classList.add("is-in"));
+    if (reduce.matches || !("IntersectionObserver" in window)) return all();
+    addEventListener("beforeprint", all);
     const io = new IntersectionObserver(es => es.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
     }), { rootMargin: "0px 0px -10% 0px" });
-    $$(".rv, .langs").forEach(el => io.observe(el));
+    els.forEach(el => io.observe(el));
   };
 
-  const fitWordmark = () => {
-    const marks = $$(".wordmark");
-    if (!marks.length) return;
-    const fit = () => marks.forEach(w => {
-      const span = $("span", w);
-      if (!span) return;
-      w.style.fontSize = "100px";
-      const k = w.clientWidth / span.getBoundingClientRect().width;
-      w.style.fontSize = Math.floor(100 * k * 0.985) + "px";
+  /* ── marquees (the river, the footer band) stand still while off screen ── */
+  const marquees = () => {
+    const els = $$(".river, .band");
+    if (!els.length || !("IntersectionObserver" in window)) return;
+    const io = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle("is-still", !e.isIntersecting)));
+    els.forEach(el => io.observe(el));
+  };
+
+  /* ── pointer-origin hover: the fill grows from where the pointer came in ── */
+  const HOVER = ".pb, .btn";
+  const hoverFill = () => {
+    const place = (el, e) => {
+      const r = el.getBoundingClientRect();
+      const x = e.clientX - r.left, y = e.clientY - r.top;
+      el.style.setProperty("--x", x + "px");
+      el.style.setProperty("--y", y + "px");
+      el.style.setProperty("--r", Math.ceil(Math.hypot(Math.max(x, r.width - x), Math.max(y, r.height - y))) + 1 + "px");
+    };
+    d.addEventListener("pointerover", e => {
+      const el = e.target.closest && e.target.closest(HOVER);
+      if (!el || el.contains(e.relatedTarget)) return;
+      place(el, e);
+      el.classList.add("is-hot");
     });
-    fit();
-    if (d.fonts) d.fonts.ready.then(fit);
-    new ResizeObserver(fit).observe(d.body);
+    d.addEventListener("pointerout", e => {
+      const el = e.target.closest && e.target.closest(HOVER);
+      if (!el || el.contains(e.relatedTarget)) return;
+      place(el, e);
+      el.classList.remove("is-hot");
+    });
+    /* keyboard focus fills from the centre */
+    d.addEventListener("focusin", e => {
+      const el = e.target.closest && e.target.closest(HOVER);
+      if (!el) return;
+      el.style.removeProperty("--x");
+      el.style.removeProperty("--y");
+      el.style.setProperty("--r", Math.ceil(Math.hypot(el.offsetWidth, el.offsetHeight) / 2) + 1 + "px");
+    });
+  };
+
+  /* ── rails: native sideways scrollers; buttons, keys, a counter and mouse drag on top ── */
+  const rails = () => {
+    $$("[data-rail]").forEach(root => {
+      const track = $(".rail__track", root), bar = $(".rail__bar i", root);
+      const prev = $("[data-prev]", root), next = $("[data-next]", root), count = $("[data-count]", root);
+      if (!track) return;
+      const items = [...track.children];
+      const rtl = () => getComputedStyle(track).direction === "rtl";
+      /* everything below counts from the start edge, so it reads the same right to left */
+      const pos = () => Math.abs(track.scrollLeft);
+      const max = () => track.scrollWidth - track.clientWidth;
+      const pad = () => parseFloat(getComputedStyle(track).scrollPaddingInlineStart) || 0;
+      const startOf = it => (rtl() ? track.clientWidth - it.offsetLeft - it.offsetWidth : it.offsetLeft);
+      const index = (bias = 0) => {
+        let best = 0, dist = Infinity;
+        items.forEach((it, i) => {
+          const dd = Math.abs(startOf(it) - pad() - pos() - bias * it.offsetWidth);
+          if (dd < dist) { dist = dd; best = i; }
+        });
+        return best;
+      };
+      const go = i => {
+        i = Math.max(0, Math.min(items.length - 1, i));
+        const to = Math.min(max(), Math.max(0, startOf(items[i]) - pad()));
+        track.scrollTo({ left: rtl() ? -to : to, behavior: reduce.matches ? "auto" : "smooth" });
+      };
+      const two = n => String(n).padStart(2, "0");
+      const update = () => {
+        const m = max(), at = pos(), end = at >= m - 2;
+        const i = end ? items.length - 1 : index();
+        if (count) count.textContent = two(i + 1) + " / " + two(items.length);
+        if (prev) prev.disabled = at <= 2;
+        if (next) next.disabled = end;
+        if (bar) {
+          const w = Math.max(0.08, track.clientWidth / track.scrollWidth);
+          bar.style.setProperty("--w", (w * 100).toFixed(2) + "%");
+          bar.style.setProperty("--t", (m > 0 ? (at / m) * (1 / w - 1) * 100 : 0).toFixed(2) + "%");
+        }
+      };
+      if (prev) prev.addEventListener("click", () => go(index() - 1));
+      if (next) next.addEventListener("click", () => go(index() + 1));
+      track.addEventListener("keydown", e => {
+        if (e.target !== track) return;
+        const step = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+        if (step) { e.preventDefault(); go(index() + (rtl() ? -step : step)); }
+        else if (e.key === "Home") { e.preventDefault(); go(0); }
+        else if (e.key === "End") { e.preventDefault(); go(items.length - 1); }
+      });
+      let raf = 0;
+      track.addEventListener("scroll", () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(update); }, { passive: true });
+      /* a mouse can drag; touch and trackpads scroll natively */
+      let down = false, moved = false, x0 = 0, s0 = 0;
+      track.addEventListener("pointerdown", e => {
+        if (e.pointerType !== "mouse" || e.button !== 0) return;
+        down = true; moved = false; x0 = e.clientX; s0 = track.scrollLeft;
+      });
+      addEventListener("pointermove", e => {
+        if (!down) return;
+        const dx = e.clientX - x0;
+        if (!moved && Math.abs(dx) > 5) { moved = true; track.classList.add("is-drag"); }
+        if (moved) track.scrollLeft = s0 - dx;
+      });
+      addEventListener("pointerup", () => {
+        if (!down) return;
+        down = false;
+        if (!moved) return;
+        const keep = track.scrollLeft;
+        track.classList.remove("is-drag");
+        track.scrollLeft = keep;
+        go(index(Math.abs(keep) > Math.abs(s0) ? 0.35 : -0.35));
+      });
+      track.addEventListener("click", e => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+      track.addEventListener("dragstart", e => e.preventDefault());
+      new ResizeObserver(update).observe(track);
+      update();
+    });
   };
 
   /* ── start ── */
@@ -634,7 +765,9 @@
   cats();
   copies();
   reveal();
-  fitWordmark();
+  marquees();
+  hoverFill();
+  rails();
   i18n.set(i18n.lang).then(() => { clock(); readyI18n(); });
   loader();
 })();

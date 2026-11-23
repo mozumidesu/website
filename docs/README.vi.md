@@ -20,7 +20,7 @@
 # zolatau.com
 
 Mã của zolatau.com: một trang nói về tôi và trang của AI Translate, một plugin
-Discord dịch tin nhắn của bạn bằng mô hình AI bạn chọn.
+Discord và Telegram dịch tin nhắn của bạn bằng mô hình AI bạn chọn.
 
 Các phông là Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest và IBM
 Plex Sans cho tiếng Ả Rập, tiếng Thái và tiếng Hàn, tất cả theo SIL Open Font

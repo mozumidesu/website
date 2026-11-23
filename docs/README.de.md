@@ -20,7 +20,7 @@
 # zolatau.com
 
 Der Quellcode von zolatau.com: eine Seite über mich und die Seite zu AI
-Translate, einem Discord-Plugin, das deine Nachrichten mit einem KI-Modell
+Translate, einem Plugin für Discord und Telegram, das deine Nachrichten mit einem KI-Modell
 deiner Wahl übersetzt.
 
 Die Schriften sind Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest

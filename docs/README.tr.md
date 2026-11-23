@@ -20,7 +20,7 @@
 # zolatau.com
 
 zolatau.com sitesinin kaynağı: hakkımda olan bir sayfa ve mesajlarınızı
-seçtiğiniz bir yapay zekâ modeliyle çeviren Discord eklentisi AI Translate'in
+seçtiğiniz bir yapay zekâ modeliyle çeviren Discord ve Telegram eklentisi AI Translate'in
 sayfası.
 
 Fontlar Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest ve Arapça,

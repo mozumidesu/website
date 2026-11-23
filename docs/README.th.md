@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-โค้ดของ zolatau.com: หน้าที่เล่าเรื่องผม และหน้าของ AI Translate ปลั๊กอินสำหรับ Discord ที่แปลข้อความของคุณด้วยโมเดล AI ที่คุณเลือก
+โค้ดของ zolatau.com: หน้าที่เล่าเรื่องผม และหน้าของ AI Translate ปลั๊กอินสำหรับ Discord และ Telegram ที่แปลข้อความของคุณด้วยโมเดล AI ที่คุณเลือก
 
 ฟอนต์คือ Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest และ IBM Plex Sans สำหรับภาษาอาหรับ ไทย และเกาหลี ทั้งหมดอยู่ภายใต้ SIL Open Font License 1.1 ใบอนุญาตอยู่ใน `public/assets/fonts/LICENSES.txt`
 

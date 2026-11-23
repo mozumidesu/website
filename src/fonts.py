@@ -8,7 +8,7 @@ from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 
 X = pathlib.Path('/tmp/claude-0/fonts/x')
-P = pathlib.Path('/home/claude/website/public')
+P = pathlib.Path(__file__).resolve().parent.parent / 'public'
 OUT = P / 'assets/fonts'
 OUT.mkdir(parents=True, exist_ok=True)
 for f in OUT.glob('*.woff2'):

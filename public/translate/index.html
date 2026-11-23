@@ -29,7 +29,7 @@ var q=new URLSearchParams(location.search),qt=q.get("theme"),ql=q.get("lang"),t=
 if(L.indexOf(l)<0){l="en";var n=navigator.languages||[navigator.language||"en"];for(var i=0;i<n.length;i++){var b=String(n[i]).toLowerCase().split("-")[0];if(L.indexOf(b)>=0){l=b;break}}}
 d.lang=l;d.dir=l==="ar"?"rtl":"ltr";d.className+=" js"+(l!=="en"?" i18n-wait":"");
 setTimeout(function(){d.classList.remove("i18n-wait")},2500);
-var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="light"?"#F3F0FA":"#0D1038";})();
+var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="light"?"#F6F4FC":"#0D1038";})();
 </script>
 <script src="../assets/js/site.js" defer></script>
 <script src="../assets/js/translate.js" defer></script>
@@ -52,6 +52,8 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
   <symbol id="i-discord" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></symbol>
   <symbol id="i-gitlab" viewBox="0 0 24 24"><path d="m23.6004 9.5927-.0337-.0862L20.3.9814a.851.851 0 0 0-.3362-.405.8748.8748 0 0 0-.9997.0539.8748.8748 0 0 0-.29.4399l-2.2055 6.748H7.5375l-2.2057-6.748a.8573.8573 0 0 0-.29-.4412.8748.8748 0 0 0-.9997-.0537.8585.8585 0 0 0-.3362.4049L.4332 9.5015l-.0325.0862a6.0657 6.0657 0 0 0 2.0119 7.0105l.0113.0087.03.0213 4.976 3.7264 2.462 1.8633 1.4995 1.1321a1.0085 1.0085 0 0 0 1.2197 0l1.4995-1.1321 2.4619-1.8633 5.006-3.7489.0125-.01a6.0682 6.0682 0 0 0 2.0094-7.003z"/></symbol>
   <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+  <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 <a class="skip" href="#main" data-i18n="common.skip">Skip to content</a>
 <div class="atmos" aria-hidden="true"><div class="atmos__cols"></div></div>
@@ -445,35 +447,61 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
 </main>
 
 <footer class="footer">
-  <div class="footer__stage">
-    <p class="wordmark" aria-hidden="true"><span>ZOLATAU</span></p>
+  <div class="band">
+    <p class="band__run" aria-hidden="true"><span>ZOLATAU</span><span>ИВАН</span><span>イヴァン</span><span>IVAN</span><span>이반</span><span>ZOLATAU</span><span>ИВАН</span><span>イヴァン</span><span>IVAN</span><span>이반</span></p>
     <button class="cat" type="button" aria-label="Cat" data-i18n-attr="aria-label:cat.label">
       <span class="cat__say" aria-live="polite">meow</span>
-      <svg class="cat-sit" viewBox="0 0 140 150" aria-hidden="true" focusable="false">
-            <g class="tail-wrap"><path class="tail" d="M100 140 C 126 144 138 126 130 110 C 126 101 131 92 138 95" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/></g>
-            <path d="M36 147 C 26 147 22 132 27 115 C 32 98 42 86 50 80 L 90 80 C 98 86 108 98 113 115 C 118 132 114 147 104 147 Z" fill="currentColor"/>
-            <ellipse cx="57" cy="146" rx="10" ry="5.5" fill="currentColor" class="paw"/>
-            <ellipse cx="83" cy="146" rx="10" ry="5.5" fill="currentColor" class="paw"/>
-            <path d="M42 54 L 38 20 Q 38 16 42 18 L 64 36 Z M98 54 L 102 20 Q 102 16 98 18 L 76 36 Z" fill="currentColor" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
-            <path class="pink" d="M44 44 L 42 27 L 55 37 Z M96 44 L 98 27 L 85 37 Z" opacity=".75"/>
-            <ellipse cx="70" cy="62" rx="31" ry="26" fill="currentColor"/>
-            <g class="eyes-wrap"><g class="eyes">
-              <clipPath id="cat-eyes"><ellipse cx="58" cy="61" rx="5.6" ry="6.4"/><ellipse cx="82" cy="61" rx="5.6" ry="6.4"/></clipPath>
-              <ellipse class="eye" cx="58" cy="61" rx="5.6" ry="6.4"/><ellipse class="eye" cx="82" cy="61" rx="5.6" ry="6.4"/>
-              <g clip-path="url(#cat-eyes)"><g class="pupils"><ellipse class="pupil" cx="58" cy="61" rx="1.9" ry="5"/><ellipse class="pupil" cx="82" cy="61" rx="1.9" ry="5"/></g></g>
-            </g></g>
-            <path class="pink" d="M67 70 L 73 70 L 70 73.5 Z"/>
-            <path class="mouth" d="M64 76 Q 67 79 70 76 Q 73 79 76 76" fill="none" stroke-width="1.6" stroke-linecap="round"/>
-            <path class="whiskers" d="M48 70 L 34 68 M48 74 L 35 77 M92 70 L 106 68 M92 74 L 105 77" stroke-width="1.2" stroke-linecap="round" opacity=".55"/>
-          </svg>
+      <svg class="cat-walk" viewBox="0 0 120 72" aria-hidden="true" focusable="false">
+        <g class="body">
+          <path class="wtail" d="M36 38 C 24 38 17 28 21 16 C 22 12 26 11 27 14" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+          <line class="leg l1" x1="44" y1="46" x2="43" y2="62" stroke="currentColor" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+          <line class="leg l3" x1="72" y1="46" x2="73" y2="62" stroke="currentColor" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+          <path d="M34 40 C 34 30 44 28 58 28 C 70 28 80 28 84 34 C 88 42 84 50 74 51 C 64 52 48 52 41 50 C 36 48 34 45 34 40 Z" fill="currentColor"/>
+          <line class="leg l2" x1="47" y1="47" x2="47" y2="63" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+          <line class="leg l4" x1="75" y1="47" x2="76" y2="63" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+          <path d="M80 20 L 81 6 Q 81 3 84 5 L 92 13 Z M95 13 L 103 5 Q 106 3 106 7 L 106 21 Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M84 12 L 85 8 L 89 12 Z M100 11 L 104 7 L 104 12 Z" fill="#F29BAE" opacity=".8"/>
+          <circle cx="93" cy="26" r="15" fill="currentColor"/>
+          <ellipse class="eye" cx="99" cy="24" rx="3" ry="3.6"/><ellipse class="pupil" cx="99.8" cy="24" rx="1.1" ry="2.9"/>
+          <path d="M106.6 29.6 l2.6 .1 -1.3 2z" fill="#F29BAE"/>
+        </g>
+      </svg>
     </button>
   </div>
-  <div class="wrap footer__row">
-    <p><a class="made" data-link="home" href="https://zolatau.com/"><span data-i18n="tr.by">Made with care</span><svg class="heart" aria-hidden="true"><use href="#i-heart"/></svg></a></p>
-    <div class="footer__links">
-      <a href="https://github.com/mozumidesu/ai-translate" target="_blank" rel="noopener">GitHub</a>
-      <a href="#top" data-i18n="common.top">Back to top</a>
+  <div class="wrap">
+    <div class="footer__cols">
+      <div>
+        <p class="footer__lead" data-i18n="home.contactTitle">Write to me</p>
+        <p data-i18n="home.contactLead">In any language</p>
+      </div>
+      <nav class="footer__col" aria-labelledby="f-contact">
+        <h2 id="f-contact" data-i18n="nav.contact">Contact</h2>
+        <ul>
+          <li><a class="pb" href="https://discord.com/users/1418804885066874880" target="_blank" rel="noopener">Discord<svg class="i" aria-hidden="true"><use href="#i-arrow-up"/></svg></a></li>
+          <li><a class="pb" href="https://t.me/mozumidesu" target="_blank" rel="noopener">Telegram<svg class="i" aria-hidden="true"><use href="#i-arrow-up"/></svg></a></li>
+          <li><a class="pb" href="https://github.com/mozumidesu" target="_blank" rel="noopener">GitHub<svg class="i" aria-hidden="true"><use href="#i-arrow-up"/></svg></a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-labelledby="f-translate">
+        <h2 id="f-translate">AI Translate</h2>
+        <ul>
+          <li><a class="pb" data-link="translate" href="https://translate.zolatau.com/"><span data-i18n="foot.all">All platforms</span></a></li>
+          <li><a class="pb" data-link="translate" href="https://translate.zolatau.com/#install">Discord</a></li>
+          <li><a class="pb" data-link="translate" href="https://translate.zolatau.com/#telegram">Telegram</a></li>
+          <li><a class="pb" href="https://github.com/mozumidesu/ai-translate" target="_blank" rel="noopener"><span data-i18n="tr.hSource">Source code</span><svg class="i" aria-hidden="true"><use href="#i-arrow-up"/></svg></a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h2 data-i18n="foot.site">Site</h2>
+        <ul>
+          <li><a class="pb" data-link="home" href="https://zolatau.com/">Ivan Zolatau</a></li>
+          <li><button class="pb" type="button" data-theme-toggle><span class="theme-ico"><svg class="moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="sun" aria-hidden="true"><use href="#i-sun"/></svg></span><span data-i18n="foot.theme">Theme</span></button></li>
+          <li><button class="pb" type="button" data-lang-open aria-haspopup="listbox"><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg><span data-i18n="lang.label">Language</span><span data-lang-code>EN</span></button></li>
+          <li><a class="pb" href="#top"><span data-i18n="common.top">Back to top</span></a></li>
+        </ul>
+      </div>
     </div>
+    <div class="footer__base"><span>© 2026 Ivan Zolatau</span><span><span data-i18n="home.clock">Belarus</span> <time data-clock>--:--</time></span></div>
   </div>
 </footer>
 </body>

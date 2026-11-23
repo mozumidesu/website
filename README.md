@@ -20,7 +20,7 @@
 # zolatau.com
 
 The source of zolatau.com: a page about me, and the page for AI Translate, a
-plugin for Discord that translates your messages with an AI model of your
+plugin for Discord and Telegram that translates your messages with an AI model of your
 choice.
 
 The fonts are Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest and IBM

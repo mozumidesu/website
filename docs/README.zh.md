@@ -19,7 +19,7 @@
 
 # zolatau.com
 
-zolatau.com 的代码：一个关于我的页面，以及 AI Translate 的页面，那是一个用你选择的 AI 模型翻译你的消息的 Discord 插件。
+zolatau.com 的代码：一个关于我的页面，以及 AI Translate 的页面，那是一个用你选择的 AI 模型翻译你的消息的 Discord 和 Telegram 插件。
 
 字体是 Dela Gothic One、Zen Kaku Gothic New、Martian Mono、Onest，以及用于阿拉伯语、泰语和韩语的 IBM Plex Sans，全部采用 SIL Open Font License 1.1。许可证在 `public/assets/fonts/LICENSES.txt` 里。
 

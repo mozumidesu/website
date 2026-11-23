@@ -20,7 +20,7 @@
 # zolatau.com
 
 Codul site-ului zolatau.com: o pagină despre mine și pagina AI Translate, un
-plugin pentru Discord care îți traduce mesajele cu modelul de inteligență
+plugin pentru Discord și Telegram care îți traduce mesajele cu modelul de inteligență
 artificială pe care îl alegi.
 
 Fonturile sunt Dela Gothic One, Zen Kaku Gothic New, Martian Mono, Onest și IBM
