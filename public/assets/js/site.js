@@ -131,7 +131,7 @@
   i18n.ready = new Promise(r => (readyI18n = r));
 
   /* ── theme: dark by default, the switch opens the new theme in a circle from the button ── */
-  const THEME_BG = { dark: "#0D1038", light: "#F6F4FC" };
+  const THEME_BG = { dark: "#14110F", light: "#F4EFE6" };
   const theme = {
     get: () => (root.dataset.theme === "light" ? "light" : "dark"),
     meta() { const m = $('meta[name="theme-color"]'); if (m) m.content = THEME_BG[this.get()]; },
@@ -212,19 +212,11 @@
     const keyboardInside = () => {
       try { return !!el.querySelector(":focus-visible"); } catch { return el.contains(d.activeElement); }
     };
-    const pill = $(".nav__pill", el);
-    const progress = () => {
-      const m = d.documentElement.scrollHeight - innerHeight;
-      if (pill) pill.style.setProperty("--progress", m > 0 ? Math.min(1, scrollY / m).toFixed(4) : "0");
-    };
-    progress();
-    addEventListener("resize", progress, { passive: true });
     let last = scrollY, busy = false;
     addEventListener("scroll", () => {
       if (busy) return;
       busy = true;
       requestAnimationFrame(() => {
-        progress();
         const y = scrollY;
         const hide = y > last && y > 260 && !root.classList.contains("menu-lock") && !keyboardInside();
         el.classList.toggle("is-hidden", hide);
@@ -234,31 +226,81 @@
       });
     }, { passive: true });
 
-    /* the blob follows the pointer and comes to rest on the section in view */
+    /* the blob follows the pointer and comes to rest on the section in view; it moves like a drop:
+       the edge in front runs ahead, the one behind catches up */
     const links = $(".nav__links", el), blob = $(".nav__blob", el);
+    let under = null, edges = null;
     const blobTo = a => {
       if (!blob) return;
-      if (!a || !a.offsetWidth) { blob.style.opacity = "0"; return; }
-      blob.style.width = a.offsetWidth + "px";
-      blob.style.transform = `translateX(${a.offsetLeft}px)`;
+      if (under) under.classList.remove("is-under");
+      under = a && a.offsetWidth ? a : null;
+      if (!under) { blob.style.opacity = "0"; edges = null; return; }
+      under.classList.add("is-under");
+      const l = under.offsetLeft, r = links.clientWidth - l - under.offsetWidth;
+      if (edges && !reduce.matches) {
+        const right = l > edges[0];
+        const fast = ".32s cubic-bezier(.3, .9, .3, 1)", slow = ".62s cubic-bezier(.5, 0, .2, 1)";
+        blob.style.transition = `left ${right ? slow : fast}, right ${right ? fast : slow}, opacity .3s`;
+      } else blob.style.transition = "opacity .3s";
+      blob.style.width = "auto";
+      blob.style.left = l + "px";
+      blob.style.right = r + "px";
       blob.style.opacity = "1";
+      edges = [l, r];
     };
     const restBlob = () => blobTo(links && $("a.is-active", links));
     if (links && blob) {
-      links.addEventListener("pointerover", e => blobTo(e.target.closest("a")));
+      links.addEventListener("pointerover", e => { const a = e.target.closest("a"); if (a) blobTo(a); });
       links.addEventListener("pointerleave", restBlob);
-      i18n.on(() => requestAnimationFrame(restBlob));
+      links.addEventListener("focusin", e => blobTo(e.target.closest("a")));
+      links.addEventListener("focusout", () => requestAnimationFrame(() => { if (!links.contains(d.activeElement)) restBlob(); }));
+      i18n.on(() => requestAnimationFrame(() => { edges = null; restBlob(); }));
+      addEventListener("resize", () => { edges = null; restBlob(); }, { passive: true });
     }
+
+    /* the seal in the bar shows the label of the section in view, stamped again on every change */
+    const stamp = $("[data-stamp]", el), stampText = stamp && $("b", stamp);
+    const home = stampText ? stampText.textContent : "";
+    const stampTo = t => {
+      if (!stampText || stampText.textContent === t) return;
+      stampText.textContent = t;
+      const n = [...t].length;
+      stampText.className = "is-" + (n <= 1 ? 1 : n <= 2 ? 2 : 4);
+      if (reduce.matches) return;
+      stamp.classList.remove("is-stamping");
+      void stamp.offsetWidth;
+      stamp.classList.add("is-stamping");
+    };
 
     const anchors = $$('.nav__links a[href^="#"], .menu__links a[href^="#"]');
     const targets = [...new Set(anchors.map(a => a.hash))].map(h => $(h)).filter(Boolean);
-    if (targets.length) {
+    const sections = $$("main > section[id]");
+    if (targets.length || sections.length) {
       const io = new IntersectionObserver(entries => entries.forEach(en => {
         if (!en.isIntersecting) return;
-        anchors.forEach(a => a.classList.toggle("is-active", a.hash === "#" + en.target.id));
-        if (!links || !links.matches(":hover")) restBlob();
+        const id = "#" + en.target.id;
+        if (targets.includes(en.target)) {
+          anchors.forEach(a => a.classList.toggle("is-active", a.hash === id));
+          if (!links || !links.matches(":hover")) restBlob();
+        }
+        if (sections.includes(en.target)) {
+          const v = $(".vlabel b", en.target);
+          stampTo(v ? v.textContent : home);
+        }
       }), { rootMargin: "-45% 0px -50% 0px" });
-      targets.forEach(t => io.observe(t));
+      new Set([...targets, ...sections]).forEach(t => io.observe(t));
+    }
+
+    /* the round buttons lean a little toward the pointer */
+    if (matchMedia("(hover: hover) and (pointer: fine)").matches && !reduce.matches) {
+      $$(".nav__btn, .nav__mark", el).forEach(b => {
+        b.addEventListener("pointermove", e => {
+          const r = b.getBoundingClientRect();
+          const x = (e.clientX - r.left - r.width / 2) / r.width, y = (e.clientY - r.top - r.height / 2) / r.height;
+          b.style.translate = `${(x * 8).toFixed(1)}px ${(y * 6).toFixed(1)}px`;
+        });
+        b.addEventListener("pointerleave", () => { b.style.translate = ""; });
+      });
     }
 
     /* the language button in the footer opens the picker in the bar */
@@ -652,7 +694,10 @@
       el.style.setProperty("--x", x + "px");
       el.style.setProperty("--y", y + "px");
       el.style.setProperty("--r", Math.ceil(Math.hypot(Math.max(x, r.width - x), Math.max(y, r.height - y))) + 1 + "px");
+      el.style.setProperty("--pb-in", grow(r.width));
     };
+    /* the wider the element, the longer the fill takes to cover it: .45 s for a small button, .9 s for a full row */
+    const grow = w => (0.45 + 0.45 * Math.min(1, Math.max(0, (w - 60) / 840))).toFixed(2) + "s";
     d.addEventListener("pointerover", e => {
       const el = e.target.closest && e.target.closest(HOVER);
       if (!el || el.contains(e.relatedTarget)) return;
@@ -672,8 +717,50 @@
       el.style.removeProperty("--x");
       el.style.removeProperty("--y");
       el.style.setProperty("--r", Math.ceil(Math.hypot(el.offsetWidth, el.offsetHeight) / 2) + 1 + "px");
+      el.style.setProperty("--pb-in", grow(el.offsetWidth));
     });
   };
+
+  /* ── platform chooser: a small window with Discord and Telegram ── */
+  const picker = () => {
+    const dlg = $("#pick");
+    if (!dlg || !dlg.showModal) return;
+    let opener = null;
+    const openers = $$("[data-pick]");
+    const close = () => {
+      if (!dlg.open || dlg.classList.contains("is-closing")) return;
+      const done = () => { dlg.classList.remove("is-closing"); dlg.close(); };
+      if (reduce.matches) return done();
+      dlg.classList.add("is-closing");
+      setTimeout(done, 220);
+    };
+    openers.forEach(b => b.addEventListener("click", () => {
+      opener = b;
+      dlg.showModal();
+      openers.forEach(o => o.setAttribute("aria-expanded", "true"));
+      root.classList.add("pick-lock");
+      const first = $(".pick__opt", dlg);
+      if (first) first.focus();
+    }));
+    dlg.addEventListener("close", () => {
+      openers.forEach(o => o.setAttribute("aria-expanded", "false"));
+      root.classList.remove("pick-lock");
+      if (opener) { opener.classList.remove("is-hot"); opener.focus(); }
+    });
+    /* Tab and Shift+Tab go round inside the window */
+    dlg.addEventListener("keydown", e => {
+      if (e.key !== "Tab") return;
+      const f = $$("a[href], button", dlg), first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && d.activeElement === first) { last.focus(); e.preventDefault(); }
+      else if (!e.shiftKey && d.activeElement === last) { first.focus(); e.preventDefault(); }
+    });
+    /* Escape plays the same closing animation */
+    dlg.addEventListener("cancel", e => { e.preventDefault(); close(); });
+    /* a click on the dimmed page around the window lands on the dialog itself */
+    dlg.addEventListener("click", e => { if (e.target === dlg) close(); });
+    $$("[data-pick-close]", dlg).forEach(b => b.addEventListener("click", close));
+  };
+
 
   /* ── rails: native sideways scrollers; buttons, keys, a counter and mouse drag on top ── */
   const rails = () => {
@@ -767,6 +854,7 @@
   reveal();
   marquees();
   hoverFill();
+  picker();
   rails();
   i18n.set(i18n.lang).then(() => { clock(); readyI18n(); });
   loader();

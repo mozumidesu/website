@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ivan Zolatau</title>
 <meta name="description" content="Ivan Zolatau, a language learner from Belarus and the maker of AI Translate, a plugin for Discord and Telegram that translates your messages with AI and keeps the way you write.">
-<meta name="theme-color" content="#0D1038">
+<meta name="theme-color" content="#14110F">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="zolatau.com">
 <meta property="og:url" content="https://zolatau.com/">
 <meta property="og:title" content="Ivan Zolatau">
-<meta property="og:description" content="Language learner from Belarus. I make AI Translate, a plugin for Discord and Telegram that lets you talk to anyone, even if you don't know their language.">
+<meta property="og:description" content="I develop AI Translate, a plugin for Discord and Telegram that lets you talk to anyone, even without a shared language. I study languages myself.">
 <meta property="og:image" content="https://zolatau.com/assets/img/og-home.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -29,7 +29,7 @@ var q=new URLSearchParams(location.search),qt=q.get("theme"),ql=q.get("lang"),t=
 if(L.indexOf(l)<0){l="en";var n=navigator.languages||[navigator.language||"en"];for(var i=0;i<n.length;i++){var b=String(n[i]).toLowerCase().split("-")[0];if(L.indexOf(b)>=0){l=b;break}}}
 d.lang=l;d.dir=l==="ar"?"rtl":"ltr";d.className+=" js"+(l!=="en"?" i18n-wait":"");
 setTimeout(function(){d.classList.remove("i18n-wait")},2500);
-var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="light"?"#F6F4FC":"#0D1038";})();
+var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="light"?"#F4EFE6":"#14110F";})();
 </script>
 <script src="assets/js/site.js" defer></script>
 <script src="assets/js/home.js" defer></script>
@@ -53,6 +53,7 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
   <symbol id="i-gitlab" viewBox="0 0 24 24"><path d="m23.6004 9.5927-.0337-.0862L20.3.9814a.851.851 0 0 0-.3362-.405.8748.8748 0 0 0-.9997.0539.8748.8748 0 0 0-.29.4399l-2.2055 6.748H7.5375l-2.2057-6.748a.8573.8573 0 0 0-.29-.4412.8748.8748 0 0 0-.9997-.0537.8585.8585 0 0 0-.3362.4049L.4332 9.5015l-.0325.0862a6.0657 6.0657 0 0 0 2.0119 7.0105l.0113.0087.03.0213 4.976 3.7264 2.462 1.8633 1.4995 1.1321a1.0085 1.0085 0 0 0 1.2197 0l1.4995-1.1321 2.4619-1.8633 5.006-3.7489.0125-.01a6.0682 6.0682 0 0 0 2.0094-7.003z"/></symbol>
   <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
   <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
   <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 <a class="skip" href="#main" data-i18n="common.skip">Skip to content</a>
@@ -88,12 +89,12 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
 
 <header class="nav">
   <nav class="nav__pill glass" aria-label="Main" data-i18n-attr="aria-label:nav.label">
-    <a class="nav__mark" href="#top" aria-label="Ivan Zolatau"><span class="app-mark"><svg aria-hidden="true"><use href="#i-z"/></svg></span></a>
+    <a class="nav__mark" href="#top" aria-label="Ivan Zolatau"><span class="stamp" data-stamp aria-hidden="true"><b class="is-2">茂住</b></span></a>
     <div class="nav__links" style="--d:.05s">
       <span class="nav__blob" aria-hidden="true"></span>
-      <a href="#translate">AI Translate</a>
-      <a href="#about" data-i18n="nav.about">About</a>
-      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a href="#translate"><span>AI Translate</span></a>
+      <a href="#about"><span data-i18n="nav.about">About</span></a>
+      <a href="#contact"><span data-i18n="nav.contact">Contact</span></a>
     </div>
     <span class="nav__sep" style="--d:.1s"></span>
     <button class="nav__btn pb" type="button" data-theme-toggle aria-label="Switch to light theme" style="--d:.15s">
@@ -105,19 +106,21 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
       </button>
     </div>
     <button class="nav__btn nav__menu-btn pb" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu" style="--d:.25s"><span class="menu-ico"></span></button>
-    <i class="nav__progress" aria-hidden="true"></i>
   </nav>
   <ul class="lang__menu" id="lang-menu" role="listbox" aria-label="Language" data-i18n-attr="aria-label:lang.label" hidden></ul>
 </header>
 
 <div class="menu" id="menu" hidden>
   <ul class="menu__links">
-    <li><a href="#top"><span data-i18n="nav.home">Home</span></a></li>
-    <li><a href="#translate">AI Translate</a></li>
-    <li><a href="#about"><span data-i18n="nav.about">About</span></a></li>
-    <li><a href="#contact"><span data-i18n="nav.contact">Contact</span></a></li>
+    <li><a href="#top"><span data-i18n="nav.home">Home</span><i aria-hidden="true">茂住</i></a></li>
+    <li><a href="#translate"><span>AI Translate</span><i aria-hidden="true">翻訳</i></a></li>
+    <li><a href="#about"><span data-i18n="nav.about">About</span><i aria-hidden="true">自己紹介</i></a></li>
+    <li><a href="#contact"><span data-i18n="nav.contact">Contact</span><i aria-hidden="true">連絡</i></a></li>
   </ul>
-  <div class="menu__foot mono"><span><span data-i18n="home.clock">Belarus</span> <time data-clock>--:--</time></span><span>茂住</span></div>
+  <div class="menu__foot">
+    <button class="menu__ctl pb" type="button" data-theme-toggle><span class="theme-ico"><svg class="moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="sun" aria-hidden="true"><use href="#i-sun"/></svg></span><span data-i18n="foot.theme">Theme</span></button>
+    <button class="menu__ctl pb" type="button" data-lang-open aria-haspopup="listbox"><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg><span data-i18n="lang.label">Language</span><span data-lang-code>EN</span></button>
+  </div>
 </div>
 
 <main id="main">
@@ -139,9 +142,9 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
           <span class="hero__first" aria-hidden="true"><span data-name dir="auto">Ivan</span></span>
           <span class="hero__last" aria-hidden="true">Zolatau</span>
         </h1>
-        <p class="hero__lead" data-in style="--in:3" data-i18n-html="home.lead">I learn languages and make <b>AI Translate</b>, a plugin for Discord and Telegram that lets you talk to anyone, even if you don't know their language.</p>
+        <p class="hero__lead" data-in style="--in:3" data-i18n-html="home.lead">I develop <b>AI Translate</b>, a plugin for Discord and Telegram that lets you talk to anyone, even without a shared language. I study languages myself.</p>
         <div class="hero__cta" data-in style="--in:4">
-          <a class="btn btn--acc" data-link="translate" href="https://translate.zolatau.com/#install"><span data-i18n="home.ctaInstall">Install AI Translate</span><svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--acc" href="#contact"><span data-i18n="home.contactTitle">Write to me</span><svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           <a class="btn btn--ghost" href="#about" data-i18n="home.ctaAbout">About me</a>
         </div>
       </div>
@@ -153,7 +156,7 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
             <source type="image/webp" srcset="assets/img/ivan-480.webp 480w, assets/img/ivan-720.webp 720w, assets/img/ivan-960.webp 960w" sizes="(max-width: 900px) 70vw, 420px">
             <img src="assets/img/ivan-720.webp" width="983" height="1604" alt="Ivan Zolatau smiling, in a white T-shirt" data-i18n-attr="alt:home.photoAlt" fetchpriority="high">
           </picture>
-          <img class="portrait__hanko" src="assets/img/hanko.svg" alt="" width="120" height="120">
+          <svg class="portrait__hanko" viewBox="0 0 120 120" width="120" height="120" aria-hidden="true" focusable="false"><defs><filter id="hanko-ink" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.22" numOctaves="3" seed="11" result="s"/><feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  30 0 0 0 -5.4" result="speck"/><feComposite in="d" in2="speck" operator="in"/></filter></defs><g filter="url(#hanko-ink)"><rect x="6" y="6" width="108" height="108" rx="14" class="hanko__bg"/><path d="M73 50.2Q73 52.4 71.8 53.4Q70.5 54.3 68.8 54.3Q60.8 54.3 54.5 50Q49.2 53 43.3 54.4Q41.9 51.1 39.4 47.7Q39.1 51.6 38.1 54.4Q34.5 53.5 32 52.9Q29.5 52.4 27 52.1Q28 50.4 28.5 48.6Q28.9 46.9 29.1 44.2Q29.2 41.5 29.2 36.3V27.9H43.3L43.2 27H37.7V26.1H28.8V18.8H37.7V17.6H47.8V18.8H53.6V17.6H63.6V18.8H72.7V26.1H67.2Q69 26.8 71.5 28H72.8L72.8 36.3H64.4L68.3 37.7Q67.6 38.7 66.2 40.3Q69.2 40.8 72.1 41.1Q72.6 44.6 72.8 46.4Q73 48.3 73 50.2ZM53.4 26.8Q53.4 27.2 53.5 28H63.2L64.8 26.1H63.6V27H53.6V26.1H47.8V26.8ZM47.8 43.5Q45.6 40.3 44.6 36.3H39.7Q39.6 36.6 39.7 36.8Q39.7 37.1 39.7 37.3V38.4Q39.7 41.4 39.6 45.3Q44.1 44.8 47.8 43.5ZM59.3 36.3H54.8Q55.4 37.8 56.1 39.2Q57.8 37.9 59.3 36.3ZM64.8 41.8Q63.7 43.1 62.3 44.4Q63.5 44.9 65.3 45.3Q65.5 45.3 65.3 44.3Q65.2 43.3 64.8 41.8ZM62.7 92.1H73V101.6H42.3V92.1H52.4V90.3H43.2V81.3H52.4V79.1H42.6V70.6H52Q50.1 69.8 48.5 69.4Q50.6 68.6 52.2 67.9Q53.8 67.3 56.5 65.9Q58.5 66.7 60.2 67.6Q61.8 68.5 64.3 69.9L62.9 70.6H72.5V79.1H62.7V81.3H71.8V90.3H62.7ZM42.8 66.7Q42.6 72.1 42.3 75.2Q42 78.4 41.3 81V102.1H31.1V91.8Q29.8 92.4 29.4 92.4Q29.1 88.4 28.7 85.8Q28.3 83.2 27 80.2Q28.9 80.2 30 79.7Q31.1 79.2 31.5 78.4Q31.8 77.9 31.9 76.5Q32 75 32 73.1Q32 69.9 31.7 66.6Z" class="hanko__ink"/></g></svg>
         </div>
       </div>
     </div>
@@ -179,7 +182,7 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
             <li data-i18n="home.tr3">Works with Groq, Gemini, GLM and other providers, several of them free</li>
           </ul>
           <div class="cta-row">
-            <a class="btn btn--acc" data-link="translate" href="https://translate.zolatau.com/#install"><span data-i18n="home.trInstall">Install</span><svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <button class="btn btn--acc" type="button" data-pick aria-haspopup="dialog" aria-expanded="false" aria-controls="pick"><span data-i18n="home.trInstall">Install</span><svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
             <a class="btn btn--ghost" data-link="translate" href="https://translate.zolatau.com/" data-i18n="home.trMore">More about the plugin</a>
           </div>
         </div>
@@ -308,12 +311,10 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
           <li><a class="pb" href="https://github.com/mozumidesu" target="_blank" rel="noopener">GitHub<svg class="i" aria-hidden="true"><use href="#i-arrow-up"/></svg></a></li>
         </ul>
       </nav>
-      <nav class="footer__col" aria-labelledby="f-translate">
-        <h2 id="f-translate">AI Translate</h2>
+      <nav class="footer__col footer__col--proj" aria-labelledby="f-proj">
+        <h2 id="f-proj" data-i18n="foot.projects">Projects</h2>
         <ul>
-          <li><a class="pb" data-link="translate" href="https://translate.zolatau.com/"><span data-i18n="foot.all">All platforms</span></a></li>
-          <li><a class="pb" data-link="translate" href="https://translate.zolatau.com/#install">Discord</a></li>
-          <li><a class="pb" data-link="translate" href="https://translate.zolatau.com/#telegram">Telegram</a></li>
+          <li><button class="proj pb" type="button" data-pick aria-haspopup="dialog" aria-expanded="false" aria-controls="pick"><span class="app-mark" aria-hidden="true"><svg><use href="#i-translate"/></svg></span><span><b>AI Translate</b><small data-i18n="foot.projNote">Discord and Telegram</small></span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></button></li>
           <li><a class="pb" href="https://github.com/mozumidesu/ai-translate" target="_blank" rel="noopener"><span data-i18n="tr.hSource">Source code</span><svg class="i" aria-hidden="true"><use href="#i-arrow-up"/></svg></a></li>
         </ul>
       </nav>
@@ -326,8 +327,20 @@ var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=t==="lig
         </ul>
       </div>
     </div>
-    <div class="footer__base"><span>© 2026 Ivan Zolatau</span><span><span data-i18n="home.clock">Belarus</span> <time data-clock>--:--</time></span></div>
+    <div class="footer__base"><span>© 2026 Ivan Zolatau</span><span class="stamp" aria-hidden="true"><b class="is-2">茂住</b></span></div>
   </div>
 </footer>
+
+<dialog class="pick" id="pick" aria-labelledby="pick-title">
+  <div class="pick__box">
+    <p class="pick__kicker">AI Translate</p>
+    <h2 id="pick-title" data-i18n="pick.title">Where do you chat?</h2>
+    <ul class="pick__list">
+      <li><a class="pick__opt pb" href="https://zolatau.com/discord"><span class="pick__ico"><svg class="i" aria-hidden="true"><use href="#i-discord"/></svg></span><span><b>Discord</b><small data-i18n="pick.discord">The app on Windows, macOS and Linux, or in a browser</small></span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a class="pick__opt pb" href="https://zolatau.com/telegram"><span class="pick__ico"><svg class="i" aria-hidden="true"><use href="#i-telegram"/></svg></span><span><b>Telegram</b><small data-i18n="pick.telegram">Telegram Web in a desktop browser</small></span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+    </ul>
+    <button class="pick__close pb" type="button" data-pick-close aria-label="Close" data-i18n-attr="aria-label:common.close"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+</dialog>
 </body>
 </html>

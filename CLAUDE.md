@@ -106,6 +106,12 @@ on the first publish.
 that hands out the plugin's builds — this site has no control over it and
 cannot break it.
 
+`zolatau.com/discord` and `zolatau.com/telegram` are where the platform chooser
+(the "Install" and "AI Translate" buttons) sends people. For now `worker.js`
+answers them with temporary 302 redirects to the install sections of
+translate.zolatau.com; phase 2 of the redesign replaces them with pages of
+their own. Both paths are in `run_worker_first`.
+
 ## Style
 
 - Comments are short.

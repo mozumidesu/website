@@ -17,6 +17,8 @@
     "directory": "./public",
     "binding": "ASSETS",
     "not_found_handling": "404-page",
-    "run_worker_first": ["/", "/index.html", "/translate", "/translate/*", "/builds", "/builds/*"]
+    // /discord and /telegram are temporary redirects in worker.js; phase 2 replaces
+    // them with pages of their own.
+    "run_worker_first": ["/", "/index.html", "/translate", "/translate/*", "/builds", "/builds/*", "/discord", "/discord/*", "/telegram", "/telegram/*"]
   }
 }
